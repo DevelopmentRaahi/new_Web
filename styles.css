@@ -4,11 +4,20 @@
   /* --font-primary: 'JetBrains Mono', monospace; */
   --font-secondary: 'Reddit Sans', sans-serif;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
 
 body {
   font-family: var(--font-primary), var(--font-secondary), 'Segoe UI', sans-serif;
   background-color: #f7f7f7;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -18,7 +27,7 @@ body {
   font-weight: bold;
   border: 2px solid #36a2d5;
   border-radius: 5px;
-  padding: 2px 6px;
+  padding: 8px 10px;
   font-family: monospace;
 }
 
@@ -654,6 +663,8 @@ body {
   padding: 60px 20px;
   text-align: center;
   background-color: white;
+  margin-bottom: 0 !important;
+  padding-bottom: 20px;
 }
 
 .trusted-title-w {
@@ -684,7 +695,7 @@ body {
 
 
 /* Footer Section */
-
+/* 
 .footer a {
   color: white;
   text-decoration: none;
@@ -703,7 +714,7 @@ body {
 
 .copyright-bottom-home-one {
   border-top: 1px solid #555;
-}
+} */
 
 
 /* hero section */
@@ -1087,4 +1098,76 @@ body {
   }
 }
 
-/* trusted card */
+/* footer  */
+/* Footer base styling */
+footer {
+  background-color: #1A4D4F;
+  padding: 3rem 2rem;
+  color: #fff;
+}
+
+.footer__primary {
+  row-gap: 2rem;
+}
+
+/* Navigation list */
+.footer__primary nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Link styles */
+.footer__primary nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.footer__primary nav a:hover {
+  text-decoration: underline;
+}
+
+/* First item special style */
+.footer__primary nav li:first-child a {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.footer__primary nav li:first-child a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+@media (max-width: 768px) {
+  .footer__primary {
+    flex-wrap: wrap;
+  }
+
+  .footer__primary .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__primary nav li:first-child a {
+    font-size: 1.1rem;
+  }
+}
+footer::after {
+  content: "";
+  display: block;
+  height: 0;
+  margin: 0;
+}
+

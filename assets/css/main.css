@@ -83,6 +83,8 @@ html{
 footer{
 	background-color:#1A4D4F;
 	padding: 3rem 2rem  ;
+	margin-bottom: -10rem;
+	
 }
 .footer__primary nav ul{
 	list-style: none;
