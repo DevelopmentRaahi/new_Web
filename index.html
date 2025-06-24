@@ -527,7 +527,7 @@
 	<!-- main sciprts -->
 	<script src="./assets/js/main.js"></script>
 
-<script>
+   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const track = document.querySelector('.icons-track-m');
     const slides = document.querySelectorAll('.icon-slide-m');
@@ -539,27 +539,24 @@
     let currentIndex = 0;
 
     function updateSlider() {
-      const slideWidth = slides[0].offsetWidth + 15; // 15 = gap
+      const slideWidth = slides[0].offsetWidth + 15; // 15px gap
       track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     }
 
     nextBtn.addEventListener('click', () => {
-      if (currentIndex < slides.length - 1) {
-        currentIndex++;
-        updateSlider();
-      }
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateSlider();
     });
 
     prevBtn.addEventListener('click', () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        updateSlider();
-      }
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlider();
     });
 
     window.addEventListener('resize', updateSlider);
   });
 </script>
+
 
 
 	</footer>
