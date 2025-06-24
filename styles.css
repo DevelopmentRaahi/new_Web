@@ -707,33 +707,32 @@ body {
 
 
 /* hero section */
-
 /* Tablet View (≤768px) */
 @media (max-width: 768px) {
   .hero_container {
     text-align: center;
-    /* padding: 0 1rem; */
+    padding: 0 0rem;
   }
 
   .line1-r,
   .line3-r {
-    font-size: 15px;
-    /* padding: 4px 10px; */
+    font-size: 24px;
+    padding: 0px 0px;
     margin-left: 0 !important;
   }
 
   .line1-r {
-    margin-bottom: 7px;
+    margin-bottom: 0px;
   }
 
   .line3-r {
-    margin-top: -4;
+    margin-top: 0;
   }
 
   .hero_container p {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 
   .hero_content .second_line::after {
@@ -742,7 +741,7 @@ body {
 
   .text-pink {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: rem;
     font-size: 1rem;
   }
 }
@@ -751,10 +750,10 @@ body {
 @media (max-width: 576px) {
   .line1-r,
   .line3-r {
-    font-size: 18px;
-    padding: 2px 10px;
+    font-size: 20px;
+    padding: 6px 25px;
     display: block;
-    margin: 0% auto !important;
+    margin: 10px auto !important;
   }
 
   .hero_container p {
@@ -770,74 +769,202 @@ body {
 
 /* second */
 
-@media (max-width: 576px) {
+/* 📱 Mobile & Small Tablets (≤ 768px) */
+@media (max-width: 768px) {
   .one-wrapper {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0;
-    gap: 0;
-    margin: 0 auto;
+    padding: 25px 10px;
   }
 
   .box {
-    width: 100%;
-    max-width: 300px; /* 👈 Smaller, centered */
-    margin: 0 auto;
-    position: relative;
+    width: 90%;
+    height: auto;
+    max-width: 90vw;
   }
 
   .box img,
   .box .imgone {
+    height: auto;
+    border-radius: 10px 10px 0 0 !important;
+  }
+
+  .text-box,
+  .text-box-two {
+    width: 140px;
+    padding: 10px;
+  }
+
+  .box .text-box {
+    left: 1px;
+    bottom: -1px;
+  }
+
+  .box .text-box-two {
+    right: -2px;
+    bottom: -1px;
+  }
+
+  .box .second_content::after {
+    display: none; /* hide big border on mobile to prevent layout issue */
+  }
+}
+
+/* third */
+
+@media (max-width: 576px) {
+  .content-wrapper-r {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 22px;
+    text-align: center;
+    position: relative;
+    
+  }
+
+  .text-content-r {
+    order: 2; /* comes after image */
+    width: 100%;
+    padding: 0;
+  }
+
+  .image-container-r {
+    order: 1; /* show image first */
+    width: 85%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .image-container-r img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-    border-radius: 12px;
   }
 
-  .box + .box {
-    margin-top: 0; /* ❌ no space between images */
-  }
-
-  .box .second_content::after {
-    display: none !important; /* ❌ hide blue border curve */
-  }
-
-  .box .text-box,
-  .box .text-box-two {
+  .heading-r {
     position: absolute;
-    bottom: 10px;
-    width: 130px;
-    padding: 10px;
-    font-size: 12px;
-    z-index: 2;
-    border-radius: 6px;
-    color: #fff;
+    top: -85px; /* Push it above image */
+    left: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
   }
 
-  .box .text-box {
-    left: 10px; /* ✅ bottom-left */
+  .line1-r,
+  .line2-r {
+    font-size: 22px;
+    padding: 2px 10px;
+    margin: 0;
   }
 
-  .box .text-box-two {
-    right: 10px; /* ✅ bottom-right */
+  .line1-r {
+    background-color: #00464b;
+    color: white;
+    margin-bottom: 0px;
   }
 
-  .text-box h3,
-  .text-box-two h3 {
-    font-size: 13px;
-    line-height: 1.2;
-    margin-bottom: 6px;
+  .line2-r {
+    background-color: #36a2d5;
+    color: white;
+    margin-top: -10px;
   }
 
-  .text-box button,
-  .text-box-two button {
-    font-size: 11px;
-    padding: 6px 12px;
-    border-radius: 16px;
-    background: #fff;
-    color: #000;
+  .para-r {
+    font-size: 14px;
+    margin: 13px 0;
+    padding: 0 0px;
+    text-align: center;
+  }
+
+  .btn-r {
+    font-size: 15px;
+    padding: 8px 20px;
+    margin: 15px 0;
+  }
+
+  /* 🔥 Remove decorative blue lines */
+  .line1-r::before,
+  .line2-r::before,
+  .line1-r::after,
+  .line2-r::after,
+  .hero_content .second_line::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+
+/* fourth mob v */
+
+@media (max-width: 768px) {
+  .slider-wrapper-cr {
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto;
+    position: relative;
+  }
+
+  .carousel-inner-cr {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .carousel-item-cr {
+    width: 100%;
+  }
+
+  .carousel-img-cr {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .carousel-btn-prev-cr,
+  .carousel-btn-next-cr {
+    background-color: rgba(0, 0, 0, 0.3);
     border: none;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 50%;
+  }
+
+  .carousel-btn-prev-cr {
+    left: 10px;
+  }
+
+  .carousel-btn-next-cr {
+    right: 10px;
+  }
+
+  .carousel-icon-prev-cr,
+  .carousel-icon-next-cr {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .carousel-icon-prev-cr {
+    background-image: url("data:image/svg+xml,%3Csvg fill='white' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L3 8l8 7'/%3E%3C/svg%3E");
+  }
+
+  .carousel-icon-next-cr {
+    background-image: url("data:image/svg+xml,%3Csvg fill='white' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 1l8 7-8 7'/%3E%3C/svg%3E");
+  }
+
+  .visually-hidden-cr {
+    display: none;
   }
 }
