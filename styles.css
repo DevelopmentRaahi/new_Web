@@ -27,8 +27,9 @@ body {
   font-weight: bold;
   border: 2px solid #36a2d5;
   border-radius: 5px;
-  padding: 8px 10px;
+  padding: 5px 10px;
   font-family: monospace;
+  margin-left: 2rem;
 }
 
 .text-pink {
