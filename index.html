@@ -17,6 +17,10 @@
 
 	<!-- custom css file -->
 	<link rel="stylesheet" href="./assets/css/main.css">
+ <link rel="stylesheet" href="styles.css">
+ <!-- Bootstrap CSS (already needed) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,11 +29,15 @@
 		<nav class="header" id="header">
 			<div class="container-fluid header__container">
 				<div class="header__logo">					
-					<a href="#" id="logo">
-						<!-- <span>Logo</span> -->
-						<img src="https://www.freshminds.co.uk/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcStNIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f9b2c51daefdd74858ead89f2a1b8eaee31664e1/logo.png" alt="">
-					</a>
+					 <a class="navbar-brand d-flex align-items-center" href="#">
+      <span class="logo-icon me-2">D</span>
+      <span class="fw-bold fs-4 text-dark">Domgys</span>
+    </a>
 				</div>
+				  
+	<button class="nav-toggle-z" id="menu-toggle">&#9776;</button>
+
+
 				<div class="header__menu">
 					<div class="header__main">
 						<ul class="nav__items">
@@ -67,19 +75,232 @@
 							<li class="nav__item">
 								<a href="#" class="nav__link get-started">Register</a>
 							</li>
-							
 						</ul>
 					</div>
 				</div>
-				
 			</div>
-			
 		</nav>
 	</header>
-
-	<div class="inner">
-		
+	<div class="inner">	
 	</div>
+
+<!-- Hero Section -->
+<section class="hero-section text-center py-5">
+  <div class="container hero_container">
+    <div class="position-relative hero_content">
+        
+      <div class="line1-r first_line">
+        Providing On-Demand Consulting:
+      </div>
+      <div class="line3-r second_line">
+        From Analyst to Expert
+      </div>
+    </div>
+    <p class="mt-4 px-4 ">
+      Freshminds is a boutique advisory firm based in London that combines recruitment and consulting. With our respected network, 25 years' experience, and informed and intelligent placements, we help ambitious companies create sustainable growth.
+    </p>
+    <a href="#" class="text-pink fs-5 text-decoration-none fw-medium">Contact us →</a>
+  </div>
+
+
+
+	<!-- second section -->
+
+	<div class="one-wrapper">
+		<div class="box">
+		<img class="imgone" src="./assets/images/ne.webp" alt="Left">
+		<div class="text-box blue-box second_content">
+			<h3>Solve Business<br>Challenges</h3>
+			<button>Find talent</button>
+		</div>
+		</div>
+		<div class="box">
+		<img src="./assets/images/ne.webp" alt="Right">
+		<div class="text-box-two teal-box">
+			<h3>Explore current<br>opportunities</h3>
+			<button>Search jobs</button>
+		</div>
+		</div>
+		</div>
+
+<!-- third section -->
+
+
+  <div class="section-r">
+    <div class="content-wrapper-r">
+      <div class="image-container-r">
+        <img src="./assets/images/ne.webp" alt="Office" />
+      </div>
+      <div class="text-content-r">
+        <div class="heading-r">
+          <span class="line1-r">Driving impact</span>
+          <span class="line2-r">through innovation</span>
+        </div>
+        <p class="para-r">
+          Freshminds is a dynamic collection of talents and opportunities. Powered by people, we're plugged into a world of skills, knowledge and experience.
+        </p>
+        <p class="para-r">
+          Founded in 2000, we bridge the gap between business needs and required skills to power progression and growth. Trusted by globally-recognised companies in a variety of sectors, our flexible approach and network of high-calibre individuals continues to create real impact and help meet your business challenges.
+        </p>
+        <button class="btn-r">About us</button>
+      </div>
+    </div>
+  </div>
+
+
+<!-- fourth section -->
+
+
+<div class="features-section-f">
+  <div class="feature-box-f">
+    <h3 class="feature-heading-f">Are you looking for new talent<br>for your team?</h3>
+    <p class="feature-text-f">
+      From expert project teams to interim consultants to permanent hires we will help find the best people for your business.
+    </p>
+    <a href="#" class="feature-button-f">Find talent</a>
+  </div>
+
+  <div class="feature-box-f">
+    <h3 class="feature-heading-f">Are you looking for your next<br>challenge?</h3>
+    <p class="feature-text-f">
+      Exciting roles from analyst to expert on a permanent or project basis.
+    </p>
+    <a href="#" class="feature-button-f">Find Roles</a>
+  </div>
+
+  <div class="feature-box-f">
+    <h3 class="feature-heading-f">Are you looking for a managed<br>consulting solution?</h3>
+    <p class="feature-text-f">
+      Have your project handled end-to-end and access insight in a flexible way with our Research Consultancy.
+    </p>
+    <a href="#" class="feature-button-f">Find out more</a>
+  </div>
+</div>
+
+
+
+<!-- fifth section -->
+
+
+<div class="industry-container-l">
+  <div class="industry-header-l ">
+    <h2 class="industry-title-l industry_content_l">We're industry experts</h2>
+  </div>
+
+  <div class="industry-video-l">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <p class="industry-description-l">
+    By activating our years of experience and in-depth industry expertise, we can help build solutions to tackle your specific challenges. 
+    Our team understands the needs of your industry and works with you, as a candidate or a business, 
+    to help you progress with our unique approach to consultancy and recruitment.
+  </p>
+
+  <div class="industry-icons-l">
+    <div class="industry-icon-item-l">
+      <img src="./assets/images/icon1.png" alt="Icon 1">
+      <p>Digital & Technology<br>Consulting</p>
+    </div>
+    <div class="industry-icon-item-l">
+      <img src="./assets/images/icon2.png" alt="Icon 2">
+      <p>Private Equity</p>
+    </div>
+    <div class="industry-icon-item-l">
+      <img src="./assets/images/icon3.png" alt="Icon 3">
+      <p>Retail Consultancy</p>
+    </div>
+    <div class="industry-icon-item-l">
+      <img src="./assets/images/icon4.png" alt="Icon 4">
+      <p>Energy & Utilities</p>
+    </div>
+    <div class="industry-icon-item-l">
+      <img src="./assets/images/icon5.png" alt="Icon 5">
+      <p>Professional Services</p>
+    </div>
+    <div class="industry-icon-item-l">
+      <img src="./assets/images/icon6.png" alt="Icon 6">
+      <p>Investment & Advisory</p>
+    </div>
+    <div class="industry-icon-item-l">
+      <img src="./assets/images/icon7.png" alt="Icon 7">
+      <p>FinTech Recruitment &<br>Consulting Experts</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- card section -->
+
+
+ <div class="section-m">
+  <div class="heading-m card-content">What's fresh...</div>
+  <p class="subheading-m">
+    Stay up to date with the latest industry insights and news from across the Freshminds network.
+  </p>
+
+  <div class="cards-m">
+    <div class="card-m">
+      <div class="card-img-m">
+        <img src="./assets/images/ne.webp" alt="img1" />
+      </div>
+      <div class="card-content-m">
+        <p class="card-date-m">20.05.2025 | Georgia Smith</p>
+        <h3 class="card-title-m">What Does Flexible Working Mean in 2025?</h3>
+      </div>
+    </div>
+
+    <div class="card-m">
+      <div class="card-img-m">
+        <img src="./assets/images/ne.webp" alt="img2" />
+      </div>
+      <div class="card-content-m">
+        <p class="card-date-m">20.05.2025 | Rebecca Priestley</p>
+        <h3 class="card-title-m">How Executive Coaching Can Reboot Businesses</h3>
+      </div>
+    </div>
+
+    <div class="card-m">
+      <div class="card-img-m">
+        <img src="./assets/images/ne.webp" alt="img3" />
+      </div>
+      <div class="card-content-m">
+        <p class="card-date-m">13.05.2025 | Dr Andrew White</p>
+        <h3 class="card-title-m">Four archetypes of leadership</h3>
+      </div>
+    </div>
+
+    <div class="card-m">
+      <div class="card-img-m">
+        <img src="./assets/images/ne.webp" alt="img4" />
+      </div>
+      <div class="card-content-m">
+        <p class="card-date-m">25.04.2025 | David Boyd</p>
+        <h3 class="card-title-m">The Myth of M&A Best Practices</h3>
+      </div>
+    </div>
+  </div>
+  <div class="cta-wrapper-m">
+    <button class="cta-btn-m">Find the latest insights</button>
+  </div>
+</div>
+
+
+<!-- trusted section -->
+
+<div class="trusted-section-w">
+  <p class="trusted-title-w">Trusted by our global network</p>
+  <div class="trusted-logos-w">
+    <img src="./assets/images/ne.webp" alt="John Lewis">
+    <img src="./assets/images/ne.webp" alt="Kamet">
+    <img src="./assets/images/ne.webp" alt="Amazon">
+    <img src="./assets/images/ne.webp" alt="Livingbridge">
+    <img src="./assets/images/ne.webp" alt="Ocado">
+    <img src="./assets/images/ne.webp" alt="Bain & Company">
+    <img src="./assets/images/ne.webp" alt="EY">
+    <img src="./assets/images/ne.webp" alt="Greenhill">
+  </div>
+</div>
 
 
 
@@ -180,6 +401,17 @@
 
 	<!-- Bootstrap sciprts -->
 	<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap JS (required for toggle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const menu = document.querySelector('.header__menu');
+
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
 
 	<!-- main sciprts -->
 	<script src="./assets/js/main.js"></script>
