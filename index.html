@@ -266,6 +266,49 @@
   </div>
 </div>
 
+<!-- fifth-mob -->
+
+<!-- Mobile Icons Slider Section -->
+<div class="industry-icons-slider-wrap-m">
+  <button class="icon-prev-btn-m">&#10094;</button>
+  <div class="industry-icons-slider-m">
+    <div class="icons-track-m">
+
+      <div class="icon-slide-m">
+        <img src="./assets/images/icon1.png" alt="Icon 1">
+        <p>Digital & Technology<br>Consulting</p>
+      </div>
+      <div class="icon-slide-m">
+        <img src="./assets/images/icon2.png" alt="Icon 2">
+        <p>Private Equity</p>
+      </div>
+      <div class="icon-slide-m">
+        <img src="./assets/images/icon3.png" alt="Icon 3">
+        <p>Retail Consultancy</p>
+      </div>
+      <div class="icon-slide-m">
+        <img src="./assets/images/icon4.png" alt="Icon 4">
+        <p>Energy & Utilities</p>
+      </div>
+      <div class="icon-slide-m">
+        <img src="./assets/images/icon5.png" alt="Icon 5">
+        <p>Professional Services</p>
+      </div>
+      <div class="icon-slide-m">
+        <img src="./assets/images/icon6.png" alt="Icon 6">
+        <p>Investment & Advisory</p>
+      </div>
+      <div class="icon-slide-m">
+        <img src="./assets/images/icon7.png" alt="Icon 7">
+        <p>FinTech Recruitment &<br>Consulting Experts</p>
+      </div>
+
+    </div>
+  </div>
+  <button class="icon-next-btn-m">&#10095;</button>
+</div>
+
+
 
 <!-- card section -->
 
@@ -480,9 +523,43 @@
   });
 </script>
 
+
 	<!-- main sciprts -->
 	<script src="./assets/js/main.js"></script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector('.icons-track-m');
+    const slides = document.querySelectorAll('.icon-slide-m');
+    const prevBtn = document.querySelector('.icon-prev-btn-m');
+    const nextBtn = document.querySelector('.icon-next-btn-m');
+
+    if (!track || slides.length === 0 || !prevBtn || !nextBtn) return;
+
+    let currentIndex = 0;
+
+    function updateSlider() {
+      const slideWidth = slides[0].offsetWidth + 15; // 15 = gap
+      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+
+    window.addEventListener('resize', updateSlider);
+  });
+</script>
 
 
 	</footer>
