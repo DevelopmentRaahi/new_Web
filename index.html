@@ -178,29 +178,40 @@
 </div>
 
 <!-- fourth sec mob  -->
+<!-- Mobile Slider for Features Section -->
+<div class="features-slider-sl">
+  <div class="slider-wrapper-sl">
+    <div class="slide-track-sl">
 
-<div id="mobileSlider-cr" class="carousel slide slider-wrapper-cr d-md-none" data-bs-ride="carousel">
-  <div class="carousel-inner-cr">
-    <div class="carousel-item-cr active">
-      <img src="./assets/images/ne.webp" class="carousel-img-cr" alt="Slide 1">
-    </div>
-    <div class="carousel-item-cr">
-      <img src="./assets/images/ne.webp" class="carousel-img-cr" alt="Slide 2">
-    </div>
-    <div class="carousel-item-cr">
-      <img src="./assets/images/ne.webp" class="carousel-img-cr" alt="Slide 3">
+      <div class="slide-item-sl">
+        <h3 class="feature-heading-sl">Are you looking for new talent<br>for your team?</h3>
+        <p class="feature-text-sl">
+          From expert project teams to interim consultants to permanent hires we will help find the best people for your business.
+        </p>
+        <a href="#" class="feature-button-sl">Find talent</a>
+      </div>
+
+      <div class="slide-item-sl">
+        <h3 class="feature-heading-sl">Are you looking for your next<br>challenge?</h3>
+        <p class="feature-text-sl">
+          Exciting roles from analyst to expert on a permanent or project basis.
+        </p>
+        <a href="#" class="feature-button-sl">Find Roles</a>
+      </div>
+
+      <div class="slide-item-sl">
+        <h3 class="feature-heading-sl">Are you looking for a managed<br>consulting solution?</h3>
+        <p class="feature-text-sl">
+          Have your project handled end-to-end and access insight in a flexible way with our Research Consultancy.
+        </p>
+        <a href="#" class="feature-button-sl">Find out more</a>
+      </div>
+
     </div>
   </div>
 
-  <button class="carousel-btn-prev-cr" type="button" data-bs-target="#mobileSlider-cr" data-bs-slide="prev">
-    <span class="carousel-icon-prev-cr" aria-hidden="true"></span>
-    <span class="visually-hidden-cr">Previous</span>
-  </button>
-
-  <button class="carousel-btn-next-cr" type="button" data-bs-target="#mobileSlider-cr" data-bs-slide="next">
-    <span class="carousel-icon-next-cr" aria-hidden="true"></span>
-    <span class="visually-hidden-cr">Next</span>
-  </button>
+  <button class="slider-btn-sl prev-sl">&#10094;</button>
+  <button class="slider-btn-sl next-sl">&#10095;</button>
 </div>
 
 
@@ -424,6 +435,36 @@
 			</div>
 		</div>
 
+
+		<script>
+  const track = document.querySelector('.slide-track-sl');
+  const slides = document.querySelectorAll('.slide-item-sl');
+  const prevBtn = document.querySelector('.prev-sl');
+  const nextBtn = document.querySelector('.next-sl');
+
+  let currentSlide = 0;
+
+  function updateSlidePosition() {
+    const slideWidth = slides[0].offsetWidth;
+    track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    if (currentSlide < slides.length - 1) {
+      currentSlide++;
+      updateSlidePosition();
+    }
+  });
+
+  prevBtn.addEventListener('click', () => {
+    if (currentSlide > 0) {
+      currentSlide--;
+      updateSlidePosition();
+    }
+  });
+
+  window.addEventListener('resize', updateSlidePosition);
+</script>
 
 <!-- Bootstrap sciprts -->
 	<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
