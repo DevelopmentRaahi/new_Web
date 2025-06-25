@@ -856,10 +856,14 @@ body {
     display: block;
     object-fit: cover;
   }
-
+ .section-r {
+    margin-top: 40px !important;
+    padding-top: 40px !important;
+    position: relative;
+  }
   .heading-r {
     position: absolute;
-    top: -85px; /* Push it above image */
+    top: -75px; /* Push it above image */
     left: 0%;
     right: 0%;
     display: flex;
@@ -868,24 +872,26 @@ body {
     z-index: 1;
   }
 
-  .line1-r,
-  .line2-r {
-    font-size: 22px;
-    padding: 2px 10px;
-    margin: 0;
-  }
+ .line1-r,
+.line2-r {
+  font-size: 22px;
+  padding: 4px 18px;
+  margin: 0;
+  display: inline-block;
+  line-height: 1.2;
+}
 
-  .line1-r {
-    background-color: #00464b;
-    color: white;
-    margin-bottom: 0px;
-  }
+.line1-r {
+  background-color: #00464b;
+  color: white;
+}
 
-  .line2-r {
-    background-color: #36a2d5;
-    color: white;
-    margin-top: -10px;
-  }
+.line2-r {
+  background-color: #36a2d5;
+  color: white;
+  margin-top: -2px; /* was -10px, too aggressive */
+}
+
 
   .para-r {
     font-size: 14px;
