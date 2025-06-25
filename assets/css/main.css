@@ -24,12 +24,26 @@ html{
 	padding: 1rem 4rem;
 	/* background-color: #f7e9bd2b;	 */
 }
-.header__logo a{
-	text-decoration: none;	
+.header__logo a {
+  display: inline-block;
+  text-decoration: none;
+    padding-left: 15px;
 }
-.header__logo a img{
-	width: 50%;	
+
+.logo-img {
+  width: 170px;
+  height: auto;
+  max-height: 70px;
+  object-fit: contain;
 }
+@media (max-width: 767px) {
+  .header__logo {
+    padding-top: 12px;
+    padding-left: 12px; /* pehle wala space bhi include */
+  }
+}
+
+
 .header__container .header__menu a{
 	text-decoration: none;
 	color: #373737;
@@ -73,11 +87,93 @@ html{
 	color: #fff;
 }
 
-/* inner */
-.inner{
-	background-color: #c9c9c92b;
-	/* height: 45vh; */
+
+/* Hide toggle button on desktop */
+.nav-toggle-z {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #373737;
 }
+
+/* Only mobile view adjustments */
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-toggle-z {
+    display: block;
+  }
+
+  .header__menu {
+    position: absolute;
+    top: 70px; /* adjust based on your logo height */
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: skyblue;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem 0;
+    z-index: 99;
+  }
+
+  .header__menu.active {
+    display: flex;
+  }
+
+  .header__main .nav__items,
+  .header__right .nav__items {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header__right {
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer start */
 footer{
@@ -119,63 +215,4 @@ footer{
 	background-color: #fff;
 }
 
-/* ========= Responsive Header ========= */
 
-.nav-toggle-z {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #373737;
-  cursor: pointer;
-}
-
-@media (max-width: 992px) {
-  .nav-toggle-z {
-    display: block;
-    margin-left: auto;
-  }
-
-  .header__menu {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-top: 0rem;
-    display: none;
-  }
-
-  .header__menu.active {
-    display: flex;
-  }
-
-  .header__main .nav__items,
-  .header__right .nav__items {
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-  }
-
-  .header__main .nav__items li,
-  .header__right .nav__items li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav__item a {
-    display: block;
-    padding: 0.75rem;
-  }
-
-  .header__container {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 2rem;
-  }
-
-  .header__logo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
