@@ -31,9 +31,9 @@ html{
 }
 
 .logo-img {
-  width: 170px;
+  width: 190px;
   height: auto;
-  max-height: 70px;
+  max-height: 80px;
   object-fit: contain;
 }
 @media (max-width: 767px) {
@@ -61,7 +61,7 @@ html{
 }
 .header__main .nav__items a:hover{
 	transition: all 0.4s linear;
-	color: #E40178;
+	color: #36a2d5;
 	text-decoration: underline;
 }
 
@@ -72,7 +72,7 @@ html{
 	justify-content: flex-end;
 }
 .header__right ul .nav__item:first-child a:hover{	
-	color: #E40178;
+	color: #36a2d5;
 }
 
 .nav__item a.get-started{
@@ -88,7 +88,7 @@ html{
 }
 
 
-/* Hide toggle button on desktop */
+/* hide toggle button on desktop */
 .nav-toggle-z {
   display: none;
   font-size: 2rem;
