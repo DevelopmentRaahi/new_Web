@@ -1254,3 +1254,63 @@ footer::after {
     overflow: hidden !important;
   }
 }
+
+/* fifth mob */
+@media (max-width: 767px) {
+  .swiper-icon-l {
+    width: 100%;
+  }
+
+  .swiper-icon-l .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-icon-l .industry-icon-item-l {
+    width: 160px;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    background: #fff;
+  }
+
+  .swiper-icon-l .industry-icon-item-l img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .swiper-icon-l .industry-icon-item-l p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #003f3c;
+    line-height: 1.4;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #36a2d5;
+    width: 22px;
+    height: 22px;
+    top: 45%;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .swiper-icon-l,
+  .swiper-icon-l .swiper-wrapper,
+  .swiper-icon-l .swiper-slide,
+  .swiper-icon-l .swiper-button-next,
+  .swiper-icon-l .swiper-button-prev {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+  }
+}
