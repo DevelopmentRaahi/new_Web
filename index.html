@@ -436,7 +436,7 @@
 
 <!-- trusted section -->
 
-<div class="trusted-section-w">
+<!-- <div class="trusted-section-w">
   <p class="trusted-title-w">Trusted by our global network</p>
   <div class="trusted-logos-w">
     <img src="./assets/images/ne.webp" alt="John Lewis">
@@ -448,7 +448,43 @@
     <img src="./assets/images/ne.webp" alt="EY">
     <img src="./assets/images/ne.webp" alt="Greenhill">
   </div>
+</div> -->
+
+<!-- ✅ DESKTOP TRUSTED SECTION -->
+<div class="trusted-section-w">
+  <p class="trusted-title-w">Trusted by our global network</p>
+  <div class="trusted-logos-w">
+    <img src="./assets/images/ne.webp" alt="John Lewis" />
+    <img src="./assets/images/ne.webp" alt="Kamet" />
+    <img src="./assets/images/ne.webp" alt="Amazon" />
+    <img src="./assets/images/ne.webp" alt="Livingbridge" />
+    <img src="./assets/images/ne.webp" alt="Ocado" />
+    <img src="./assets/images/ne.webp" alt="Bain & Company" />
+    <img src="./assets/images/ne.webp" alt="EY" />
+    <img src="./assets/images/ne.webp" alt="Greenhill" />
+  </div>
 </div>
+
+<!-- ✅ MOBILE-ONLY LOGO SLIDER -->
+<div class="mobile-slider-container md:hidden px-4 py-6">
+  <p class="trusted-title-w text-center">Trusted by our global network</p>
+  <div class="swiper swiper-trusted-w">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 1" /></div>
+      <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 2" /></div>
+      <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 3" /></div>
+      <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 4" /></div>
+      <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 5" /></div>
+      <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 6" /></div>
+      <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 7" /></div>
+      <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 8" /></div>
+    </div>
+    <!-- Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
 
 
 
@@ -658,7 +694,21 @@
     });
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".swiper-trusted-w", {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  });
+</script>
 </body>
 
 </html>

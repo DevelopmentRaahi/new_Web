@@ -1173,11 +1173,99 @@ footer::after {
 }
 
 /* trusted resp */
-
+/* ✅ MOBILE SLIDER STYLE — show only on small screens */
 @media (max-width: 767px) {
-  .swiper-f {
+  .swiper-trusted-w {
     width: 100%;
   }
+
+  .swiper-trusted-w .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-trusted-w img {
+    max-height: 80px;
+    max-width: 160px;
+    border-radius: 12px;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+  }
+
+  .swiper-trusted-w img:hover {
+    opacity: 1;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #36a2d5;
+    width: 18px;
+    height: 18px;
+    top: 45%;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 12px;
+  }
+}
+/* ✅ Hide mobile slider and heading on desktop */
+@media (min-width: 768px) {
+  .mobile-slider-container,
+  .mobile-slider-container * {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+  }
+}
+/* ✅ Hide desktop grid on mobile */
+@media (max-width: 767px) {
+  .trusted-logos-w {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+  }
+}
+/* ✅ Hide desktop heading on mobile */
+@media (max-width: 767px) {
+  .trusted-section-w .trusted-title-w {
+    display: none !important;
+  }
+
+  /* ✅ Add spacing below mobile slider */
+  .mobile-slider-container {
+    margin-bottom: 30px; /* Adjust if needed */
+  }
+}
+
+/* ✅ DESKTOP HIDE SLIDER AND ITS HEADING */
+@media (min-width: 768px) {
+  /* Hide swiper + arrows + heading (sibling p tag) */
+  .swiper-trusted-w,
+  .swiper-trusted-w .swiper-wrapper,
+  .swiper-trusted-w .swiper-button-next,
+  .swiper-trusted-w .swiper-button-prev,
+  .swiper-trusted-w + .swiper-button-next,
+  .swiper-trusted-w + .swiper-button-prev,
+  .swiper-trusted-w ~ .trusted-title-w,
+  .swiper-trusted-w::before,
+  .swiper-trusted-w::after,
+  .trusted-section-w + .md\\:hidden {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+  }
+}
+
+
+/* 
 
   .swiper-slide {
     display: flex;
@@ -1237,8 +1325,8 @@ footer::after {
   .feature-button-f:hover {
     background-color: #36a2d5;
     color: white;
-  }
-}
+  } */
+
 /* ===== MOBILE-ONLY SLIDER VISIBILITY ===== */
 @media (min-width: 768px) {
   /* Hide slider completely on desktop/tablet */
