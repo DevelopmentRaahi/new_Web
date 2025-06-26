@@ -21,10 +21,13 @@
  <!-- Bootstrap CSS (already needed) -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- ✅ Swiper CSS (include in <head> or top) -->
+<!-- swiper CSS (include in <head> or top) -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 
 </head>
@@ -90,7 +93,7 @@
 
 
 <!-- Hero Section -->
-<section class="hero-section text-center py-5">
+<!-- <section class="hero-section text-center py-5">
   <div class="container hero_container">
     <div class="position-relative hero_content">
         
@@ -105,7 +108,26 @@
       Freshminds is a boutique advisory firm based in London that combines recruitment and consulting. With our respected network, 25 years' experience, and informed and intelligent placements, we help ambitious companies create sustainable growth.
     </p>
     <a href="#" class="text-pink fs-5 text-decoration-none fw-medium">Contact us →</a>
-  </div>
+  </div> -->
+
+  <section class="hero-section text-center py-5">
+  <div class="container hero_container">
+    <div class="position-relative hero_content" data-aos="fade-right">
+        
+      <div class="line1-r first_line">
+        Providing On-Demand Consulting:
+      </div>
+      <div class="line3-r second_line">
+        From Analyst to Expert
+      </div>
+    </div>
+    <p class="mt-4 px-4" data-aos="fade-up">
+     Freshminds is a boutique advisory firm based in London that combines recruitment and consulting. With our respected network, 25 years' experience, and informed and intelligent placements, we help ambitious companies create sustainable growth.
+    </p>
+    <a href="#" class="text-pink fs-5 text-decoration-none fw-medium" data-aos="zoom-in">Contact us →</a>
+  </div> 
+</section>
+
 
 
 
@@ -640,10 +662,10 @@
   });
 </script>
 
-<!-- ✅ Swiper JS CDN -->
+<!-- swiper JS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- ✅ Safe Swiper Init After DOM Load -->
+<!-- safe Swiper Init After DOM Load -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper('.swiper-icon-l', {
@@ -672,6 +694,14 @@
     });
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
 </body>
 
 </html>
