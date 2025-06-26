@@ -315,24 +315,28 @@ body {
   line-height: 1.5;
   text-align: center;
 }
+.hero_container-o {
+  text-align: center;
+}
 
-.btn-r {
-  padding: 10px 25px;
+ .btn-r {
+  padding: 10px 20px;
   border: 2px solid #36a2d5;
   background-color: transparent;
   color: #36a2d5;
   border-radius: 25px;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s ease;
-
+  display: inline-block;
+  margin: 20px auto 0;
+  transition: background-color 0.3s ease, color 0.3s ease; /* ✅ fixed */
 }
 
-.btn-r:hover {
+ .btn-r:hover {
   background-color: #36a2d5;
   color: #fff;
-  
 }
+
 
 
 
