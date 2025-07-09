@@ -102,6 +102,7 @@ html {
 	gap: 1.5rem;
 	list-style: none;
 	flex-wrap: wrap;
+	padding: 0;
 }
 
 .header__main .nav__items a {
@@ -232,7 +233,7 @@ html {
 
 	.header__container .header__menu a {
 		color: var(--text-white);
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 
 	.header__main .nav__items{
@@ -284,6 +285,7 @@ html {
 		flex-direction: column;
 		gap: 1.2rem;
 		align-items: center;
+		padding: 0;
 	}
 	.header__right .nav__item:first-child{
 		display: none;
