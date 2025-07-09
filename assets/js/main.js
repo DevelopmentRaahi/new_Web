@@ -11,14 +11,14 @@ function updateSlidePosition() {
   track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
 
-nextBtn.addEventListener('click', () => {
+nextBtn && nextBtn.addEventListener('click', () => {
   if (currentSlide < slides.length - 1) {
 	currentSlide++;
 	updateSlidePosition();
   }
 });
 
-prevBtn.addEventListener('click', () => {
+prevBtn && prevBtn.addEventListener('click', () => {
   if (currentSlide > 0) {
 	currentSlide--;
 	updateSlidePosition();

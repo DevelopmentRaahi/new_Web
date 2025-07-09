@@ -54,7 +54,7 @@ html{
 
 
 
-#header{
+.header{
 	background-color: var(--bg-light-gray);
 	/* border-bottom: 1px solid #8b8b8b52; */
 	padding: 0rem 8rem;	
@@ -97,6 +97,7 @@ html{
 	display: flex;
 	gap: 1.5rem;
 	list-style: none;
+	flex-wrap: wrap;
 }
 .header__main .nav__items a{
 	font-size: 0.9rem;
@@ -142,6 +143,19 @@ html{
   cursor: pointer;
   color: #373737;
 }
+
+/*  media queries */
+@media (max-width: 1590px) {	
+	.header {
+	  padding: 0 2rem;
+	}
+	.header__logo a{
+		padding-left: 0px;
+	}
+	.header__container{
+		padding: 1rem 0;
+	}
+  }
 
 /* Only mobile view adjustments */
 @media (max-width: 768px) {

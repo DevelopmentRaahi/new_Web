@@ -5,12 +5,6 @@
   --font-secondary: 'Reddit Sans', sans-serif;
   --hero-font: 'Roboto Slab', serif;
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-}
 
 :root {
 	/* Background Colors */
@@ -77,19 +71,13 @@ body {
   max-width: 800px;
 }
 
-@media (max-width: 576px) {
-  .navbar-nav {
-    text-align: center;
-  }
-
-}
-
 /* second section  */
 
 .one-wrapper {  
   padding: 50px 0;
   /* gap: 20px; */
   background-color: #f6f6f6;
+  overflow-x: hidden;
 }
 
 .box {
@@ -234,7 +222,7 @@ body {
 .section-r {
   padding: 40px 0;
   background-color: #e8e5e5;
-  margin-top: 20px;
+  margin: 4.5rem 0;
 }
 
 .content-wrapper-r {
@@ -340,18 +328,18 @@ body {
 .hero_content .second_line::after {
   content: "";
   position: absolute;
-  display: block;
-  width: 700px;
+  display: none;
+  width: 100%;
   height: 200px;
-  /* background: url('./assests/img/main-banner-right-line.png') center center no-repeat; */
-  /* background-size: 100% 100%; */
-  background-color: transparent;
+  /* background: url('./assests/img/main-banner-right-line.png') center center no-repeat;
+  background-size: 100% 100%;  */
   border-radius: 0 0 0 50px;
+  background-color: transparent;
   border: 3px solid var(--bg-pink);
   border-top: none;
   border-right: none;
   bottom: -132px;
-  right: -700px;
+  right: -100%;
 }
 
 .para-r {
@@ -465,11 +453,13 @@ body {
   bottom: 8px;
   z-index: -1;
   right: -127px;
+  display: none;
 }
 
 .industry-header-l .industry_content_l::before {
   content: "";
   position: absolute;
+  display: none;
   height: 978px;  
   width:700px;
   background-color: transparent;
@@ -592,7 +582,7 @@ body {
 .section-m .card-content::after{
   content: "";
   position: absolute;
-  display: block;
+  display: none;
   width: 550px;
   height: 230px;
   background-color: transparent;
@@ -777,8 +767,25 @@ body {
 } */
 
 
+/* mobile view (≤1024px) */
+@media (max-width: 1024px) {
+  .hero_container {
+    padding: 0 2rem;
+  }
+  #header {
+    padding: 0 2rem;
+  }
+}
 
-/* hero section */
+@media (max-width: 992px) {
+  .header__menu{
+    display: none;
+  }
+  .nav-toggle-z{
+    display: block;
+  }
+}
+
 /* tablet view (≤768px) */
 @media (max-width: 768px) {
   .hero_container {
@@ -923,7 +930,7 @@ body {
     
   }
   .section-r{
-    margin-top: 80px;
+    margin-top: 6rem;
   }
   .image-container-r{
     height: 350px;
@@ -972,8 +979,8 @@ body {
     object-fit: cover;
   }
  .section-r {
-    margin-top: 40px !important;
-    padding-top: 40px !important;
+    margin: 40px 0 ;
+    padding-top: 40px ;
     position: relative;
   }
   .heading-r {
@@ -1423,7 +1430,7 @@ footer::after {
   }
 }
 /* hide desktop heading on mobile */
-@media (max-width: 767px) {
+@media (max-width: 76px) {
   .trusted-section-w .trusted-title-w {
     display: none !important;
   }
