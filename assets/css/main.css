@@ -315,7 +315,12 @@ html {
 	.header__right .nav__item{
 		width:100%;		
 	}
-	
+	.trusted-section-w{
+		display: none;
+	}
+	.mobile-slider-container{
+		margin: 1.5rem auto;
+	}	
 }
 
 
