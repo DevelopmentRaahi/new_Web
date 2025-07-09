@@ -27,6 +27,7 @@
 <body>
   <!-- header Code -->
   <header>
+    <div class="" id="backdrop"></div>
     <nav class="header" id="header">
       <div class="container-fluid header__container">
         <div class="header__logo">
@@ -68,13 +69,14 @@
             <ul class="nav__items">
               <li class="nav__item">
                 <a href="#" class="nav__link">020 7692 4300</a>
-              </li>
+              </li>             
               <li class="nav__item">
                 <a href="#" class="nav__link get-started">Login</a>
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link get-started">Register</a>
-              </li>
+              </li>             
+             
             </ul>
           </div>
         </div>
@@ -782,6 +784,7 @@
   <script src="./assets/js/main.js"></script>
   
   <script>
+    
     const swiper = new Swiper('.swiper-f', {
       slidesPerView: 1,
       loop: true,
@@ -822,7 +825,9 @@
         duration: 1000,
         once: true
       });
-  });  
+  }); 
+
+
   </script>
 
 </body>
