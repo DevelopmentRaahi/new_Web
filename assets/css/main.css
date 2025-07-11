@@ -154,6 +154,10 @@ html {
 	color: #373737;
 }
 
+.hero-section{
+	position: relative;
+}
+
 /*  media queries */
 @media (max-width: 1590px) {
 	.header {

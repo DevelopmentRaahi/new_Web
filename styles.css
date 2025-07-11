@@ -49,12 +49,12 @@ body {
   overflow-x: hidden; 
 }
 .logo-icon {
-  color: #36a2d5;
-  font-size: 2rem;
+  color: var(--text-cyan);
+  font-size: 1.7rem;
   font-weight: bold;
-  border: 2px solid #36a2d5;
+  border: 2px solid var(--text-pink);
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 2px 7px;
   font-family: monospace;
   /* margin-left: 2rem; */
 }
@@ -328,18 +328,19 @@ body {
 .hero_content .second_line::after {
   content: "";
   position: absolute;
-  display: none;
-  width: 100%;
+  /* display: none; */
+  width: 800px;
   height: 200px;
   /* background: url('./assests/img/main-banner-right-line.png') center center no-repeat;
   background-size: 100% 100%;  */
   border-radius: 0 0 0 50px;
   background-color: transparent;
-  border: 3px solid var(--bg-pink);
+  border: 2px solid var(--bg-pink);
   border-top: none;
   border-right: none;
   bottom: -132px;
-  right: -100%;
+  right: -800px;
+  z-index: -1;
 }
 
 .para-r {
@@ -503,7 +504,7 @@ body {
 .industry-description-l {
   max-width: 700px;
   margin: 30px auto;
-  font-size: 14px;
+  font-size: 1rem;
   color: #003f3c;
   line-height: 1.6;
 }
@@ -609,8 +610,8 @@ body {
   display: inline-block;
   background-color: #00bde3;
   color: white;
-  font-size: 28px;
-  font-weight: bold;
+  font-size:1.8rem;
+  font-weight: 600;
   padding: 10px 20px;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -717,9 +718,10 @@ body {
   }
 
   .trusted-title-w {
-    font-size: 40px;
+    font-size: 1.8rem;
+    font-weight: 600;
     color: #003c3c;
-    margin:1.2rem 0; 
+    margin:2rem 0; 
   }
 
   .trusted-logos-w {
@@ -847,6 +849,9 @@ body {
 .heading-r{
   display: none;
 }
+.content-paras{
+  margin-block: 3rem;
+}
 /* mobile & small tablets (≤ 768px) */
 @media (max-width: 768px) {
   .one-wrapper {
@@ -908,6 +913,7 @@ body {
   }
   .heading-rl{
     display: none;
+    background-color: red;
   }
   .heading-r{
     display:flex;  
@@ -917,9 +923,12 @@ body {
   .line2-r{
     margin-left: 0;
   }
+ 
+  
   .content-paras p{
     width: 90%;
     text-align: left;
+
   }
   .industry-title-l{
     font-size: 2rem;    
