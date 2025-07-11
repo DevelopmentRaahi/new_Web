@@ -17,7 +17,10 @@
 
     <!-- swiper CSS --> 
     <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- aos link -->
+    <!-- <link href="./assets/vendor/aos/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- custom css file -->
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -674,7 +677,7 @@
   <footer>
     <div class="container-fluid">
       <div class="row footer__primary" id="footer__links">
-        <div class="  col-sm-3">
+        <div class=" col">
           <nav>
             <ul>
               <li><a href="#">About us</a></li>
@@ -688,7 +691,7 @@
             </ul>
           </nav>
         </div>
-        <div class="  col-sm-3">
+        <div class=" col">
           <nav>
             <ul>
               <li><a href="#">Capabilities</a></li>
@@ -698,7 +701,7 @@
             </ul>
           </nav>
         </div>
-        <div class="  col-sm-3">
+        <div class=" col">
           <nav>
             <ul>
               <li><a href="#">Candidates</a></li>
@@ -710,7 +713,7 @@
             </ul>
           </nav>
         </div>
-        <div class="  col-sm-3">
+        <div class=" col">
           <nav>
             <ul>
               <li><a href="#">Businesses</a></li>
@@ -725,7 +728,7 @@
             </ul>
           </nav>
         </div>
-        <div class="  col-sm-3">
+        <div class=" col">
           <nav>
             <ul>
               <li><a href="#">Insights</a></li>
@@ -736,7 +739,7 @@
             </ul>
           </nav>
         </div>
-        <div class="  col-sm-3">
+        <div class=" col">
           <nav>
             <ul>
               <li><a href="#">Sectors</a></li>
@@ -750,7 +753,7 @@
             </ul>
           </nav>
         </div>
-        <div class="  col-sm-3">
+        <div class=" col">
           <nav>
             <ul>
               <li><a href="#">Contact</a></li>
@@ -766,16 +769,15 @@
   </footer>
   
   <!-- CDN scripts -->   
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> 
 
   <!-- Bootstrap sciprts -->
   <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- Swiper sciprts -->
   <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- AOS sciprts -->
-  <script src="./assets/vendor/aos/aos.js"></script>
-
+  <script src="./assets/vendor/aos/aos.js"></script>  
   <!-- custom sciprts -->
   <script src="./assets/js/main.js"></script>
   
@@ -819,9 +821,10 @@
     // aos init
       AOS.init({
         duration: 1000,
-        once: true
+        once: true,
+        disable: false
       });
-  }); 
+  });  
 
 
   </script>
