@@ -767,6 +767,9 @@
       </div>
     </div>
   </footer>
+  <!-- Back to Top Button -->
+<button id="backToTop" class="back-to-top" title="Go to top">↑</button>
+
   
   <!-- CDN scripts -->   
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
@@ -818,14 +821,32 @@
         },
       });
 
-    // aos init
-      AOS.init({
-        duration: 1000,
-        once: true,
-        disable: false
-      });
+    
   });  
+    // aos init
+  // AOS.init({
+  //       duration: 1000,
+  //       once: false,
+  //       startEvent: 'DOMContentLoaded',
+  //       disable: false
+  // });
 
+AOS.init({
+  duration: 1000,
+  once: true,
+  disable: false,
+  startEvent: 'DOMContentLoaded',
+  mirror: false,
+  easing: 'ease-in-out',
+  offset: 120  ,
+  debounceDelay: 50,
+  throttleDelay: 99,
+  anchorPlacement: 'top-bottom',
+});
+
+setTimeout(() => {
+    AOS.refresh(); // ensures AOS sees new DOM position
+}, 500);
 
   </script>
 
