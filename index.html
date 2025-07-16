@@ -25,9 +25,9 @@
     <!-- custom css file -->
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="styles.css">
-</head>
+ </head>
 
-<body>
+ <body>
   <!-- header Code -->
   <header>
     <div class="" id="backdrop"></div>
@@ -38,7 +38,7 @@
             <img src="./assets/images/logo.png" alt="Domgys Logo" class="logo-img"></a> -->
           <a class="navbar-brand d-flex align-items-center gap-1" href="./index.html">
             <span class="logo-icon ">CP</span>
-            <span class="fw-bold fs-4 text-dark">Candid</span>
+            <span class="fw-bold fs-4 text-dark">CandidPage</span>
           </a>
         </div>
         <button class="nav-toggle-z" id="menu-toggle">&#9776;</button>
@@ -79,7 +79,6 @@
               <li class="nav__item">
                 <a href="#" class="nav__link get-started">Register</a>
               </li>             
-             
             </ul>
           </div>
         </div>
@@ -124,7 +123,7 @@
     
         <!-- right side box -->
         <div class="col-6 col-lg-6 box" data-aos="fade-left" data-aos-duration="1000">
-          <img src="./assets/images/ne.webp" alt="Right">
+          <img src="./assets/images/can-two.webp" alt="Right">
           <div class="text-box-two teal-box">
             <h3>Explore current<br>opportunities</h3>
             <button>Search jobs</button>
@@ -145,7 +144,8 @@
       </div>    
       <!-- image (bottom to top) -->
       <div class="image-container-r" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-        <img src="./assets/images/ne.webp" alt="Office" />
+        <!-- <img src="./assets/images/ne.webp" alt="Office" /> -->
+         <img src="./assets/images/can-three.webp" alt="Office" />
       </div>
 
       <!-- text -->
@@ -176,10 +176,8 @@
           <a href="#" class="btn-r">About us</a>
         </div>
        </div>
-      </div>
-    
+      </div> 
     </div>
- 
   </div>
 
   <!-- fourth section -->
@@ -372,7 +370,6 @@
 
   <!-- card section -->
 
-
   <div class="section-m">
     <div class="heading-m card-content">What's fresh...</div>
     <p class="subheading-m">
@@ -421,47 +418,6 @@
       </div>
     </div>
 
-    <div class="card-m">
-      <div class="card-img-m">
-        <img src="./assets/images/ne.webp" alt="img1" />
-      </div>
-      <div class="card-content-m">
-        <p class="card-date-m">20.05.2025 | Georgia Smith</p>
-        <h3 class="card-title-m">What Does Flexible Working Mean in 2025?</h3>
-      </div>
-     </div>
-
-     <div class="card-m">
-      <div class="card-img-m">
-        <img src="./assets/images/ne.webp" alt="img2" />
-      </div>
-      <div class="card-content-m">
-        <p class="card-date-m">20.05.2025 | Rebecca Priestley</p>
-        <h3 class="card-title-m">How Executive Coaching Can Reboot Businesses</h3>
-      </div>
-    </div>
-
-    <div class="card-m">
-      <div class="card-img-m">
-        <img src="./assets/images/ne.webp" alt="img3" />
-      </div>
-      <div class="card-content-m">
-        <p class="card-date-m">13.05.2025 | Dr Andrew White</p>
-        <h3 class="card-title-m">Four archetypes of leadership</h3>
-      </div>
-    </div>
-
-    <div class="card-m">
-      <div class="card-img-m">
-        <img src="./assets/images/ne.webp" alt="img4" />
-      </div>
-      <div class="card-content-m">
-        <p class="card-date-m">25.04.2025 | David Boyd</p>
-        <h3 class="card-title-m">The Myth of M&A Best Practices</h3>
-      </div>
-    </div>
-  </div> -->
-    
   <div class="cta-wrapper-m">
       <button class="cta-btn-m">Find the latest insights</button>
     </div>
@@ -595,7 +551,7 @@
               <li><a href="tel:+91 20 7692 4300">+91 (0)20 7692 4300</a></li>
               <li><a href="mailto:yourgmail.com">yourgmail.com</a></li>
               <li><a href="#">Kingsbourne House, 229-231 High Holborn London, WC1V 7DA</a></li>
-              <li><a href="#">Get in touch</a></li>
+              <li><a href="#"><b>Get in touch</b></a></li>
             </ul>
           </nav>
         </div>
@@ -603,7 +559,7 @@
     </div>
   </footer>
   <!-- Back to Top Button -->
-<button id="backToTop" class="back-to-top" title="Go to top">↑</button>
+ <button id="backToTop" class="back-to-top" title="Go to top">↑</button>
 
   
   <!-- CDN scripts -->   
@@ -666,7 +622,7 @@
   //       disable: false
   // });
 
-AOS.init({
+ AOS.init({
   duration: 1000,
   once: true,
   disable: false,
@@ -677,13 +633,12 @@ AOS.init({
   debounceDelay: 50,
   throttleDelay: 99,
   anchorPlacement: 'top-bottom',
-});
+ });
 
-setTimeout(() => {
+ setTimeout(() => {
     AOS.refresh(); // ensures AOS sees new DOM position
-}, 500);
+ }, 500);
 
   </script>
-
 </body>
 </html>
