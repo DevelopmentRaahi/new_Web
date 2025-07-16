@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 :root {
-  /* --font-primary: 'JetBrains Mono', monospace; */
+  --font-primary: 'JetBrains Mono', monospace;
   --font-secondary: 'Reddit Sans', sans-serif;
   --hero-font: 'Roboto Slab', serif;
 }
-
 :root {
 	/* Background Colors */
 	--bg-white: #ffffff;
@@ -745,29 +744,79 @@ body {
     opacity: 1;
   }
 
+/* about us */
 
-/* Footer Section */
-/* 
-.footer a {
-  color: white;
-  text-decoration: none;
+ .one-wrapper_one .imgone { 
+  border-radius: 100px 0 0 0;  
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.wrapper-heading{
+  font-size: 1.8rem;
+  font-weight: 600; 
+  margin:2rem 0;
+  font-family: var(--hero-font);
+}
+.wrapper-heading span{
+  background-color: var(--border-blue-gray);
+  color: var(--text-white);
+  padding: 7px 20px;
+  display: block;
+  width: fit-content;
+}
+.wrapper-heading span:not(:first-child){  
+  background-color: var(--bg-pink); 
+  margin-left: 60px;
+}
+.one-wrapper_two {
+  padding: 20px 50px;   
+  color: var(--text-white);   
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.one-wrapper_two::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color:var(--fill-cyan);
+  z-index: -1;  
+}
+.tm-container{
+  margin-block: 6rem ;
 }
 
-.footer-title {
-  font-size: 1.1rem;
-  border-top: 1px solid #ffffff33;
-  padding-top: 10px;
-  margin-bottom: 10px;
+.tm-left{
+  position: relative;
+  right: 0px;
+  padding: 50px;
+}
+.tm-left::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: -40px;
+  left: 0px;
+  width: 105%;
+  height: 90%;  
+  opacity:0.2;
+  background-color:var(--text-gray);
+  z-index: -1;
 }
 
-.copyright-bottom-home-one {
-  border-top: 1px solid #555;
-} */
-
+.tm-right{
+  position: relative;
+  left: 0px;
+}
+.tm-right img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 0 100px 0 0;
+}
 
 /* mobile view (≤1024px) */
 @media (max-width: 1024px) {
