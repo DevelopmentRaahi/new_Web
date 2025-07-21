@@ -753,7 +753,7 @@ body {
   height: 100%;
 }
 .wrapper-heading{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600; 
   margin:2rem 0;
   font-family: var(--hero-font);
@@ -761,13 +761,13 @@ body {
 .wrapper-heading span{
   background-color: var(--border-blue-gray);
   color: var(--text-white);
-  padding: 7px 20px;
+  padding: 0 15px;
   display: block;
   width: fit-content;
 }
 .wrapper-heading span:not(:first-child){  
   background-color: var(--bg-pink); 
-  margin-left: 60px;
+  margin-left: 30px;
 }
 .one-wrapper_two {
   padding: 20px 50px;   
