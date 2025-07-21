@@ -817,10 +817,31 @@ body {
   object-fit: cover;
   border-radius: 0 100px 0 0;
 }
-
-.section-m .heading-m {
-  background-color: transparent;
+.fb-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
+.fb-column{
+  margin-block: 3rem;
+  text-align: center
+}
+.fb-column span{
+  font-size: 2rem;
+  color: var(--border-blue-gray);
+}
+.fb-column h4{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-block: 1rem;
+}
+.sb-content p{ 
+  font-weight: 400;
+  color: var(--text-gray);
+  width: 80%;
+  margin: auto; 
+}
+
 
 /* mobile view (≤1024px) */
 @media (max-width: 1024px) {
