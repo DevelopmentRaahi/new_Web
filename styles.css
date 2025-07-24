@@ -1737,3 +1737,38 @@ footer::after {
     width: 100%;   
   }
 }
+
+/* services */
+
+.service-s {
+  background-image: url('assets/images/bubble-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 70vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.service-h{
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  /* color: #222; */
+  color: #fff;
+
+}
+
+.service-p{
+  max-width: 700px;
+  font-size: 16px;
+  /* color: #555; */
+  color: #fff;
+  line-height: 1.6;
+}
