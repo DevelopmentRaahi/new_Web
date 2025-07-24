@@ -1739,7 +1739,7 @@ footer::after {
 }
 
 /* services */
-
+/* 
 .service-s {
   background-image: url('assets/images/bubble-bg.webp');
   background-size: cover;
@@ -1756,11 +1756,20 @@ footer::after {
   position: relative;
 }
 
+.service-s:before{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
 .service-h{
-  font-size: 28px;
+  font-size: 37px;
   font-weight: bold;
   margin-bottom: 50px;
-  /* color: #222; */
   color: #fff;
 
 }
@@ -1768,7 +1777,104 @@ footer::after {
 .service-p{
   max-width: 700px;
   font-size: 16px;
-  /* color: #555; */
   color: #fff;
   line-height: 1.6;
+} */
+
+/* Services Section */
+.service-s {
+  background-image: url('assets/images/bubble-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 70vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-s::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.service-h,
+.service-p {
+  z-index: 2;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s ease-out forwards;
+}
+
+.service-p {
+  animation-delay: 0.3s;
+}
+
+.service-h {
+  font-size: 37px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.service-p {
+  max-width: 900px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Animation Keyframes */
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .service-h {
+    font-size: 28px;
+  }
+  .service-p {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-s {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .service-h {
+    font-size: 24px;
+  }
+
+  .service-p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-h {
+    font-size: 20px;
+  }
+
+  .service-p {
+    font-size: 13px;
+  }
 }
