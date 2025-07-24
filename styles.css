@@ -898,6 +898,57 @@ body {
   margin-top: 25rem;
 }
 
+/* bt-text section */
+
+
+.bt-service {  
+  background: linear-gradient(
+      to right,
+      rgba(1, 1, 1, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('assets/images/bubble-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;  
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  
+}
+.bt-service h2{
+  font-size:2.8rem;
+  font-weight: 600;  
+  width: 80%;  
+  color: var(--bg-light-gray);
+}
+.bt-service p{
+  font-size: 1.2rem;
+  font-weight: 400;  
+  line-height: 1.7;
+  width: 75%;
+  color: var(--text-gray);
+}
+.bt-service-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 1rem;
+  margin: 5rem 0;
+}
+
+/* Animation Keyframes */
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 /* mobile view (≤1024px) */
 @media (max-width: 1024px) {
@@ -910,7 +961,14 @@ body {
   .tm-left::after{
     width: 100%;
   }
-
+  .bt-service h2{
+    font-size:2.5rem;   
+    width: 80%;   
+  }
+  .bt-service p{
+    font-size: 1.2rem; 
+    width: 75%; 
+  }  
 }
 
 @media (max-width: 992px) {
@@ -928,14 +986,12 @@ body {
     text-align: center;
     padding: 0 0rem;
   }
-  
 
   .line1-r,
   .line3-r {
     font-size: 24px;
     padding: 0px 0px;
     margin-left: 0 !important;
-
   }
 
   .line1-r {
@@ -978,6 +1034,19 @@ body {
   #header{
     padding: 0;
   }
+  .bt-service h2{
+    font-size:2rem;   
+    width: 95%;   
+  }
+  .bt-service p{
+    font-size: 1.2rem; 
+    width: 90%; 
+    line-height: auto;
+  }
+  .bt-service-content{
+    margin: 3rem 0;
+  }
+  
 }
 
 /* second */
@@ -1097,8 +1166,7 @@ body {
     align-items: center;
     padding: 0 22px;
     text-align: center;
-    position: relative;
-    
+    position: relative;    
   }
 
   .text-content-r {
@@ -1181,6 +1249,7 @@ body {
     display: none !important;
     content: none !important;
   }
+  
 }
 
 
@@ -1736,145 +1805,15 @@ footer::after {
   .wrapper_content p {   
     width: 100%;   
   }
-}
-
-/* services */
-/* 
-.service-s {
-  background-image: url('assets/images/bubble-bg.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  height: 70vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-}
-
-.service-s:before{
-    content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-.service-h{
-  font-size: 37px;
-  font-weight: bold;
-  margin-bottom: 50px;
-  color: #fff;
-
-}
-
-.service-p{
-  max-width: 700px;
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.6;
-} */
-
-/* Services Section */
-.service-s {
-  background-image: url('assets/images/bubble-bg.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #fff;
-  height: 70vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.service-s::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-.service-h,
-.service-p {
-  z-index: 2;
-  position: relative;
-  opacity: 0;
-  transform: translateY(50px);
-  animation: slideUp 1s ease-out forwards;
-}
-
-.service-p {
-  animation-delay: 0.3s;
-}
-
-.service-h {
-  font-size: 37px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
-
-.service-p {
-  max-width: 900px;
-  font-size: 20px;
-  line-height: 1.6;
-}
-
-/* Animation Keyframes */
-@keyframes slideUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
+   .bt-service h2{
+    font-size:1.7rem;   
+    width: 100%;    
+  }
+  .bt-service p{
+    font-size: 1rem; 
+    width: 95%; 
   }
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .service-h {
-    font-size: 28px;
-  }
-  .service-p {
-    font-size: 15px;
-    padding: 0 20px;
-  }
-}
 
-@media (max-width: 768px) {
-  .service-s {
-    height: auto;
-    padding: 60px 20px;
-  }
 
-  .service-h {
-    font-size: 24px;
-  }
-
-  .service-p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .service-h {
-    font-size: 20px;
-  }
-
-  .service-p {
-    font-size: 13px;
-  }
-}
