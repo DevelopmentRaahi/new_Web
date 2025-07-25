@@ -1817,3 +1817,22 @@ footer::after {
 
 
 
+/* blog */
+
+.blog-main .card-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.blog-main .card-text {
+  font-size: 0.95rem;
+}
+
+.blog-search input:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.blog-sidebar img {
+  object-fit: cover;
+}

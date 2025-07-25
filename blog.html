@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CandidPage | blogs  </title>
+    
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+
+    <!-- bootstrap icons link -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+
+    <!-- swiper CSS --> 
+    <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- aos link -->
+    <!-- <link href="./assets/vendor/aos/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="styles.css">
+ </head>
+
+ <body>
+  <!-- header Code -->
+  <header>
+    <div class="" id="backdrop"></div>
+    <nav class="header" id="header">
+      <div class="container-fluid header__container">
+        <div class="header__logo">
+          <!-- <a href="/">
+            <img src="./assets/images/logo.png" alt="Domgys Logo" class="logo-img"></a> -->
+          <a class="navbar-brand d-flex align-items-center gap-1" href="./index.html">
+            <span class="logo-icon ">CP</span>
+            <span class="fw-bold fs-4 text-dark">CandidPage</span>
+          </a>
+        </div>
+        <button class="nav-toggle-z" id="menu-toggle">&#9776;</button>
+        <div class="header__menu" id="mobile-menu">
+          <div class="header__main">
+            <ul class="nav__items">
+              <li class="nav__item">
+                <a href="./about-us.html" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="./Services.html" class="nav__link">Services</a>
+              </li>
+              <li class="nav__item">
+                <a href="./Job-opportunity.html" class="nav__link">Jobs</a>
+              </li>
+              <li class="nav__item">
+                <a href="./blog.html" class="nav__link">Blogs</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Capabilities</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Sectors</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Candidates</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Insights</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__right">
+            <ul class="nav__items">
+              <li class="nav__item">
+                <a href="#" class="nav__link">020 7692 4300</a>
+              </li>             
+              <li class="nav__item">
+                <a href="#" class="nav__link get-started">Login</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link get-started">Register</a>
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- hero section  -->
+  <section class="hero-section text-center py-5">
+    <div class="container hero_container">
+      <div class="position-relative hero_content" data-aos="fade-right">
+
+        <div class="line1-r first_line">
+          Explore Job Market  :
+        </div>
+        <div class="line3-r second_line">
+         Trends and Strategies
+        </div>
+      </div>
+      <p class="mt-4 px-4" data-aos="fade-up">
+        Stay updated with expert career tips, industry insights, job search strategies, interview guidance, resume advice, and 
+        hiring trends to boost your professional growth and land your dream job faster.
+      </p>
+      <!-- <a href="#" class="text-pink fs-5 text-decoration-none fw-medium" data-aos="zoom-in">Contact us →</a> -->
+    </div>
+  </section>
+  
+  <!--blog section -->
+  <div class="container my-5">
+  <div class="row">
+         <h2 class="text-center fw-bold mb-5 text-decoration-underline">Blogs</h2>
+
+    <!-- Left: Main Blog Post -->
+    <div class="col-lg-8">
+      <div class="card border-0 shadow blog-main">
+        <img src="./assets/images/bg.jpeg" class="card-img-top" alt="Blog Image">
+        <div class="card-body">
+          <span class="badge bg-light text-dark px-3 py-2 mb-2">Blogs</span>
+          <h3 class="card-title fw-bold">
+            The Benefits of Working with a Leading Manpower Agency for Your Staffing Needs
+          </h3>
+          <p class="card-text text-muted">
+            The Benefits of Working with a Leading Manpower Agency for Your Staffing Needs. In today’s fast-paced business environment, finding the right talent to fill your staffing needs can be...
+          </p>
+          <a href="#" class="text-success text-decoration-none fw-bold">
+            Continue Reading <i class="fa fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Right: Sidebar -->
+    <div class="col-lg-4 mt-5 mt-lg-0">
+      
+      <!-- Search Box -->
+      <div class="mb-4">
+        <div class="input-group blog-search">
+          <input type="text" class="form-control rounded-start" placeholder="Searching..." />
+          <span class="input-group-text bg-white rounded-end">
+            <i class="fa fa-search text-muted"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Recent Posts -->
+      <div class="bg-white p-3 shadow-sm rounded blog-sidebar">
+        <h5 class="fw-bold border-start ps-2 border-success border-3 mb-3">Recent Posts</h5>
+
+        <div class="d-flex mb-3">
+          <img src="./assets/images/bg.jpeg" alt="thumb" class="rounded me-3" width="60" height="60">
+          <p class="mb-0 fw-semibold small">
+            The Benefits of Working with a Le
+          </p>
+        </div>
+
+        <div class="d-flex mb-3">
+          <img src="./assets/images/bg.jpeg" alt="thumb" class="rounded me-3" width="60" height="60">
+          <p class="mb-0 fw-semibold small">
+            Maximizing Your Job Search: Tip
+          </p>
+        </div>
+
+        <div class="d-flex">
+          <img src="./assets/images/bg.jpeg" alt="thumb" class="rounded me-3" width="60" height="60">
+          <p class="mb-0 fw-semibold small">
+            Why Executive Search and Headhunting Are Crucial for...
+          </p>
+        </div>
+      </div>
+    </div>
+<br>
+     <!-- Left: Main Blog Post -->
+    <div class="col-lg-8">
+      <div class="card border-0 shadow blog-main">
+        <img src="./assets/images/bg.jpeg" class="card-img-top" alt="Blog Image">
+        <div class="card-body">
+          <span class="badge bg-light text-dark px-3 py-2 mb-2">Blogs</span>
+          <h3 class="card-title fw-bold">
+           Maximizing Your Job Search: Tips from a Leading Placement Agency
+          </h3>
+          <p class="card-text text-muted">
+           Maximizing Your Job Search: Tips from a Leading Placement Agency In today’s competitive job market, finding the right opportunity can be a challenge. As a Leading Placement Agency, Talent...   </p>
+          <a href="#" class="text-success text-decoration-none fw-bold">
+            Continue Reading <i class="fa fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <!--  desktop trusted sec -->
+
+  <div class="trusted-section-w " data-aos="fade-up">
+    <p class="trusted-title-w">Trusted by our global network</p>
+    <div class="container trusted-logos-w">
+      <img src="./assets/images/ne.webp" alt="John Lewis" />
+      <img src="./assets/images/ne.webp" alt="Kamet" />
+      <img src="./assets/images/ne.webp" alt="Amazon" />
+      <img src="./assets/images/ne.webp" alt="Livingbridge" />
+      <img src="./assets/images/ne.webp" alt="Ocado" />
+      <img src="./assets/images/ne.webp" alt="Bain & Company" />
+      <!-- <img src="./assets/images/ne.webp" alt="EY" />
+      <img src="./assets/images/ne.webp" alt="Greenhill" /> -->
+    </div>
+  </div>
+
+  
+
+  <!-- mobile logo slider -->
+  <div class="mobile-slider-container md:hidden px-4 py-6">
+    <p class="trusted-title-w text-center">Trusted by our global network</p>
+    <div class="swiper swiper-trusted-w">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 1" /></div>
+        <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 2" /></div>
+        <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 3" /></div>
+        <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 4" /></div>
+        <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 5" /></div>
+        <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 6" /></div>
+        <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 7" /></div>
+        <div class="swiper-slide"><img src="./assets/images/ne.webp" alt="Logo 8" /></div>
+      </div>
+      <!-- arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <!-- footer Code -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row footer__primary" id="footer__links">
+        <div class=" col">
+          <nav>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our team</a></li>
+              <li><a href="#">Join the team</a></li>
+              <li><a href="#">Inclusion & Diversity</a></li>
+              <li><a href="#">Environmental Sustainability</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Modern Slavery Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class=" col">
+          <nav>
+            <ul>
+              <li><a href="#">Capabilities</a></li>
+              <li><a href="#">Change and Transformation</a></li>
+              <li><a href="#">PMO Consulting services</a></li>
+              <li><a href="#">Strategy and Growth</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class=" col">
+          <nav>
+            <ul>
+              <li><a href="#">Candidates</a></li>
+              <li><a href="#">Browse opportunities</a></li>
+              <li><a href="#">Permanent candidates</a></li>
+              <li><a href="#">Freelance candidates</a></li>
+              <li><a href="#">Skills hub</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class=" col">
+          <nav>
+            <ul>
+              <li><a href="#">Businesses</a></li>
+              <li><a href="#">Graduates</a></li>
+              <li><a href="#">Researchers</a></li>
+              <li><a href="#">Analysts</a></li>
+              <li><a href="#">Consultants</a></li>
+              <li><a href="#">Strategic senior management</a></li>
+              <li><a href="#">Executive leadership</a></li>
+              <li><a href="#">Project teams</a></li>
+              <li><a href="#">Managed projects</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class=" col">
+          <nav>
+            <ul>
+              <li><a href="#">Insights</a></li>
+              <li><a href="#">Digital trends</a></li>
+              <li><a href="#">Strategy</a></li>
+              <li><a href="#">Future of work</a></li>
+              <li><a href="#">Freshminds news</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class=" col">
+          <nav>
+            <ul>
+              <li><a href="#">Sectors</a></li>
+              <li><a href="#">Private Equity</a></li>
+              <li><a href="#">Retail and Consumer</a></li>
+              <li><a href="#">Digital and Tech</a></li>
+              <li><a href="#">FinTech and Banking</a></li>
+              <li><a href="#">Investment and Advisory</a></li>
+              <li><a href="#">Professional Services</a></li>
+              <li><a href="#">Energy and Utilities</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class=" col">
+          <nav>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="tel:+91 20 7692 4300">+91 (0)20 7692 4300</a></li>
+              <li><a href="mailto:yourgmail.com">yourgmail.com</a></li>
+              <li><a href="#">Kingsbourne House, 229-231 High Holborn London, WC1V 7DA</a></li>
+              <li><a href="#"><b>Get in touch</b></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Back to Top Button -->
+ <button id="backToTop" class="back-to-top" title="Go to top">↑</button>
+
+  
+  <!-- CDN scripts -->   
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> 
+
+  <!-- Bootstrap sciprts -->
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper sciprts -->
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- AOS sciprts -->
+  <script src="./assets/vendor/aos/aos.js"></script>  
+  <!-- custom sciprts -->
+  <script src="./assets/js/main.js"></script>
+  
+  <script>
+    
+    const swiper = new Swiper('.swiper-f', {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  
+  //safe Swiper Init After DOM Load 
+ 
+  document.addEventListener("DOMContentLoaded", function () {
+    // swiper init
+      const swiper = new Swiper('.swiper-icon-l', {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });  
+ 
+    // swiper init
+      new Swiper(".swiper-trusted-w", {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+    
+  });  
+    // aos init
+  // AOS.init({
+  //       duration: 1000,
+  //       once: false,
+  //       startEvent: 'DOMContentLoaded',
+  //       disable: false
+  // });
+
+ AOS.init({
+  duration: 1000,
+  once: true,
+  disable: false,
+  startEvent: 'DOMContentLoaded',
+  mirror: false,
+  easing: 'ease-in-out',
+  offset: 120  ,
+  debounceDelay: 50,
+  throttleDelay: 99,
+  anchorPlacement: 'top-bottom',
+ });
+
+ setTimeout(() => {
+    AOS.refresh(); // ensures AOS sees new DOM position
+ }, 500);
+
+  </script>
+</body>
+</html>
