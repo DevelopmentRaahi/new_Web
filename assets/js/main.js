@@ -92,6 +92,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// back to top button
 backToTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
