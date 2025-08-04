@@ -2258,3 +2258,60 @@ footer::after {
       border-radius: 10px;
       margin-bottom: 20px;
     }
+
+    /* form */
+
+    .form-wrapper {
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: #003087;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #0056b3;
+}
+
+/* Custom dropdown icon */
+.custom-select-wrapper {
+  position: relative;
+}
+
+.custom-select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px;
+  padding-right: 3rem;
+}
+
+.btn-success {
+  background-color: #6adb6a;
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.form-note {
+  font-size: 14px;
+  color: #000;
+}
