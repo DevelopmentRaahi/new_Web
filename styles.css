@@ -2357,4 +2357,43 @@ footer::after {
 }
 
 /* next section */
+/* btn */
+.btn-group-l {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
 
+.btn-l {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Primary Button */
+.primary-l {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: #fff;
+}
+
+.primary-l:hover {
+  background: transparent;
+  color: #28a745;
+  border-color: #28a745;
+}
+
+/* Secondary Button */
+.secondary-l {
+  background: linear-gradient(135deg, #36a2d5, #36a2d5);
+  color: #fff;
+}
+
+.secondary-l:hover {
+  background: transparent;
+  color: #36a2d5;
+  border-color: #36a2d5;
+}
