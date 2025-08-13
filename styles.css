@@ -2358,42 +2358,110 @@ footer::after {
 
 /* next section */
 /* btn */
-.btn-group-l {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-}
-
-.btn-l {
-  padding: 12px 28px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-/* Primary Button */
-.primary-l {
-  background: linear-gradient(135deg, #28a745, #20c997);
-  color: #fff;
-}
-
-.primary-l:hover {
-  background: transparent;
-  color: #28a745;
-  border-color: #28a745;
-}
-
 /* Secondary Button */
 .secondary-l {
-  background: linear-gradient(135deg, #36a2d5, #36a2d5);
+  /* background: linear-gradient(135deg, #36a2d5, #36a2d5); */
+background: linear-gradient(135deg, #833471, #833471);
   color: #fff;
 }
 
 .secondary-l:hover {
   background: transparent;
-  color: #36a2d5;
-  border-color: #36a2d5;
+  color: #833471;
+  border-color: #833471;
+}
+
+.sales-section-l {
+  min-height: 60vh;
+}
+
+.left-side-l, .right-side-l {
+  min-height: 60vh; /* Equal height for both sides */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Backgrounds */
+.left-side-l {
+  /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
+/* background: linear-gradient(135deg, #0A3D62, #3C6382); */
+background: linear-gradient(135deg, #003f3c, #15a099);
+
+}
+
+.right-side-l {
+  /* background: linear-gradient(135deg, #1d4350, #a43931); */
+  background: linear-gradient(135deg, #2ca0d5, #12d298);
+
+}
+
+/* Buttons */
+.btn-custom-l {
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* Primary Button */
+.btn-primary-l {
+  background: linear-gradient(135deg, #2ca0d5, #12d298);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary-l:hover {
+  background: transparent;
+  border: 2px solid #2ca0d5;
+  /* color: #2ca0d5; */
+   color: #fff;
+}
+
+/* Outline Button */
+.btn-outline-l {
+  border: 2px solid #003f3c;
+  color: #003f3c;
+   background: linear-gradient(135deg, #2eb9b2, #04827c );
+  /* background: transparent; */
+}
+
+.btn-outline-l:hover {
+  background: #003f3c;
+  color: #fff;
+}
+
+/* Keyframes for sliding */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations */
+.left-side-l {
+  animation: slideInLeft 2s ease-out forwards;
+}
+
+.right-side-l {
+  animation: slideInRight 2s ease-out forwards;
 }
