@@ -2387,13 +2387,13 @@ background: linear-gradient(135deg, #833471, #833471);
 .left-side-l {
   /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
 /* background: linear-gradient(135deg, #0A3D62, #3C6382); */
-background: linear-gradient(135deg, #003f3c, #15a099);
+background: linear-gradient(135deg, #00393c, #00393c);
 
 }
 
 .right-side-l {
   /* background: linear-gradient(135deg, #1d4350, #a43931); */
-  background: linear-gradient(135deg, #2ca0d5, #12d298);
+  background: linear-gradient(135deg, #36a2d5, #36a2d5);
 
 }
 
@@ -2409,7 +2409,7 @@ background: linear-gradient(135deg, #003f3c, #15a099);
 
 /* Primary Button */
 .btn-primary-l {
-  background: linear-gradient(135deg, #2ca0d5, #12d298);
+  background: linear-gradient(135deg, #36a2d5, #36a2d5);
   color: #fff;
   border: none;
 }
@@ -2425,7 +2425,7 @@ background: linear-gradient(135deg, #003f3c, #15a099);
 .btn-outline-l {
   border: 2px solid #003f3c;
   color: #003f3c;
-   background: linear-gradient(135deg, #2eb9b2, #04827c );
+   background: linear-gradient(135deg, #36a2d5, #36a2d5 );
   /* background: transparent; */
 }
 
