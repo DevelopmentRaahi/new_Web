@@ -2465,3 +2465,97 @@ background: linear-gradient(135deg, #00393c, #00393c);
 .right-side-l {
   animation: slideInRight 2s ease-out forwards;
 }
+
+
+/* four card */
+
+/* Animation */
+@keyframes slideUp {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.animated-section {
+  animation: slideUp 2s ease forwards;
+}
+
+/* Heading style */
+.main-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.main-heading span {
+  display: block;          /* alag line me kar diya */
+  width: fit-content;      /* background bas text ke jitna hi */
+  padding: 8px 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 5px auto;        /* center align */
+}
+.main-heading .first {
+  background-color: #004c45; /* Green */
+}
+.main-heading .second {
+  background-color: #36a2d5; /* Pink */
+}
+
+/* Paragraph */
+.section-desc {
+  text-align: center;
+  color: #000;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  max-width: 700px;   /* paragraph width fix */
+  margin-left: auto;
+  margin-right: auto; /* center align */
+  line-height: 1.6;   /* thoda gap lines me */
+}
+
+
+/* Cards */
+.career-card {
+  padding: 2rem 1rem;
+  text-align: center;
+  border: none;
+  height: 100%;
+}
+.career-dark {
+  background-color: #476277;
+  color: #fff;
+}
+.career-light {
+  background-color: #eee8e8;
+  color: #232323;
+}
+
+/* Button */
+/* Common Button */
+.career-btn {
+  font-size: 0.9rem;
+  padding: 6px 20px;         /* thoda bada so text center ho */
+  border-radius: 25px;       /* gol shape */
+  border: 2px solid;         /* outline look */
+  background: transparent;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Dark card button */
+.career-dark .career-btn {
+  color: #fff;
+  border-color: #fff;
+}
+.career-dark .career-btn:hover {
+  background: #fff;
+  color: #476277;            /* dark bg ka text */
+}
+
+/* Light card button */
+.career-light .career-btn {
+  color: #36a2d5;
+  border-color: #36a2d5;
+}
+.career-light .career-btn:hover {
+  background: #36a2d5;
+  color: #fff;
+}
