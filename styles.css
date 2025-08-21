@@ -2361,16 +2361,14 @@ footer::after {
 /* next section */
 /* btn */
 /* Secondary Button */
-.secondary-l {
-  /* background: linear-gradient(135deg, #36a2d5, #36a2d5); */
-background: linear-gradient(135deg, #833471, #833471);
-  color: #fff;
+.sales-section-l h1,
+.sales-section-l h2 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.secondary-l:hover {
-  background: transparent;
-  color: #833471;
-  border-color: #833471;
+.secondary-l {
+  color: #fff;
 }
 
 .sales-section-l {
@@ -2385,19 +2383,7 @@ background: linear-gradient(135deg, #833471, #833471);
   align-items: center;
 }
 
-/* Backgrounds */
-.left-side-l {
-  /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
-/* background: linear-gradient(135deg, #0A3D62, #3C6382); */
-background: linear-gradient(135deg, #00393c, #00393c);
 
-}
-
-.right-side-l {
-  /* background: linear-gradient(135deg, #1d4350, #a43931); */
-  background: linear-gradient(135deg, #36a2d5, #36a2d5);
-
-}
 
 /* Buttons */
 .btn-custom-l {
@@ -2407,7 +2393,18 @@ background: linear-gradient(135deg, #00393c, #00393c);
   font-size: 1rem;
   transition: all 0.3s ease;
   text-decoration: none;
+  margin-top: 20px;
 }
+.left-side-l {
+  background: linear-gradient(135deg, #00393c, #00393c);
+  border-top-left-radius: 180px;      /* top-left curve */
+}
+
+.right-side-l {
+   background: linear-gradient(135deg, #36a2d5, #36a2d5);
+  border-bottom-right-radius: 180px;  /* bottom-right curve */
+}
+
 
 /* Primary Button */
 .btn-primary-l {
