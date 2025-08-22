@@ -2558,7 +2558,7 @@ footer::after {
 
 /* test */
 .test-box-m {
-  min-height: 400px;
+  min-height: 250px;
   background-size: cover;
   background-position: center;
   position: relative;
