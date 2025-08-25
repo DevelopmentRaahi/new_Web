@@ -2559,27 +2559,42 @@ footer::after {
 
 
 /* test */
-.test-box-m {
-  min-height: 50vh;
+.test-section-m{
+    background: linear-gradient(
+    to right,
+    rgba(24, 23, 23, 0.3),
+    rgba(201, 191, 172, 0.3)
+    ),
+    url('assets/images/bg_hero.webp') no-repeat; 
+    background-size: cover;
+    background-position: center;
+    position: relative;  
+    min-height: 50vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+.test-box-m {  
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-.test-left-m {
+/* .test-left-m {
   background: linear-gradient(
     to right,
-    rgba(37, 81, 120, 0.8),
-    rgba(12, 41, 67, 0.8) ),
-    url('assets/images/img1.jpg'); 
+    rgba(120, 52, 37, 0.4),
+    rgba(12, 41, 67, 0.4) );  
+    
 }
 .test-right-m {
   background: linear-gradient(
     to right,   
-    rgba(26, 77, 79, 0.8),
-    rgba(0, 58, 61, 0.8) ),
-    url('assets/images/img1.jpg'); 
-}
+    rgba(26, 77, 79, 0.4),
+    rgba(0, 58, 61, 0.4) );
+} */
 
 .content-m {
  text-align: center;
@@ -2589,7 +2604,21 @@ footer::after {
  align-items: center;
  height: 100%;
  color :#fff;
+ background: linear-gradient(
+    to right,   
+    rgba(26, 77, 79, 0.7),
+    rgba(0, 58, 61, 0.7) );
+  width: 100%;
+  margin: 10px;
+  border-radius: 10px;
 }
+.content-m.second{
+ background: linear-gradient(
+    to right,   
+  rgba(120, 52, 37, 0.7),
+   rgba(84, 29, 17, 0.7) );
+}
+
 .content-m h2{
   font-family: var(--hero-font);  
   font-size: 2rem;
