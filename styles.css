@@ -2513,7 +2513,7 @@ footer::after {
     rgba(24, 23, 23, 0.3),
     rgba(201, 191, 172, 0.3)
     ),
-    url('assets/images/bg_hero.webp') no-repeat; 
+    url('assets/images/bgone.jpg') no-repeat; 
     background-size: cover;
     background-position: center;
     position: relative;  
@@ -2558,13 +2558,13 @@ footer::after {
     rgba(0, 58, 61, 0.7) );
   width: 100%;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 .content-m.second{
  background: linear-gradient(
     to right,   
-  rgba(120, 52, 37, 0.7),
-   rgba(84, 29, 17, 0.7) );
+  rgb(59, 163, 211),
+   rgba(73, 197, 238, 0.867) );
 }
 
 .content-m h2{
