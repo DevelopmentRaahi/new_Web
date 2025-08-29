@@ -25,16 +25,14 @@
 /* second section  */
 
 .one-wrapper {
-  padding: 50px 0;
+  padding: 150px 100px;
   /* gap: 20px; */
-  background-color: #f6f6f6;
-  overflow-x: hidden;
+  background-color: #f6f6f6; 
+  position: relative;
 }
 
 .box {
-  position: relative;
-  width: 50%;
-  overflow: hidden;
+  position: relative;  
 }
 
 .box .imgone {
@@ -53,18 +51,12 @@
 
 .text-box {
   position: absolute;
-  bottom: 0;
-  left: -10px;
-  padding: 20px;
-  border-radius: 6px;
+  bottom: -50px;
+  right: -50px;
+  padding: 20px;  
   color: white;
-  width: 200px;
-}
-
-.box .text-box {
-  left: 0px;
-  bottom: 0px;
-
+  width: 200px;  
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,32 +65,32 @@
   text-align: center;
 }
 
-.box .text-box-two {
-  right: 0px;
-  bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  text-align: center;
-}
+
 
 .text-box-two {
   position: absolute;
-  bottom: 0;
-  right: -10px;
-  padding: 20px;
-  border-radius: 6px;
+  bottom: -50px;;
+  left: -30px;
+  padding: 20px;  
   color: white;
   width: 200px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
 }
+
+
+
 
 .blue-box {
   background-color: #36a2d5;
 }
 
-
+/* 
 .box .second_content::after {
   content: "";
   position: absolute;
@@ -114,7 +106,7 @@
   bottom: -150px;
 
 
-}
+} */
 
 
 
