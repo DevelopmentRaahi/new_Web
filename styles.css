@@ -220,12 +220,13 @@
   display: inline-block;
   margin-left: -100px;
   position: relative;
-  font-family: var(--hero-font);
+  font-family: var(--font-primary);
 }
 
 .hero_content {
   position: relative;
-  font-family: var(--hero-font);
+  font-family: var(--font-primary);
+  /* overflow: hidden ; */
 }
 
 .hero-section .first_line {
@@ -261,6 +262,7 @@
   display: inline-block;
   margin-top: -1px;
   margin-left: -20px;
+  font-family: var(--font-primary);
 }
 
 
@@ -281,7 +283,7 @@
   content: "";
   position: absolute;
   /* display: none; */
-  width: 100vw;
+  width: 800px;
   height: 200px;
   /* background: url('./assests/img/main-banner-right-line.png') center center no-repeat;
   background-size: 100% 100%;  */
@@ -291,7 +293,7 @@
   border-top: none;
   border-right: none;
   bottom: -132px;
-  right: -100vw;
+  right: -800px;
   z-index: -1;
 }
 
@@ -443,8 +445,7 @@
   display: inline-block;
   background-color: #003f3c;
   color: white;
-  padding: 8px 25px;
-  font-size: 20px;
+  padding: 8px 25px; 
   font-weight: 700;
   border-radius: 4px;
 }
@@ -563,12 +564,12 @@
   display: inline-block;
   background-color: #00bde3;
   color: white;
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.9rem;
+  font-weight: 700;
   padding: 10px 20px;
   border-radius: 4px;
   margin-bottom: 20px;
-
+font-family: var(--font-primary);
   position: relative;
   top: -300px;
   z-index: 2;
@@ -671,10 +672,11 @@
 }
 
 .trusted-title-w {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.9rem;
+  font-weight: 700;
   color: #003c3c;
   margin: 2rem 0;
+  font-family: var(--font-primary);
 }
 
 .trusted-logos-w {
@@ -1422,7 +1424,7 @@
   }
 
   .line2-r {
-    margin-left: 0;
+    margin-left: 0;   
   }
 
 
