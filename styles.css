@@ -270,13 +270,13 @@
   background-color: var(--bg-pink);
   color: white;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 10px 25px;
   display: inline-block;
   margin-top: -1px;
   margin-left: 190px;
   position: relative;
-  font-family: var(--hero-font);
+  font-family: var(--font-primary);
 }
 
 .hero_content .second_line::after {
