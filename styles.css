@@ -740,6 +740,27 @@ font-family: var(--font-primary);
   z-index: -1;
 }
 
+/* candidate Hero */
+
+/* .candi-hero{
+  height: 55vh;  
+} */
+.candi-hero figure{ 
+  width: 100%; 
+  height: 100%;
+}
+.candi-hero .one-wrapper-two{    
+   align-self: flex-end;
+}
+.one-wrapper-two .candi-content{    
+  padding: 30px;  
+  color: var(--text-white);
+  background-color: var(--fill-cyan);  
+}
+.candi-content .wrapper_content p{
+  width: 100%;
+}
+
 .tm-container {
   margin-block: 6rem;
 }
