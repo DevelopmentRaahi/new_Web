@@ -2551,9 +2551,10 @@ footer::after {
     to right,   
     rgba(26, 77, 79, 0.7),
     rgba(0, 58, 61, 0.7) );
-  width: 100%;
-  margin: 10px;
-  border-radius: 30px;
+  width: 90%;
+  margin: 1.5px;
+  border-radius: 50px;
+  
 }
 .content-m.second{
  background: linear-gradient(
@@ -2564,7 +2565,7 @@ footer::after {
 
 .content-m h2{
   font-family: var(--hero-font);  
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700; 
   text-align: center;
   margin-bottom: 1rem;
@@ -2572,13 +2573,13 @@ footer::after {
 .content-m p{
   font-family: var(--font-secondary);  
   font-weight: 400; 
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
    color:var(--bg-light-gray)
 }
 
 .btn-outline-light {
   border-radius: 50px;
-  font-weight: 500;
+  font-weight: 400;
   padding: 12px 30px;
 }
