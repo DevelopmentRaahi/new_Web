@@ -2530,7 +2530,7 @@ footer::after {
     rgba(24, 23, 23, 0.3),
     rgba(201, 191, 172, 0.3)
     ),
-    url('assets/images/bgone.jpg') no-repeat; 
+    url('assets/images/bgone-1.webp') no-repeat; 
     background-size: cover;
     background-position: center;
     position: relative;  
