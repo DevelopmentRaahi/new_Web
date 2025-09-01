@@ -261,8 +261,8 @@
 .line3-r {
   background-color: var(--bg-pink);
   color: white;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
   padding: 10px 25px;
   display: inline-block;
   margin-top: -1px;
@@ -438,7 +438,7 @@
   background-color: #003f3c;
   color: white;
   padding: 8px 25px; 
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 4px;
 }
 
@@ -556,8 +556,8 @@
   display: inline-block;
   background-color: #00bde3;
   color: white;
-  font-size: 1.9rem;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
   padding: 10px 20px;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -664,8 +664,9 @@ font-family: var(--font-primary);
 }
 
 .trusted-title-w {
-  font-size: 1.9rem;
-  font-weight: 700;
+  /* font-size: 1.9rem; */
+  font-size: 40px;
+  font-weight: 600;
   color: #003c3c;
   margin: 2rem 0;
   font-family: var(--font-primary);
