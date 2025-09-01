@@ -450,7 +450,8 @@
 .industry-description-l {
   max-width: 700px;
   margin: 30px auto;
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  font-size: 17px;
   color: #003f3c;
   line-height: 1.6;
 }
