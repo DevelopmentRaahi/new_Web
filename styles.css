@@ -2536,7 +2536,7 @@ footer::after {
     background-size: cover;
     background-position: center;
     position: relative;  
-    min-height: 50vh;   
+    padding: 5rem 0;  
     display: flex;
     justify-content: center;
     align-items: center;   
