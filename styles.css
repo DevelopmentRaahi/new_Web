@@ -763,10 +763,10 @@ font-family: var(--font-primary);
 }
 
 .tm-container {
-  margin-block: 6rem;
+  padding-block: 6rem;
 }
-.tm-container .wrapper_content p{
-  width: 100%;
+.tm-container .wrapper_content p{  
+  width: 75%;
 }
 
 .tm-left {
@@ -779,18 +779,20 @@ font-family: var(--font-primary);
 .tm-right {
   position: relative;  
   }
-
-.tm-right img {
-  width: 100%;  
- object-fit: cover;
+.tm-right figure{  
+  margin: 0;
+  padding: 0;  
+}
+.tm-right img { 
+  height: 100%;
+  width: 100%; 
   border-radius: 0 100px 0 0;
+  object-fit: cover; 
 }
-.tm-container img{
-   height: 50vh;   
-}
+
 @media (min-width: 1200px) {
   .tm-container img{
-    height: 46vh;
+    height:55vh;
   }
 }
 
