@@ -765,18 +765,20 @@ font-family: var(--font-primary);
 .tm-container {
   margin-block: 6rem;
 }
-
+.tm-container .wrapper_content p{
+  width: 100%;
+}
 
 .tm-left {
   position: relative;
   right: 0px;
   padding: 10px 30px; 
   background-color: rgba(112, 112, 112, 0.177);
-}
+  }
 
 .tm-right {
   position: relative;  
-}
+  }
 
 .tm-right img {
   width: 100%;  
@@ -784,7 +786,12 @@ font-family: var(--font-primary);
   border-radius: 0 100px 0 0;
 }
 .tm-container img{
-   height: 46vh;
+   height: 50vh;   
+}
+@media (min-width: 1200px) {
+  .tm-container img{
+    height: 46vh;
+  }
 }
 
 
