@@ -100,5 +100,12 @@ backToTopBtn.addEventListener("click", () => {
   });
 });
 
+// Stop AOS animation on tablet and phone
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 991) {
+    AOS.refreshHard();
+  }
+});
+
 
 
