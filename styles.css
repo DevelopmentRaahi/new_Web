@@ -2860,7 +2860,7 @@ footer::after {
   content: '';
   position: absolute;
   top: -97.5px;
-  left: -70px;  
+  left: -10px;  
   width: 100px;
   height: 100px;  
   border-radius:0 0 0 50px;
