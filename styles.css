@@ -399,8 +399,9 @@
 }
 
 .industry-title-l {
+  position: relative;
   display: inline-block;
-  z-index: 3;
+  z-index: 4;
 }
 
 /* fifth section  */
@@ -408,7 +409,8 @@
   position: relative;
 }
 
-.industry-header-l .industry_content_l::after {
+.industry-header-l 
+.industry_content_l::after {
   content: "";
   position: absolute;
   height: 1126px;
@@ -426,26 +428,24 @@
 .industry-header-l .industry_content_l::before {
   content: "";
   position: absolute;
-  display: none;
-  height: 978px;
+  /* display: none; */
+  height: 740px;
   width: 700px;
   background-color: transparent;
   border-radius: 50px 0 0 50px;
-  border: 3px solid #003f3c;
-  left: -40px;
+  border: 3px solid  #23c6e0;
+  left: -700px;
   border-right: none;
   /* border-bottom: none; */
-  top: 0px;
+  top: 20px;
   z-index: -1;
-
-
 }
 
 .industry-container-l {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
-  text-align: center;
+  text-align: center;  
 }
 
 .industry-header-l {
@@ -2428,7 +2428,15 @@ footer::after {
 /* six block */
 
 .text-dark-blue {
-  color: #00383c;
+  background-color: var(--fill-cyan);
+  color: var(--bg-light-gray);
+  font-weight: 600;
+  position: relative;
+  z-index: 5;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 .trust-card {
@@ -2840,22 +2848,9 @@ footer::after {
   margin-bottom: 8px;
 }
 .line-wrapper{  
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    max-width: 1500px;
-    display: none;
-    width: 100%;
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;    
-    display: flex;
-    height: 100%;
-    z-index: 1;
-    pointer-events: none !important;
+  position: relative;
 }
+
 .line-wrapper .line-top{
   position: absolute;
   top: 0; 
@@ -2908,7 +2903,7 @@ footer::after {
   position: absolute;
   bottom: -70px;
   right: -0px;  
-  width: 600px;
+  width: 650px;
   height: 100px;  
   border-radius:0 0px 50px 0 ;
   z-index: 2;  
@@ -2916,7 +2911,7 @@ footer::after {
   border:3px solid #23c6e0;
   border-left: none;
   border-top: none;
-  z-index: -1; 
+  z-index: -2; 
 }
 .line-container{
   max-width: 1500px;
