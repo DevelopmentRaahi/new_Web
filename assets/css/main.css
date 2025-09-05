@@ -63,8 +63,7 @@ html {
 body {
 	font-family: var(--font-secondary), 'Segoe UI', sans-serif;
 	background-color: #f7f7f7;	
-	max-width: 100%;
-	/* padding-top: 100px; */
+	max-width: 100%;	
 	position: relative;
 }
 
@@ -354,9 +353,6 @@ h6 {
   
 /* for aos animation shift */
 .row {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
-/* [data-aos] {
-  overflow: hidden;
-} */
