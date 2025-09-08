@@ -2792,6 +2792,9 @@ footer::after {
   align-items: center;
 
 }
+.container-xxl{
+  max-width: 1500px;
+}
 
 .test-box-m {
   background-size: cover;
@@ -2826,7 +2829,7 @@ footer::after {
       rgba(0, 58, 61, 0.7));
   width: 100%;
   margin: 1.5px;
-  border-radius: 50px;
+  border-radius: 8px;
 
 }
 
