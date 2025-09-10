@@ -128,9 +128,10 @@ h6 {
 }
 
 .header__main .nav__items a {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	cursor: pointer;
 	transition: all 0.4s linear;
+	font-weight: bold;
 }
 
 .header__main .nav__items a:hover {
@@ -141,6 +142,7 @@ h6 {
 
 .header__right {
 	margin-top: 2rem;
+	font-weight: bold;
 }
 
 .header__right .nav__items {
@@ -237,7 +239,7 @@ h6 {
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		background-color: rgba(0, 0, 0, 0.828);
+		background-color: rgba(26, 25, 25, 0.828);
 		z-index: 99;
 	}
 
