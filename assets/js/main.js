@@ -107,5 +107,11 @@ window.addEventListener("resize", () => {
   }
 });
 
+var viewJob = document.getElementById('jobDetails');
+var viewJobDetails = document.querySelector('.job-details');
+viewJob.addEventListener('click', () => {
+  viewJobDetails.classList.toggle('show');  
+})
+
 
 

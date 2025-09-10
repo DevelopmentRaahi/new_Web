@@ -3034,6 +3034,29 @@ footer::after {
   margin: 0 auto;
  
 }
+
+.job-details{
+  display: none;
+  margin-top: 15px;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: #272626;
+  text-align: left;
+}
+.job-details.show{
+  display: block;
+}
+.job-card-job > div + div a, 
+.job-card-job > div + div button{
+   padding: 10px 30px;
+   border:none;
+   font-weight: normal;
+}
+.job-card-job > div + div a:is(:hover, :focus), 
+.job-card-job > div + div button:is(:hover, :focus){
+   background-color:#2c8fe4;
+}
+
 @media  (max-width: 1230px) {
    .line-wrapper{
      visibility: hidden;

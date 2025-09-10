@@ -131,7 +131,7 @@ h6 {
 	font-size: 1rem;
 	cursor: pointer;
 	transition: all 0.4s linear;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .header__main .nav__items a:hover {
@@ -142,7 +142,7 @@ h6 {
 
 .header__right {
 	margin-top: 2rem;
-	font-weight: bold;
+	font-weight: 500;
 }
 
 .header__right .nav__items {
