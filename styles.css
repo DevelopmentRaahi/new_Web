@@ -3294,23 +3294,25 @@ footer::after {
   position: relative;
   overflow: hidden;
 }
-.tm-images .overlay{
-  position: absolute;
-  top: 0;
-  left: 0; 
-  transform: translateY(-20%);
-  width: 10%;
-  height: 150%;
-  rotate: 35deg;
-  background-color: rgba(0, 0, 0, 0.5);
-  an
-}
+
+.tm-images .overlay {
+    position: absolute;
+    top:150px;
+    left: 0%;
+    width: 100%;
+    height: 30%;
+    rotate: -50deg;
+    background-color: #2d94f3;
+    animation: slideInLeft 7s ease-in-out 0s infinite normal forwards;
+    mix-blend-mode: color;
+}  
+
 @keyframes slideInLeft {
   0% {
-    transform: translateX(-100%);
+   left: -100%;
   }
   100% {
-    transform: translateX(0);
+    left: 100%;
   }  
 }
 
