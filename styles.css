@@ -3297,8 +3297,12 @@ footer::after {
 .job-list >div + a{
   font-size: 14px;
   border-radius: 50px;
+  transition: all 0.3s ease;
 }
-
+.job-list:hover >div + a{
+  background-color:#1775ff;
+  color: #fff;
+}
 /* team meatup */
 .team-meetup{
   position: relative;
