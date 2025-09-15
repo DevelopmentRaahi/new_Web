@@ -863,6 +863,14 @@
 
 
 
+
+
+
+.fb-column:hover {
+    transform: translateY(-10px);
+}
+
+
 .fb-header {
   display: flex;
   align-items: center;
@@ -870,6 +878,7 @@
 }
 
 .fb-column {
+    transition: transform 0.9s ease;
   margin-block: 3rem;
   text-align: center
 }
@@ -3134,9 +3143,9 @@ footer::after {
     font-size: 32px;
   }
 }
-.ca-bg{
+/* .ca-bg{
   background: url('https://www.squareboat.com/assets/svg/pattern-2.svg') no-repeat center top  ;
-}
+} */
 .ca-hero{
   position: relative;
   padding: 7rem 0;
@@ -3434,6 +3443,7 @@ footer::after {
   padding: 3rem 0;
   display: grid;
   gap: 1rem;
+  
 }
 .career-form input{
   border-radius: 5px;

@@ -86,7 +86,7 @@ h6 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 2rem;
+	padding: 1rem 4rem;
 	position: relative;
 	/* background-color: #f7e9bd2b;	 */
 }
@@ -121,7 +121,8 @@ h6 {
 .header__main .nav__items,
 .header__right .nav__items {
 	display: flex;
-	gap: 1.5rem;
+	/* gap: 1.5rem; */
+	gap: 2rem;
 	list-style: none;
 	flex-wrap: wrap;
 	padding: 0;
@@ -142,7 +143,7 @@ h6 {
 
 .header__right {
 	margin-top: 2rem;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 .header__right .nav__items {
