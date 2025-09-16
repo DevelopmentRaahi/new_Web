@@ -3491,3 +3491,64 @@ input[type="file"] {
   color: #ffffff;
   background-color: #0c71dd;
 }
+
+/* four box */
+/* .four-sec-h .hover-box {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.four-sec-h .hover-box h4 {
+    margin-top: 15px;
+}
+
+.four-sec-h .hover-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    margin-top: 10px;
+    color: #555;
+}
+
+.four-sec-h .hover-box:hover .hover-content {
+    opacity: 1;
+    max-height: 200px;
+} */
+
+.four-sec-h .hover-box {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.four-sec-h .hover-box h4 {
+    margin-top: 15px;
+}
+
+.four-sec-h .hover-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    margin-top: 10px;
+    color: #555;
+}
+
+.four-sec-h .hover-box:hover .hover-content {
+    opacity: 1;
+    max-height: 200px;
+}
+
+/* Mobile view fix – paragraph always visible on small screens */
+@media (max-width: 767px) {
+    .four-sec-h .hover-content {
+        opacity: 1 !important;
+        max-height: 500px !important;
+    }
+}
