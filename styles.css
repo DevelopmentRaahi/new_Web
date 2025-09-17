@@ -910,6 +910,22 @@
   position: relative;
   z-index: -2;
 }
+.center-text {
+    text-align: center;
+    max-width: 600px; 
+    margin: 0 auto;   
+    padding: 20px;
+}
+
+.center-text p {
+    margin-bottom: 1rem;
+    font-size: 17px;
+    line-height: 1.6; 
+}
+
+
+
+
 
 .wrapper_content p {
   /* font-size: 1rem; */
@@ -917,6 +933,7 @@
   font-weight: 400;
   width: 90%;
   margin-bottom: 1rem;
+  justify-content: center;
 }
 
 .join-team {
