@@ -116,6 +116,7 @@ h6 {
 .header__container .header__menu a {
 	text-decoration: none;
 	color: var(--text-gray);
+	
 }
 
 .header__main .nav__items,
@@ -126,6 +127,7 @@ h6 {
 	list-style: none;
 	flex-wrap: wrap;
 	padding: 0;
+	 margin-right: 5rem;
 }
 
 .header__main .nav__items a {
@@ -133,6 +135,7 @@ h6 {
 	cursor: pointer;
 	transition: all 0.4s linear;
 	font-weight: 500;
+	 
 }
 
 .header__main .nav__items a:hover {
@@ -274,6 +277,7 @@ h6 {
 	.header__right .nav__items{
 		gap: 1rem;
 		justify-content: center;
+		
 	}
 
 	.header__right {
