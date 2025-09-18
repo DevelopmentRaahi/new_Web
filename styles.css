@@ -909,6 +909,7 @@
   background-color: var(--bg-light-gray);
   position: relative;
   z-index: -2;
+
 }
 /* .center-text {
     text-align: center;
@@ -934,6 +935,21 @@
   line-height: 1.7;
   margin-bottom: 1.2rem;
 }
+
+
+.c-text {
+  text-align: center; 
+}
+
+.c-text p {
+  margin: 0 auto 1.5rem auto; 
+  font-size: 18px;          
+  line-height: 1.8;         
+  max-width: 800px;        
+  text-align: justify;      
+  text-align-last: center;   
+}
+
 
 
 
