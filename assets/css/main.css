@@ -612,7 +612,7 @@ max-width: 100%;
   .navmenu a:focus i {
     font-size: 12px;
     line-height: 0;
-    margin-left: 5px;
+    margin-left: 12px;
     transition: 0.3s;
   }
 
