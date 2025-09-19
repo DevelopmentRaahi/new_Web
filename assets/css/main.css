@@ -400,6 +400,9 @@ max-width: 100%;
 
 
 /* #preheader */
+.space-horizontal{
+  padding-inline:8rem;
+}
 
 .pre-header {
   background-color: #09656a; 
@@ -413,9 +416,11 @@ max-width: 100%;
 .contact-info {
   /* margin-right: 150px;   */
 }
+
 .contact-info a{
   color: var(--bg-light-gray);
   text-decoration: none;
+  font-size: 17px;
   padding: 10px;
   transition: all 0.3s ease-in;
 }
@@ -440,6 +445,7 @@ max-width: 100%;
 }
 .header  a{
   text-decoration: none;
+  font-size: 17px;
 }
 
 .header .logo img {
@@ -516,6 +522,11 @@ max-width: 100%;
 }
 
 /* btn code start here  */
+@media (max-width:1400px){
+  .space-horizontal{
+    padding-inline:3rem;
+  }
+}
 
 @media (max-width: 1200px) {
   .header .logo {
@@ -523,8 +534,7 @@ max-width: 100%;
   }
   .header{
     padding:1rem 0;
-  }
-
+  }  
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
@@ -597,8 +607,8 @@ max-width: 100%;
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
-    padding: 10px 8px;
-    font-size: 16px;
+    padding: 10px 12px;
+    font-size: 17px;
     font-family: var(--font-primary);
     font-weight: 500;
     display: flex;
