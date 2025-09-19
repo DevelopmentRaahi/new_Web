@@ -1900,6 +1900,30 @@ footer {
   padding: 3rem 2rem;
   color: #fff;
 }
+.footer-input {
+  display: flex;
+  margin-top: 2rem;
+}
+.footer-input input {  
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  border-radius:  5px 0 0 5px;
+  background-color: transparent;
+  color: #fff;  
+}
+.footer-input button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  border-left: none;
+  border-radius: 0 5px 5px 0px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.footer-input button:hover {
+  background-color: #fff;
+  color: #1A4D4F;
+}
 
 .footer__primary {
   row-gap: 2rem;

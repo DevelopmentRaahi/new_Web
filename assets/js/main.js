@@ -181,3 +181,23 @@ viewJob && viewJob.addEventListener('click', () => {
       e.stopImmediatePropagation();
     });
   });
+
+const subscribe = document.querySelector('.footer-input input');
+const subscribeBtn = document.querySelector('.footer-input button');
+
+subscribeBtn && subscribeBtn.addEventListener('click', () => {
+  let email = subscribe.value.trim();
+
+  if (!email) {
+    return alert('Please enter your email');
+  } 
+
+  // regex check
+  const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+  if (!regex.test(email)) {
+    return alert('Please enter a valid email');
+  }
+
+  alert('Subscribed successfully ✅');
+});
