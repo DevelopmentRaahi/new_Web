@@ -1413,7 +1413,7 @@
 
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .header__menu {
     display: none;
   }
@@ -1421,7 +1421,7 @@
   .nav-toggle-z {
     display: block;
   }
-}
+} */
 
 /* tablet view (≤768px) */
 @media (max-width: 768px) {
