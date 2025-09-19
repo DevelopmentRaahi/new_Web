@@ -33,7 +33,7 @@ const menu = document.querySelector('.header__menu');
 const backdrop = document.querySelector('#backdrop');
 const body = document.querySelector('body');
 
-toggleBtn.addEventListener('click', () => {
+toggleBtn && toggleBtn.addEventListener('click', () => {
   const isMobile = window.innerWidth <= 991; // or 768px as per your breakpoint
 
   menu.classList.toggle('active');
@@ -46,13 +46,6 @@ toggleBtn.addEventListener('click', () => {
   }
 });
 
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 991) {
-    document.body.classList.remove('no-scroll');
-    menu.classList.remove('active');
-    backdrop.classList.remove('active');
-  }
-});
 document.addEventListener("DOMContentLoaded", function () {
   const track = document.querySelector('.icons-track-m');
   const slides = document.querySelectorAll('.icon-slide-m');

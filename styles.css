@@ -1393,9 +1393,7 @@
     padding: 0 2rem;
   }
 
-  #header {
-    padding: 0 2rem;
-  }
+  
 
   .tm-left::after {
     width: 100%;
@@ -1478,10 +1476,7 @@
   .hero-section .first_line::before {
     display: none;
   }
-
-  #header {
-    padding: 0;
-  }
+  
 
   .bt-service h2 {
     font-size: 2rem;
