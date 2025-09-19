@@ -411,7 +411,7 @@ max-width: 100%;
   align-items: center;  
 }
 .contact-info {
-  margin-right: 150px;  
+  /* margin-right: 150px;   */
 }
 .contact-info a{
   color: var(--bg-light-gray);
@@ -568,12 +568,12 @@ max-width: 100%;
 /* Navmenu - Desktop */
 @media (max-width: 1850px) {
   .contact-info {
-    margin-right: 100px;  
+    /* margin-right: 100px;   */
   }
 }
 @media (max-width: 1550px) {
   .contact-info {
-    margin-right: 0px;  
+    /* margin-right: 0px;   */
   }
 }
 
