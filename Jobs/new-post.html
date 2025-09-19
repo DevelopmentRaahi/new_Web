@@ -29,63 +29,101 @@
 
  <body>
   <!-- header Code -->
-   <header>
-    <div class="" id="backdrop"></div>
-    <nav class="header " id="header">
-      <div class="container-fluid fixed-top header__container ">
-        <div class="header__logo">
-         <a href="../index.html">
-            <img src="../assets/images/LOGOTEST.png" alt="CP" class="logo-img"></a> 
-          <!-- <a class="navbar-brand d-flex align-items-center gap-1" href="./index.html">
-            <span class="logo-icon ">CP</span>
-            <span class="fw-bold fs-4 text-dark">CandidPage</span>
-          </a> -->
-        </div>
-        <button class="nav-toggle-z" id="menu-toggle">&#9776;</button>
-        <div class="header__menu " id="mobile-menu">
-          <div class="header__main">
-            <ul class="nav__items">
-              <li class="nav__item">
-                <a href="../about-us.html" class="nav__link">About Us</a>
-              </li>
-              <li class="nav__item">
-                <a href="../Services.html" class="nav__link">Services</a>
-              </li>
-              <li class="nav__item">
-                <a href="../Job-opportunity.html" class="nav__link">Current opportunity</a>
-              </li>
-              <li class="nav__item">
-                <a href="../blog.html" class="nav__link">Blogs</a>
-              </li>
-              <li class="nav__item">
-                <a href="../employer.html" class="nav__link">Employers</a>
-              </li>
-              <li class="nav__item">
-                <a href="../Candidate.html" class="nav__link">Candidates</a>
-              </li>
-              <li class="nav__item">
-                <a href="../contact-us.html" class="nav__link">Contact us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="header__right">
-            <ul class="nav__items">
-              <li class="nav__item">
-                <a href="#" class="nav__link">+91-888-239-2962</a>
-              </li>
-              <li class="nav__item">
-                <a href="../log.html" class="nav__link get-started">Login</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link get-started">Register</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+<section>
+  <div class="container-fluid pre-header px-lg-5">
+    <div class="contact-info d-flex align-items-center">
+      <a href="tel:+91-888-239-2962"><i class="bi bi-telephone-fill me-1"></i>+91-888-239-2962</a>
+      <a href="./log.html"><i class="bi bi-person me-1"></i>Login/Signup</a>
+      <a href="#"><i class="bi bi-cart3 "></i></a>
+      <a href="#"><i class="bi bi-search"></i></a>
+    </div>
+  </div>
+</section>
+<header id="header" class="header sticky-top w-100">
+  <div class="container-fluid position-relative px-lg-5 ">
+    <div class="d-flex align-items-center justify-content-between">
+    <!-- <a href="./home.html" class="logo d-flex align-items-center me-auto me-xl-0"> -->
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <!-- <h1 class="sitename uppercase"><span>Candid</span>Page</h1> -->
+       <a class="navbar-brand d-flex align-items-center" href="./home.html">
+      <span class="logo-icon me-2">CP</span>
+      <span class="fw-bold fs-4 text-dark">CandidPage</span>
+    </a>
 
+      <!-- <img src="./assets_edr/img/logo.png" alt="Logo" class="img-fluid logo-cls" width="200" height="50"> -->
+    </a>
+    <nav id="navmenu" class="navmenu">
+      <ul class="icon-header">
+        <!-- <li><a href="https://domgys.in" class="active">Home</a></li> -->
+        <li class="dropdown">
+          <a href="./about-us.html"><span>About Us</span> <i class="bi "></i>
+          </a>
+         
+        </li>
+        <li>
+          <a href="./Services.html">Services</a>
+        </li>
+        <li class="dropdown">
+          <a href="./employer.html"><span>Employers</span> <i class="bi "></i></a>
+        </li>
+        <!-- dropdown menu -->
+        <li class="dropdown">
+          <a href="./Candidate.html"><span>Candidates</span> <i class="bi "></i>
+          </a>
+         
+        </li>
+        <!-- dropdown menu -->
+        <li class="dropdown">
+          <a href="./Job-opportunity.html"><span>Current Opportunity</span> <i class="bi "></i>
+          </a>
+          
+        </li>
+        <!-- <li class="dropdown">
+          <a href="#"><span>Domains</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+          </a>
+          <ul>
+            <li><a href="https://domgys.in/in-domain.html">Book .In domain</a></li>
+            <li><a href="https://domgys.in/com-domain.html">Book .Com domain</a></li>
+            <li><a href="https://domgys.in/bank-domain.html">Book .Bank domain </a></li>
+            <li><a href="https://domgys.in/insurance-domain.html">Book .insurance domain</a></li>
+          </ul>
+        </li>
+        <li class="close-md-screen">
+          <a href="https://domgys.in/Become-Our-Partner.html" aria-current="page">
+            Become Our Partner</a>
+        </li> -->
+        <!-- <li class="becom-partner">
+            <a class="becom-partner" href="https://domgys.in/Become-Our-Partner.html" aria-current="page">
+              Sign In</a>
+          </li> -->
+
+        <li class="close-md-screen">
+          <a href="./contact-us.html" aria-current="page">Contact
+            us</a>
+        </li>
+        <li class="dropdown open-md-screen">
+          <a href="#"> <i class="bi bi-three-dots toggle-dropdown"></i>
+          </a>
+          <ul>
+            <li><a href="./blog.html" aria-current="page">Blogs</a></li>
+            <li><a href="./contact-us.html" aria-current="page">Contact
+                us</a></li>
+            <!-- <li><a href="https://domgys.in/Become-Our-Partner.html" aria-current="page">
+                Become Our Partner</a></li> -->
+          </ul>
+        </li>
+        <li class="close-md-screen">
+          <a href="./blog.html" aria-current="page">Blogs</a>
+        </li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <!-- <a class="btn-getstarted" href="https://clients.domgys.in/login"> Sign In</a> -->
+    </div>
+  </div>
+</header>
 <section class="career-bg">
   <!-- carrier hero section  -->
   <div class="container-fluid ca-bg">
@@ -288,29 +326,35 @@
     <div class="container-fluid">
       <div class="container">
         <div class="row footer__primary" id="footer__links">
-          <div class=" col-md-6 col-lg-3 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <!-- <span class="sitename">Domgys</span> -->
-              <img src="../assets/images/LOGOTEST.png" alt="candid page" class="img-fluid">
-            </a>
+          <div class=" col-md-6 col-lg-4 footer-about">
+              <a class="d-block mb-3 navbar-brand d-flex align-items-center gap-1" href="./index.html">
+                <!-- <span class="logo-icon ">CP</span> -->
+                 <span class="logo-icon me-2">CP</span>
+                 
+                <span >CandidPage</span>
+                <span >CandidPage</span>
+              </a>
             <div class="footer-contact ">
               <p>Street Number 67, Vipin Garden, <br>Uttam Nagar, Delhi,110059</p>             
               <p class="mt-3"><strong>Phone:</strong> <span>+91-888-239-2962</span></p>
               <p><strong>Email:</strong> <span>sales@domgys.com</span></p>
-              <p><strong>Email:</strong> <span>info@domgys.com</span></p>
+            <div class="footer-input">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
             </div>
            
           </div>
           <div class=" col col-lg-3">
             <nav>
               <ul>
-                <li><a href="../about-us.html">About us</a></li>
+                <li><a href="./about-us.html">About us</a></li>
                 <li><a href="#">Our team</a></li>
                 <li><a href="#">Join the team</a></li>
                 <li><a href="#">Inclusion & Diversity</a></li>
                 <li><a href="#">Environmental Sustainability</a></li>
-                <li><a href="../Privacy-Policy.html">Privacy Policy</a></li>
-                <li><a href="../Terms-Conditions.html">Terms & Conditions</a></li>
+                <li><a href="./Privacy-Policy.html">Privacy Policy</a></li>
+                <li><a href="./Terms-Conditions.html">Terms & Conditions</a></li>
                 <!-- <li><a href="#">Modern Slavery Policy</a></li> -->
               </ul>
             </nav>
@@ -318,7 +362,7 @@
           <div class=" col col-lg-3">
             <nav>
               <ul>
-                <li><a href="../Candidate.html">Candidates</a></li>
+                <li><a href="./Candidate.html">Candidates</a></li>
                 <li><a href="#">Browse opportunities</a></li>
                 <li><a href="#">Permanent candidates</a></li>
                 <li><a href="#">Freelance candidates</a></li>
@@ -327,8 +371,8 @@
               </ul>
             </nav>
           </div>
-          <div class="col col-lg-3">
-  <nav>
+          <div class="col col-lg-2">
+             <nav>
               <ul>
                 <li><a href="#">Useful Links</a></li>
                 <li><a href="./Privacy-Policy.html">Privacy</a></li>
@@ -340,7 +384,7 @@
               </ul>
             </nav>
             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19081986.98000634!2d72.11121152502997!3d20.75740054346675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e1!3m2!1sen!2sin!4v1757333221358!5m2!1sen!2sin" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           -->
+        -->
           </div>
         </div>
       </div>
