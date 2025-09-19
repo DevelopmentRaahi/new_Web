@@ -413,9 +413,6 @@ max-width: 100%;
   justify-content: end;
   align-items: center;  
 }
-.contact-info {
-  /* margin-right: 150px;   */
-}
 
 .contact-info a{
   color: var(--bg-light-gray);
@@ -577,14 +574,9 @@ max-width: 100%;
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
 @media (max-width: 1850px) {
-  .contact-info {
-    /* margin-right: 100px;   */
   }
-}
 @media (max-width: 1550px) {
-  .contact-info {
-    /* margin-right: 0px;   */
-  }
+  
 }
 
 @media (min-width: 1200px) {

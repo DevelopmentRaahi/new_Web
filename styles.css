@@ -215,7 +215,8 @@
   font-weight: 600;
   padding: 10px 25px;
   display: inline-block;
-  margin-left: -100px;
+  /* margin-left: -100px; */
+  margin-left: -50px;
   position: relative;
   font-family: var(--font-primary);
 }
@@ -227,7 +228,7 @@
 }
 
 .hero-section .first_line {
-  width: 70%;
+  width: fit-content;
   line-height: 1.2;
 }
 
@@ -258,7 +259,7 @@
   padding: 10px 25px;
   display: inline-block;
   margin-top: -1px;
-  margin-left: -20px;
+  /* margin-left: -20px; */
   font-family: var(--font-primary);
 }
 
@@ -271,7 +272,7 @@
   padding: 10px 25px;
   display: inline-block;
   margin-top: -1px;
-  margin-left: 190px;
+  margin-left: 100px;
   position: relative;
   font-family: var(--font-primary);
 }
@@ -425,6 +426,7 @@
 .industry-header-l h2{
   position: relative;
   z-index: 2;
+  font-size: 40px;
 }
 
 .industry-title-l {
@@ -770,9 +772,9 @@
 
 }
 
-.wrapper-heading {
-  font-size: 1.7rem;
+.wrapper-heading {  
   font-weight: 600;
+  font-size: 40px;
   margin: 1rem 0;
   font-family: var(--hero-font);
 }
@@ -783,6 +785,7 @@
   padding: 0 15px;
   display: block;
   width: fit-content;
+  padding-inline: 20px;
 }
 
 .wrapper-heading span:not(:first-child) {
@@ -2621,6 +2624,7 @@ footer::after {
 .text-dark-blue {
   background-color: var(--fill-cyan);
   color: var(--bg-light-gray);
+  font-size: 40px;
   font-weight: 600;
   position: relative;
   z-index: 5;
