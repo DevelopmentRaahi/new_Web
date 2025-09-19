@@ -3566,29 +3566,47 @@ input[type="file"] {
 
 .four-sec-h .hover-box {
     text-align: center;
-    padding: 20px;
-    transition: transform 0.5s ease, background-color 0.5s ease;
+    padding: 20px;    
     cursor: pointer;
     position: relative;
+    transition: all 0.5s ease;
 }
-
 .four-sec-h .hover-box h4 {
-    margin-top: 15px;
+   margin-top: 10px;
+   font-size: 1.3rem;
 }
-
 .four-sec-h .hover-content {
     opacity: 0;
     max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
+    /* overflow: hidden; */
     margin-top: 10px;
-    color: #555;
+    color: #555;   
+    transition:all 0.5s ease;  
+    
+  }
+.hover-content p{
+   margin-inline: auto ;
+  width: 70%;
+  font-size: 15px;
+  color: #555;
+}
+.hb-container:hover:hover .hover-content {
+    opacity: 1;
+    max-height: 200px;    
+}
+.hb-container:hover .hover-box h4{
+  color: var(--fill-cyan);
+}
+.hb-container:hover .hover-box{
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+}
+.hb-container:hover .hover-box  i{
+    display: none;
+    transition: all 0.5s ease;
 }
 
-.four-sec-h .hover-box:hover .hover-content {
-    opacity: 1;
-    max-height: 200px;
-}
+
 
 /* Mobile view fix – paragraph always visible on small screens */
 @media (max-width: 767px) {
