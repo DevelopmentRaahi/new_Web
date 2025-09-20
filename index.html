@@ -29,61 +29,69 @@
 
 <body>
   <!-- header Code -->
-  <header>
-    <div class="" id="backdrop"></div>
-    <nav class="header " id="header">
-      <div class="container-fluid fixed-top header__container ">
-        <div class="header__logo">
-         <a href="./index.html">
-            <!-- <img src="./assets/images/LOGOTEST.png" alt="CP" class="logo-img"></a>  -->
-            <a class="navbar-brand d-flex align-items-center gap-1" href="./index.html">
-            <span class="logo-icon ">CP</span>
-            <span class="fw-bold fs-4 text-dark">CandidPage</span>
-          </a>
-        </div>
-        <button class="nav-toggle-z" id="menu-toggle">&#9776;</button>
-        <div class="header__menu " id="mobile-menu">
-          <div class="header__main">
-            <ul class="nav__items">
-              <li class="nav__item">
-                <a href="./about-us.html" class="nav__link">About Us</a>
-              </li>
-              <li class="nav__item">
-                <a href="./Services.html" class="nav__link">Services</a>
-              </li>
-              <li class="nav__item">
-                <a href="./Job-opportunity.html" class="nav__link">Current opportunity</a>
-              </li>
-              <li class="nav__item">
-                <a href="./blog.html" class="nav__link">Blogs</a>
-              </li>
-              <li class="nav__item">
-                <a href="./employer.html" class="nav__link">Employers</a>
-              </li>
-              <li class="nav__item">
-                <a href="./Candidate.html" class="nav__link">Candidates</a>
-              </li>
-              <li class="nav__item">
-                <a href="./contact-us.html" class="nav__link">Contact us</a>
-              </li>
+  <header id="header" class="header sticky-top w-100">
+    <div class="container-fluid position-relative space-horizontal ">
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- <a href="./home.html" class="logo d-flex align-items-center me-auto me-xl-0"> -->
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <!-- <h1 class="sitename uppercase"><span>Candid</span>Page</h1> -->
+        <a class="navbar-brand d-flex align-items-center" href="./home.html">
+          <span class="logo-icon me-2">CP</span>
+          <span class="fw-bold fs-4 text-dark">CandidPage</span>
+        </a>
+  <!-- <img src="./assets_edr/img/logo.png" alt="Logo" class="img-fluid logo-cls" width="200" height="50"> -->
+  </a>
+  <nav id="navmenu" class="navmenu">
+    <ul class="icon-header">
+      <!-- <li><a href="https://domgys.in" class="active">Home</a></li> -->
+      <li>
+        <a href="./about-us.html">About Us</a>
+      </li>
+            <li>
+              <a href="./Services.html">Services</a>
+            </li>
+            <li>
+              <a href="./employer.html">Employers </a>
+            </li>
+            <!-- dropdown menu -->
+            <li>
+              <a href="./Candidate.html">Candidates</a>
+            </li>
+            <!-- dropdown menu -->
+            <li>
+              <a href="./Job-opportunity.html">Current Opportunity</a>
+            </li>
+            <!-- <li class="dropdown">
+                        <a href="#"><span>Domains</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+                        </a>
+                        <ul>
+                          <li><a href="https://domgys.in/in-domain.html">Book .In domain</a></li>
+                          <li><a href="https://domgys.in/com-domain.html">Book .Com domain</a></li>
+                          <li><a href="https://domgys.in/bank-domain.html">Book .Bank domain </a></li>
+                          <li><a href="https://domgys.in/insurance-domain.html">Book .insurance domain</a></li>
             </ul>
-          </div>
-          <div class="header__right">
-            <ul class="nav__items">
-              <li class="nav__item">
-                <a href="#" class="nav__link">+91-888-239-2962</a>
-              </li>
-              <li class="nav__item">
-                <a href="./log.html" class="nav__link get-started">Login</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link get-started">Register</a>
-              </li>
+          </li>
+          <li class="close-md-screen">
+            <a href="https://domgys.in/Become-Our-Partner.html" aria-current="page">
+              Become Our Partner</a>
+          </li> -->
+          <!-- <li class="becom-partner">
+                        <a class="becom-partner" href="https://domgys.in/Become-Our-Partner.html" aria-current="page">
+                          Sign In</a>
+                      </li> -->
+          <li>
+            <a href="./blog.html" aria-current="page">Blogs</a>
+          </li>
+            <li>
+              <a href="./contact-us.html" aria-current="page">Contact us</a>
+            </li>
             </ul>
-          </div>
-        </div>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+          <!-- <a class="btn-getstarted" href="https://clients.domgys.in/login"> Sign In</a> -->
       </div>
-    </nav>
+      </div>
   </header>
   <!-- test -->
   <section class="test-section-m">

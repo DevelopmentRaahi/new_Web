@@ -213,7 +213,7 @@
   color: white;
   font-size: 40px;
   font-weight: 600;
-  padding: 10px 25px;
+  padding: 16px 25px;
   display: inline-block;
   /* margin-left: -100px; */
   margin-left: -50px;
@@ -774,7 +774,7 @@
 
 .wrapper-heading {  
   font-weight: 600;
-  font-size: 40px;
+  font-size: 35px;
   margin: 1rem 0;
   font-family: var(--hero-font);
 }
@@ -793,6 +793,9 @@
   margin-left: 30px;
 }
 
+.candidate_heading span:not(:first-child) {
+  margin-left:0px;
+}
 .one-wrapper_two {
   padding: 30px 50px;
   color: var(--text-white);
@@ -830,9 +833,12 @@
 .tm-container {
   padding-block: 6rem;
 }
+.tm-container .wrapper-heading span {
+   margin-left: 0;
+}
 
 .tm-container .wrapper_content p {
-  width: 75%;
+  width: 90%;
 }
 
 .tm-left {
@@ -930,9 +936,9 @@
  */
 
 .center-text p {
-  text-align: center;       
-  margin-left: auto;        
-  margin-right: auto;
+  /* text-align: center;        */
+  /* margin-left: auto;        
+  margin-right: auto; */
   max-width: 700px;       
     font-size: 17px;
   line-height: 1.7;
@@ -954,24 +960,20 @@
 }
 
 .ca-text {
-  text-align: center; 
+  /* text-align: center;  */
+}
+.ca-text p:first-child{
+  font-weight: 500;
 }
 
 .ca-text p {
-  margin: 0 auto 1.5rem auto; 
+  /* margin: 0 auto 1.5rem auto;  */
   font-size: 18px;          
-  line-height: 1.8;         
+  line-height:2;         
   max-width: 800px;        
-  text-align: justify;      
-  text-align-last: center;   
+  /* text-align: justify;       */
+  /* text-align-last: center;    */
 }
-
-
-
-
-
-
-
 .wrapper_content p {
   /* font-size: 1rem; */
   font-size: 17px;
@@ -2846,7 +2848,9 @@ footer::after {
   border: none;
   height: 100%;
 }
-
+.career-card  p{
+  padding: 10px;
+}
 .career-dark {
   background-color: #476277;
   color: #fff;
