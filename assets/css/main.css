@@ -625,7 +625,7 @@ max-width: 100%;
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--accent-btn);
   }
 
   .navmenu .dropdown ul {
