@@ -767,11 +767,11 @@
 .one-wrapper_one .imgone {
   border-radius: 100px 0 0 0;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-
+  width: 100%;  
 }
-
+/* .candi-hero .one-wrapper_one{
+  max-height: 50vh;
+} */
 .wrapper-heading {  
   font-weight: 600;
   font-size: 35px;
@@ -800,9 +800,10 @@
   padding: 30px 50px;
   color: var(--text-white);
   gap: 0;
+   background-color: var(--fill-cyan);
 }
 
-.second-about .one-wrapper_two::after {
+/* .second-about .one-wrapper_two::after {
   content: "";
   position: absolute;
   display: block;
@@ -812,7 +813,7 @@
   height: 100%;
   background-color: var(--fill-cyan);
   z-index: -1;
-}
+} */
 
 /* candidate Hero */
 
@@ -820,24 +821,33 @@
   position: relative;
 }
 
+.candi-hero img{
+  max-height: auto;
+  height:510px;
+  width: 100%;
+  object-fit: cover;
+}
 .candi-hero .one-wrapper-two {
   padding: 10px 30px;
   color: var(--text-white);
   background-color: var(--fill-cyan);
 }
 
-.candi-content .wrapper_content p {
+.candi-content 
+.wrapper_content p {
   width: 100%;
 }
 
 .tm-container {
   padding-block: 6rem;
 }
-.tm-container .wrapper-heading span {
+.tm-container 
+.wrapper-heading span {
    margin-left: 0;
 }
 
-.tm-container .wrapper_content p {
+.tm-container 
+.wrapper_content p {
   width: 90%;
 }
 
@@ -845,6 +855,9 @@
   position: relative;
   right: 0px;
   padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: rgba(112, 112, 112, 0.177);
 }
 
@@ -863,12 +876,23 @@
   border-radius: 0 100px 0 0;
   object-fit: cover;
 }
-
-@media (min-width: 1200px) {
+.ab-image img{
+  height:45vh;
+  width: 100%; 
+  object-fit: cover;
+}
+/* 
+@media (min-width: 1300px) {
   .tm-container img {
-    height: 55vh;
+    height: 512px;
+
   }
 }
+@media (max-width: 1300px) {
+  .tm-container img {
+    height: 512px;
+  }
+} */
 
 
 
@@ -959,9 +983,9 @@
   text-align-last: center;   
 }
 
-.ca-text {
-  /* text-align: center;  */
-}
+/* .ca-text {
+  text-align: center; 
+} */
 .ca-text p:first-child{
   font-weight: 500;
 }
@@ -978,7 +1002,7 @@
   /* font-size: 1rem; */
   font-size: 17px;
   font-weight: 400;
-  width: 90%;
+  width: 98%;
   margin-bottom: 1rem;
   justify-content: center;
 }
@@ -1386,6 +1410,9 @@
 
 /* mobile view (≤1024px) */
 @media (max-width: 1024px) {
+  .candi-hero img{
+    height:350px;  
+  }
   .line-wrapper {
     display: none;
   }
@@ -1403,17 +1430,11 @@
   }
   .industry-header-l .industry_content_l::before{
     display: none;
-  }
-  .wrapper-row-lines{
-    gap: 20px;
-  }
+  }  
 
   .hero_container {
     padding: 0 2rem;
   }
-
-  
-
   .tm-left::after {
     width: 100%;
   }
@@ -2012,6 +2033,7 @@ footer {
   margin-bottom: 1rem;
   display: inline-block;
   position: relative;
+  color:#62c9f9;
 }
 
 .footer__primary nav li:first-child a::before {
@@ -3097,7 +3119,7 @@ footer::after {
   right: -100px;  
   max-width: 1400px;
   width: 3px;
-  height:950px;
+  height:964px;
   background-color: #23c6e0;
 }
 .line-wrapper .line-right::after{
@@ -3250,12 +3272,12 @@ footer::after {
     font-size: 32px;
   }
 }
-/* .ca-bg{
-  background: url('https://www.squareboat.com/assets/svg/pattern-2.svg') no-repeat center top  ;
-} */
+.ca-bg{
+  background: linear-gradient(to right, #ffffffa4, #f7f7f7db), url('./assets/images/waves.jpg') no-repeat center center/cover;;  
+}
 .ca-hero{
   position: relative;
-  padding: 7rem 0;
+  padding: 7rem 0; 
 }
 .job-home{
   position: relative;
