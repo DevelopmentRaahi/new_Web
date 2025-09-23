@@ -336,7 +336,6 @@
     right: -230px;
     width: 230px;
   }
-
 }
 
 @media (max-width: 1023px) {
@@ -1410,6 +1409,23 @@
 
 /* mobile view (≤1024px) */
 @media (max-width: 1024px) {
+  .hero_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .industry-title-l{
+    font-size: 2rem;
+  }
+
+  .hero-section .first_line {
+    /* font-size: 2rem; */
+    padding: 10px 20px; 
+  }
+  .line1-r{
+    font-size: 2rem;
+  }
   .candi-hero img{
     height:350px;  
   }
@@ -1469,9 +1485,8 @@
   }
 
   .line1-r,
-  .line3-r {
-    font-size: 24px;
-    padding: 0px 0px;
+  .line3-r {   
+    padding: 10px 15px;    
     margin-left: 0 !important;
   }
 
@@ -1485,12 +1500,7 @@
     padding: 4px 15px;
 
   }
-
-  .hero-section .first_line {
-    font-size: 2rem;
-    padding: 10px 0px;
-    width: 75%;
-  }
+  
 
   .hero-section .first_line .hero_container p {
     width: 100%;
@@ -1589,9 +1599,12 @@
     width: 140px;
     padding: 10px;
   }
+  .wrapper-row-lines{
+    gap: 2rem;
+  }
 
   .box .text-box {
-    left: 1px;
+    right: 0px;
     bottom: -1px;
     width: 173px;
     height: 150px;
@@ -1603,7 +1616,7 @@
   }
 
   .box .text-box-two {
-    right: -2px;
+    left:-0px;
     bottom: -1px;
     width: 173px;
     height: 150px;
@@ -3273,7 +3286,8 @@ footer::after {
   }
 }
 .ca-bg{
-  background: linear-gradient(to right, #ffffffa4, #f7f7f7db), url('./assets/images/waves.jpg') no-repeat center center/cover;;  
+  background: linear-gradient(to right, #e1e0e0d7, #ffffffdb), url('assets/images/job-opportunity.jpg') no-repeat center center/cover;
+ backdrop-filter: blur(10px);
 }
 .ca-hero{
   position: relative;
@@ -3698,4 +3712,16 @@ input[type="file"] {
         opacity: 1 !important;
         max-height: 500px !important;
     }
+}
+
+@media (max-width: 1024px) {
+   .text-dark-blue,
+   .sales-section-l h1,
+   .trusted-title-w,
+   .industry-header-l h2,
+   .title-mn,
+   .line2-r,
+   .line3-r {
+    font-size: 2rem;
+  }
 }
