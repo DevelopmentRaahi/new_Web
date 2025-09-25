@@ -3725,3 +3725,15 @@ input[type="file"] {
     font-size: 2rem;
   }
 }
+
+/* teal btn */
+.btn-outline-teal {
+  border: 1px solid #00393c;
+  color: #00393c;
+  background-color: transparent;
+}
+
+.btn-outline-teal:hover {
+  background-color: #00393c;
+  color: #fff;
+}
