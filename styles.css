@@ -3286,7 +3286,7 @@ footer::after {
   }
 }
 .ca-bg{
-  background: linear-gradient(to right, #e1e0e0d7, #ffffffdb), url('assets/images/job-opportunity.jpg') no-repeat center center/cover;
+  background: linear-gradient(to right, #ddd9d9d7, #fff4f4db), url('assets/images/job-opportunity.jpg') no-repeat center center/cover;
  backdrop-filter: blur(10px);
 }
 .ca-hero{
@@ -3736,4 +3736,30 @@ input[type="file"] {
 .btn-outline-teal:hover {
   background-color: #00393c;
   color: #fff;
+}
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 93px; 
+    right: 25px;
+    background-color: #25D366; 
+    color: white;
+    width: 47px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float i {
+    font-size: 28px;
 }
