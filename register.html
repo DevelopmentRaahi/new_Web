@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidpage</title>
+
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="./assets/images/LOGOTEST.png" type="image/x-icon">
+
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <!-- bootstrap icons link -->
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+
+  <!-- swiper CSS -->
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- aos link -->
+  <!-- <link href="./assets/vendor/aos/aos.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- header Code -->
+  <section>
+    <div class="container-fluid pre-header space-horizontal">
+      <div class="contact-info d-flex align-items-center">
+        <a href="#"><i class="bi bi-chat-dots me-1"></i>Chat with us</a>
+         
+       <li class="dropdown">
+        <a href="#" class="dropdown-toggle"><span>Apply as candidate</span> 
+          <!-- <i class="bi bi-chevron-down "></i> -->
+         </a>
+            <ul class="dropdown-menu">
+                 <li> <a href="./log.html"><i class="bi bi-person me-1"></i>Login</a></li>
+                 <li> <a href="./register.html"><i class="bi bi-person-check me-1"></i>Register</a></li>
+            </ul>
+       </li>
+
+
+       <!-- <a href="./log.html"><i class="bi bi-person me-1"></i>Login</a> -->
+        <!-- <a href="#"><i class="bi bi-person-check me-1"></i>Register</a> -->
+        <!-- <a href="#"><i class="bi bi-cart3 "></i></a>
+        <a href="#"><i class="bi bi-search"></i></a> -->
+      </div>
+    </div>
+    </section>
+    <header id="header" class="header sticky-top w-100">
+    <div class="container-fluid position-relative space-horizontal ">
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- <a href="./home.html" class="logo d-flex align-items-center me-auto me-xl-0"> -->
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <!-- <h1 class="sitename uppercase"><span>Candid</span>Page</h1> -->
+        <a class="navbar-brand d-flex align-items-center" href="./home.html">
+          <span class="logo-icon me-2">CP</span>
+          <span class="fw-bold fs-4 text-dark">CandidPage</span>
+        </a>
+
+        <!-- <img src="./assets_edr/img/logo.png" alt="Logo" class="img-fluid logo-cls" width="200" height="50"> -->
+        </a>
+        <nav id="navmenu" class="navmenu">
+          <ul class="icon-header">
+            <!-- <li><a href="https://domgys.in" class="active">Home</a></li> -->
+            <li>
+              <a href="./about-us.html">About Us</a>
+            </li>
+            <li>
+              <a href="./Services.html">Services</a>
+            </li>
+            <li>
+              <a href="./employer.html">Employers </a>
+            </li>
+            <!-- dropdown menu -->
+            <li>
+              <a href="./Candidate.html">Candidates</a>
+            </li>
+            <!-- dropdown menu -->
+            <li>
+              <a href="./Job-opportunity.html">Current Opportunity</a>
+            </li>
+            
+            <!-- <li class="dropdown">
+          <a href="#"><span>Domains</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
+          </a>
+          <ul>
+            <li><a href="https://domgys.in/in-domain.html">Book .In domain</a></li>
+            <li><a href="https://domgys.in/com-domain.html">Book .Com domain</a></li>
+            <li><a href="https://domgys.in/bank-domain.html">Book .Bank domain </a></li>
+            <li><a href="https://domgys.in/insurance-domain.html">Book .insurance domain</a></li>
+          </ul>
+        </li>
+        <li class="close-md-screen">
+          <a href="https://domgys.in/Become-Our-Partner.html" aria-current="page">
+            Become Our Partner</a>
+        </li> -->
+            <!-- <li class="becom-partner">
+            <a class="becom-partner" href="https://domgys.in/Become-Our-Partner.html" aria-current="page">
+              Sign In</a>
+          </li> -->
+          <li>
+            <a href="./blog.html" aria-current="page">Blogs</a>
+          </li>
+          <li>
+            <a href="./contact-us.html" aria-current="page">Contact us</a>
+          </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        <!-- <a class="btn-getstarted" href="https://clients.domgys.in/login"> Sign In</a> -->
+        </div>
+      </div>
+    </header>
+  <!-- test -->
+
+ <section class="register-section">
+    <h2>Basic Registration</h2>
+    <form>
+      <!-- Full Name -->
+      <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-control" placeholder="Enter your full name" required>
+      </div>
+
+      <!-- Email ID -->
+      <div class="mb-3">
+        <label class="form-label">Email ID (for login)</label>
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Mobile Number -->
+      <div class="mb-3">
+        <label class="form-label">Mobile Number</label>
+        <input type="tel" class="form-control" placeholder="Enter your mobile number" required>
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" placeholder="Create a password" required>
+      </div>
+
+      <!-- Location -->
+      <div class="mb-3">
+        <label class="form-label">Location / City</label>
+        <input type="text" class="form-control" placeholder="Enter your current location" required>
+      </div>
+
+      <!-- Preferred Job Location -->
+      <div class="mb-3">
+        <label class="form-label">Preferred Job Location(s)</label>
+        <input type="text" class="form-control" placeholder="e.g. Delhi, Mumbai, Bangalore" required>
+      </div>
+
+      <!-- Total Experience -->
+      <div class="mb-3">
+        <label class="form-label">Total Experience</label>
+        <select class="form-select" required>
+          <option value="" selected disabled>Select experience</option>
+          <option>Fresher</option>
+          <option>1-2 Years</option>
+          <option>3-5 Years</option>
+          <option>5+ Years</option>
+        </select>
+      </div>
+
+      <!-- Resume Upload -->
+      <div class="mb-3">
+        <label class="form-label">Upload Resume (PDF/DOC)</label>
+        <input type="file" class="form-control" accept=".pdf,.doc,.docx" required>
+      </div>
+
+      <!-- Educational Details -->
+      <div class="mb-3">
+        <label class="form-label">Educational Details</label>
+        <textarea class="form-control" rows="3" placeholder="Highest qualification, specialization, year of passing, university/college" required></textarea>
+      </div>
+
+      <!-- LinkedIn Profile -->
+      <div class="mb-3">
+        <label class="form-label">LinkedIn / Portfolio URL</label>
+        <input type="url" class="form-control" placeholder="Enter your LinkedIn or portfolio link" required>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-teal">Register</button>
+      </div>
+    </form>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer code -->
+  <footer>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row footer__primary" id="footer__links">
+          <div class=" col-md-6 col-lg-4 footer-about">
+            <a class="d-block mb-3 navbar-brand d-flex align-items-center gap-1" href="./home.html">
+              <!-- <span class="logo-icon ">CP</span> -->
+              <span class="logo-icon me-2">CP</span>
+
+              <span>CandidPage</span>
+              <span>CandidPage</span>
+              </a>
+            <div class="footer-contact ">
+              <p>Street Number 67, Vipin Garden, <br>Uttam Nagar, Delhi,110059</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+91-888-239-2962</span></p>
+              <p><strong>Email:</strong> <span>sales@domgys.com</span></p>
+              <div class="footer-input">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit"><i class="bi bi-send-fill"></i></button>
+              </div>
+            </div>
+
+          </div>
+          <div class=" col col-lg-3">
+            <nav>
+              <ul>
+                <li><a href="./about-us.html">About us</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Join the team</a></li>
+                <li><a href="./Privacy-Policy.html">Privacy Policy</a></li>
+                <li><a href="#">Inclusion & Diversity</a></li>
+                <li><a href="./Terms-Conditions.html">Terms & Conditions</a></li>
+                <li><a href="#">Environmental Sustainability</a></li>
+
+
+                <!-- <li><a href="#">Modern Slavery Policy</a></li> -->
+              </ul>
+            </nav>
+          </div>
+          <div class=" col col-lg-3">
+            <nav>
+              <ul>
+                <li><a href="./Candidate.html">Candidates</a></li>
+
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Skills hub</a></li>
+                <li><a href="#">Browse opportunities</a></li>
+                <li><a href="#">Permanent candidates</a></li>
+                <li><a href="#">Freelance candidates</a></li>
+
+              </ul>
+            </nav>
+          </div>
+          <div class="col col-lg-2">
+            <nav>
+              <ul>
+                <li><a href="#">Useful Links</a></li>
+                <li><a href="./Terms-Conditions.html">Terms</a></li>
+                <li><a href="./Privacy-Policy.html">Privacy</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="#">Accessibility</a></li>
+                   <li><a href="./contact-us.html" style="font-size:1.3rem;"><b>Contact Us</b></a></li>
+              </ul>
+            </nav>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19081986.98000634!2d72.11121152502997!3d20.75740054346675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e1!3m2!1sen!2sin!4v1757333221358!5m2!1sen!2sin" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="container-fluid copyright">
+    <div class="container">
+      <div class="row footer__bottom align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="mb-0">Copyright
+            <script>document.write(new Date().getFullYear());</script> CandidPage. All rights reserved.
+          </p>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" title="Go to top">↑</button>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/918882392962" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+
+  <!-- CDN scripts -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Bootstrap sciprts -->
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper sciprts -->
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- AOS sciprts -->
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <!-- custom sciprts -->
+  <script src="./assets/js/main.js"></script>
+<script>
+  document.querySelectorAll(".dropdown-toggle").forEach(drop => {
+    drop.addEventListener("click", function(e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("active");
+    });
+  });
+</script>
+
+  <script>
+
+    const swiper = new Swiper('.swiper-f', {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    //safe Swiper Init After DOM Load 
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // swiper init
+      const swiper = new Swiper('.swiper-icon-l', {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+      // swiper init
+      new Swiper(".swiper-trusted-w", {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+    });
+
+
+    AOS.init({
+      duration: 1000,
+      once: true,
+      disable: false,
+      startEvent: 'DOMContentLoaded',
+      mirror: false,
+      easing: 'ease-in',
+      offset: 120,
+      debounceDelay: 50,
+      throttleDelay: 99,
+      anchorPlacement: 'top-bottom',
+    });
+
+    setTimeout(() => {
+      AOS.refresh(); // ensures AOS sees new DOM position
+    }, 500);
+
+  </script>
+</body>
+
+</html>

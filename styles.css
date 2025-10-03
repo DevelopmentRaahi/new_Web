@@ -3763,3 +3763,40 @@ input[type="file"] {
 .whatsapp-float i {
     font-size: 28px;
 }
+
+
+/* register form */
+.register-section {
+      max-width: 750px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .register-section h2 {
+      color: teal;
+      font-weight: 700;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .form-label {
+      font-weight: 500;
+      color: #333;
+    }
+    .form-control:focus {
+      border-color: teal;
+      box-shadow: 0 0 5px rgba(0,128,128,0.3);
+    }
+    .btn-teal {
+      background-color: teal;
+      color: #fff;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+    .btn-teal:hover {
+      background-color: #006d6d;
+      color: #fff;
+    }
