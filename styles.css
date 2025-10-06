@@ -3889,3 +3889,107 @@ input[type="file"] {
   }
 }
 
+ .section-subtitle {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #4d7a66;
+    }
+
+    .section-heading {
+      font-size: 1.9rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-description {
+      color: #5c6f63;
+      font-size: 0.95rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    /* WHAT WE DO BEST boxes */
+    .info-box {
+      background: #fff;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .info-box i {
+      font-size: 1.4rem;
+      color: #4d7a66;
+      margin-right: 0.75rem;
+    }
+
+    .info-text {
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #204938;
+    }
+
+    .info-desc {
+      font-size: 0.9rem;
+      color: #5f7065;
+    }
+
+    .arrow-icon {
+      color: #4d7a66;
+      font-size: 1rem;
+    }
+
+    /* Roles Section */
+    .roles-section {
+      margin-top: 4rem;
+    }
+
+    .role-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 2rem;
+      height: 100%;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .role-card h5 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #204938;
+    }
+
+    .role-card p {
+      font-size: 0.9rem;
+      color: #5f7065;
+      line-height: 1.6;
+    }
+
+    .learn-more {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: #4d7a66;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 768px) {
+      .info-box {
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-start;
+        border-radius: 20px;
+      }
+      .info-text {
+        margin-bottom: 0.5rem;
+      }
+    }
