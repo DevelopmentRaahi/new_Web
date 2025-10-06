@@ -4195,3 +4195,108 @@ input[type="file"] {
         margin-top: 2rem;
       }
     }
+    /* TOP GREEN SECTION */
+    .different-section {
+      background-color: #16442f; 
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem 6rem;
+      position: relative;
+    }
+
+    .different-section h6 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #b1c8b5;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .different-section h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .different-section p {
+      font-size: 0.95rem;
+      color: #d9e3db;
+      margin-bottom: 0;
+    }
+
+    /* THREE CARDS SECTION */
+    .info-cards {
+      margin-top: -4rem;
+      margin-bottom: 5rem;
+    }
+
+    .info-card {
+      background: transparent;
+      border: none;
+      text-align: center;
+    }
+
+    .info-card img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 1.2rem;
+    }
+
+    .info-card h5 {
+      font-size: 1.1rem;
+      color: #1a3c32;
+      font-weight: 500;
+    }
+
+    .info-card p {
+      font-size: 0.9rem;
+      color: #52655c;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+    /* CALL-TO-ACTION BOX */
+    .cta-box {
+      background-color: #e7d9b5;
+      border-radius: 25px;
+      padding: 2.5rem 3rem;
+      max-width: 1200px;
+      margin: 0 auto 5rem;
+      position: relative;
+    }
+
+    .cta-box h3 {
+      font-size: 1.7rem;
+      color: #1a3c32;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    .cta-btn {
+      background-color: #1a3c32;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #356b5a;
+    }
+
+    @media (max-width: 992px) {
+      .info-card img {
+        border-radius: 15px;
+      }
+      .cta-box {
+        text-align: center;
+        padding: 2rem;
+      }
+    }
