@@ -3802,8 +3802,19 @@ input[type="file"] {
     }
 
     /* employer page */
+
+.curved-img {
+  width: 1000px;  
+  height: auto;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+  display: block;
+   margin-left: 0%;  
+}
+
+
     .hire-section-m {
-  background-color: #f5f7f5;
+  background-color: #eaeeea;
 }
 
 .filled-role-box-m {
