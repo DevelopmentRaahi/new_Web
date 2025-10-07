@@ -3878,8 +3878,18 @@ input[type="file"] {
 .confidence-section-m h3 {
   font-size: 3rem;
 }
-
-
+.heading-large{
+  font-size: 2.8rem;
+   line-height: 1.2;
+}
+.heading-small{
+  font-size: 1.6rem;
+  margin-top: -20px;
+  
+}
+/* .benefits-section-m h2{
+  font-size: 2rem;
+} */
 
 .benefit-item-m {
   align-items: flex-start;
