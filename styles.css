@@ -4152,9 +4152,11 @@ input[type="file"] {
 
 .section-description {
   color: #5c6f63;
-  font-size: 0.95rem;
-  max-width: 720px;
-  margin: 0 auto 3rem;
+  font-size: 1rem;
+  max-width: 1250px;
+ margin: 1.5rem auto 2rem; 
+  text-align: center;
+  
 }
 
 /* --- Company Cards --- */
