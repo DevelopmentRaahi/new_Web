@@ -4124,120 +4124,129 @@ input[type="file"] {
       }
     } 
      /* Section Header */
-    .section-subtitle {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 0.75rem;
-      color: #4d7a66;
-      font-weight: 600;
-    }
+   /* Section Header */
+.section-subtitle {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  color: #4d7a66;
+  font-weight: 600;
+}
 
-    .section-heading {
-      font-size: 2rem;
-      font-weight: 500;
-      color: #003f3c;
-    }
+.section-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #003f3c;
+}
 
-    .section-description {
-      color: #5c6f63;
-      font-size: 0.95rem;
-      max-width: 700px;
-      margin: 0 auto 3rem;
-    }
+.section-description {
+  color: #5c6f63;
+  font-size: 0.95rem;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
 
-    /* Card Styling */
-    .company-card {
-     background: #fef0f0;
-     border: none;
-     border-radius: 15px;
-     box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-     overflow: hidden;
-     height: 350px; 
-     padding: 1.2rem;
-    }
+/* --- Company Cards --- */
+.company-card {
+  background: #f9faf9;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  height: auto;
+  transition: transform 0.2s ease;
+}
 
-    .company-logo {
-      font-weight: 700;
-      font-size: 1rem;
-      color: #000;
-    }
+.company-card:hover {
+  transform: translateY(-4px);
+}
 
-    .company-sub {
-      text-transform: uppercase;
-      font-size: 0.7rem;
-      color: #7a857c;
-      margin-top: -3px;
-      font-weight: 600;
-    }
+.company-logo {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000;
+}
 
-    .person-image {
-      width: 100%;
-      border-radius: 15px;
-      object-fit: cover;
-    }
+.company-sub {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #7a857c;
+  font-weight: 600;
+  margin-top: 2px;
+}
 
-    .card-title {
-      font-size: 0.95rem;
-      color: #003f3c;
-      padding: 0.75rem 0 0;
-       line-height: 1.4;
-    }
+.person-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;  /* ✅ Keeps perfect proportion */
+  filter: grayscale(100%);
+}
 
-    /* Testimonial Card */
-    .testimonial-card {
-      background-color: #fff8f0;
-      border-radius: 20px;
-      padding: 2rem;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-    }
+.card-title {
+  font-size: 0.95rem;
+  color: #003f3c;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
 
-    .testimonial-card::before {
-      content: "“";
-      color: #f6b142;
-      font-size: 2rem;
-      position: absolute;
-      top: 1.5rem;
-      left: 2rem;
-    }
+/* --- Testimonial Card --- */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+}
 
-    .testimonial-text {
-      font-size: 0.95rem;
-      color: #003f3c;
-      line-height: 1.7;
-      margin-top: 1.5rem;
-    }
+.testimonial-stars {
+  color: #f6b142;
+  font-size: 1.5rem;
+}
 
-    .testimonial-stars {
-      color: #f6b142;
-      margin-bottom: 0.5rem;
-    }
+.testimonial-text {
+  font-size: 1rem;
+  color: #f4f4f4;
+  line-height: 1.7;
+  margin-top: 0rem;
+}
 
-    .testimonial-author {
-      font-weight: 600;
-      color: #1a3c32;
-      margin-bottom: 0;
-    }
+.author-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-    .testimonial-role {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      color: #4d7a66;
-    }
+.testimonial-author {
+  font-weight: 600;
+  color: #1a3c32;
+}
 
-    .author-img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      position: absolute;
-      top: -30px;
-      right: 30px;
-      border: 3px solid #fff8f0;
-      object-fit: cover;
-    }
+.testimonial-role {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #4d7a66;
+}
+
+/* --- Button --- */
+.see-more-btn {
+  background-color: #004c3f;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+
+.see-more-btn:hover {
+  background-color: #03624e;
+}
+
 
     /* Button */
     .see-more-btn {
@@ -4295,7 +4304,7 @@ input[type="file"] {
 
     /* THREE CARDS SECTION */
     .info-cards {
-      margin-top: -4rem;
+      margin-top: 1rem;
       margin-bottom: 5rem;
     }
 
