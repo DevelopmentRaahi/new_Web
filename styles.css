@@ -4399,3 +4399,65 @@ input[type="file"] {
         padding: 2rem;
       }
     }
+
+  /* register page */
+    .build-section-m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30vh;
+  background-color: #f8f4f4;
+  padding: 2rem;
+    padding: 3rem 3rem 2rem;
+}
+
+.build-heading-m {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 0.5rem;
+}
+
+.build-text-m {
+  color: #5c6f63;
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.5;
+  margin: 4px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .build-heading-m {
+    font-size: 2.3rem;
+  }
+  .build-text-m {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .build-section-m {
+    padding: 3rem 1.5rem;
+  }
+  .build-heading-m {
+    font-size: 1.9rem;
+  }
+  .build-text-m {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .build-heading-m {
+    font-size: 1.6rem;
+  }
+  .build-text-m {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+}
+
