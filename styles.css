@@ -3783,6 +3783,7 @@ input[type="file"] {
     .form-label {
       font-weight: 500;
       color: #333;
+      text-align: left;
     }
     .form-control:focus {
       border-color: teal;
@@ -3948,7 +3949,378 @@ input[type="file"] {
     .service-section-m {
   background-color: #f2f5f4;
 }
+.info-box-m {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #003f3c;
+      color: #fff;
+      padding: 20px 60px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-bottom: 10px;
+    }
 
+    .info-box-m:hover {
+      background: #064c49;
+    }
+
+    .info-left-m {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .info-left-m i {
+      font-size: 30px;
+    }
+
+    .info-left-m h5 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .info-left-m p {
+      margin: 0;
+      font-size: 17px;
+      color: #d1e7d3;
+    }
+
+    .arrow-icon-m {
+      font-size: 24px;
+      transition: transform 0.3s;
+    }
+
+    .arrow-icon-m.rotate {
+      transform: rotate(180deg);
+    }
+
+    /* Detail section (same for all 3) */
+    .detail-box {
+      display: none;
+      background: #fff;
+      border-radius: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+    }
+
+    .detail-box.active {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .detail-left {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .detail-left img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .detail-left p {
+      font-size: 18px;
+      color: #444;
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+
+    /* ---------- RIGHT SECTION ---------- */
+    /* ---------- RIGHT SECTION ---------- */
+/* ---------- RIGHT SECTION ---------- */
+.detail-right {
+  flex: 1;
+  min-width: 320px;
+  padding-left: 40px;
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* About the Search heading */
+.detail-right h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  color: #0f3d2e;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 15px; 
+  margin-top: 10px;
+}
+
+/* vertical yellow line on heading */
+.detail-right h4::after {
+   content: ""; 
+   position: absolute; 
+   left: -15px; 
+   top: 0; 
+   width: 2px; 
+   height: 2700%; 
+   background-color: #f2b01e; 
+   border-radius: 3px;
+   }
+
+/* points*/
+.detail-right ul {
+  list-style: none;
+  padding: 0;
+  /* margin: 25px 0 35px 5px; */
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.detail-right ul li {
+  margin-bottom: 18px;
+  font-size: 16px; /* slightly bigger than h4 */
+  color: #333;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+
+.detail-right ul li i {
+  color: #0f3d2e;
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 3px;
+ 
+}
+/* Logo section */
+.logos {
+  margin-top: 20px;
+}
+
+.logos h5 {
+  font-size: 18px;
+  color: #0f3d2e;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 15px;
+  position: relative;
+}
+
+/* green vertical line beside heading */
+/* .logos h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #0f3d2e;
+  border-radius: 3px;
+} */
+
+/* logo grid */
+.logo-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 20px; /* row, column spacing */
+  justify-items: center;
+  align-items: center;
+}
+
+.logo-list img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-list img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* centered learn more button */
+.learn-more-btn {
+  display: inline-block;
+  background: #0f3d2e;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 35px auto 0;
+  font-size: 15px;
+  font-weight: 500;
+  width: auto;
+  text-align: center;
+}
+
+.learn-more-btn:hover {
+  background: #14573e;
+}
+
+/* Recently Placed Roles heading */
+/* .logos h5 {
+  font-size: 18px;
+  color: #0f3d2e;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 15px;
+  position: relative;
+}
+.logos img{
+  width: 150px;
+  height: 70px;
+  
+} */
+
+/* green vertical line for recently placed roles */
+/* .logos h5::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #0f3d2e; /* green */
+  /* border-radius: 3px;
+}  */
+
+/* logo grid: 3 per row, responsive */
+/* .logo-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.logo-list img {
+  width: 90px;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.logo-list img:hover {
+  transform: scale(1.05);
+} */
+
+/* Learn More button */
+.learn-more-btn {
+  display: inline-block;
+  background: #0f3d2e;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin: 35px auto 0;
+  font-size: 15px;
+  font-weight: 500;
+  width: auto;
+  text-align: center;
+}
+
+.learn-more-btn:hover {
+  background: #14573e;
+}
+
+
+/* .detail-right {
+  flex: 1;
+  min-width: 320px;
+  padding-left: 40px;
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.detail-right h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+  color: #0f3d2e;
+  font-weight: 600;
+  
+}
+
+.detail-right h4::after {
+  content: "";
+  position: absolute;
+  left: -15px;       
+  top: 0;
+  width: 2px;
+  height: 3000%;
+  background-color: #f2b01e; 
+  border-radius: 3px;
+  
+}
+
+
+.detail-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+  padding-left: 40px;
+}
+
+.detail-right ul li {
+  margin-bottom: 14px;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: flex-start;
+}
+
+.detail-right ul li i {
+  color: #0f3d2e;
+  margin-right: 10px;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.logos {
+  margin-top: 30px;
+}
+
+.logos h5 {
+  font-size: 16px;
+  color: #0f3d2e;
+  margin-bottom: 15px;
+}
+
+.logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.logo-list img {
+  width: 90px;
+  opacity: 0.85;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  background: #0f3d2e;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.learn-more-btn:hover {
+  background: #14573e;
+} */
+
+/* 
 .info-box-m {
   background: #fffdf8; 
   border-radius: 50px;
@@ -3995,7 +4367,7 @@ input[type="file"] {
 .arrow-icon-m {
   color: #1f4736;
   font-size: 1.2rem;
-}
+} */
 
     /* .info-box {
       background: #fff;
@@ -4496,5 +4868,58 @@ input[type="file"] {
 
 .view-more-btn-m:hover {
   background-color: #003f3c;
+}
+/* emp page contact form */
+/* Make both columns same height */
+.contact-section-m .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: -40px;
+}
+
+/* Left image styling */
+.contact-img-m {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Ensure left column stretches */
+.contact-section-m .col-lg-6:first-child {
+  display: flex;
+}
+
+.contact-section-m .col-lg-6:first-child img {
+  flex: 1 1 auto; /* Fill the column height */
+}
+
+/* Right form styling */
+.contact-form-m {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+}
+
+/* Responsive behavior */
+@media (max-width: 992px) {
+  .contact-section-m .row {
+    flex-direction: column;
+  }
+
+  .contact-img-m {
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-form-m {
+    height: auto;
+  }
 }
 
