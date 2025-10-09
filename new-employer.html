@@ -194,9 +194,49 @@
       </div>
     </div>
 
-    <button class="btn view-more-btn-m px-5 py-2 fw-semibold text-white rounded-pill">
-      VIEW MORE
-    </button>
+    <!-- Hidden Section (View More Logos) -->
+  <div id="more-logos" class="d-none">
+    <div class="row justify-content-center align-items-center mb-4">
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/upstart.png" class="img-fluid" alt="Logo 11">
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/pathlight.png" class="img-fluid" alt="Logo 12">
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/parsec.png" class="img-fluid" alt="Logo 13">
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/Lumos.png" class="img-fluid" alt="Logo 14">
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/sentry.png" class="img-fluid" alt="Logo 15">
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center mb-4">
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/decodable.png" class="img-fluid" alt="Logo 16">
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/disco.png" class="img-fluid" alt="Logo 17">
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/medallion.png" class="img-fluid" alt="Logo 18">
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/lexcheck.png" class="img-fluid" alt="Logo 19">
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <img src="./assets/images/kyndi.png" class="img-fluid" alt="Logo 20">
+      </div>
+    </div>
+  </div>
+   <!-- View More Button -->
+  <button id="view-more-btn" class="btn view-more-btn-m px-5 py-2 fw-semibold text-white rounded-pill" style="background-color:#003f3c;">
+    VIEW MORE
+  </button>
+
   </div>
 </section>
 
@@ -382,6 +422,58 @@
   </section>
 <!-- review msg -->
  <section class="testimonial-section bg-light">
+    <div class="row g-0 align-items-stretch">
+      <!-- Image -->
+      <div class="col-lg-6">
+        <img src="./assets/images/review.jpg" alt="Testimonial Person" class="testimonial-image">
+      </div>
+
+      <!-- Text Content -->
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="testimonial-text w-100">
+          <i class="bi bi-quote quote-icon"></i>
+          <p class="testimonial-quote">
+           CandidPage helped us bring in exceptional industry experts across the three pillars of our go-to-market strategy —
+            Sales, Marketing, and Customer Success. From Senior Director to Chief Revenue Officer, 
+            <br><br>
+          Every role was filled with the right talent — and ahead of schedule.
+          </p>
+          <p class="testimonial-author text-blackmb-1">Charles Lu</p>
+          <p class="testimonial-role text-white" >Senior Director of Operations, LexCheck</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- right section -->
+ <section class="testimonial-section-right bg-light">
+    <div class="row g-0 align-items-stretch">
+     
+
+      <!-- Text Content -->
+      <div class="col-lg-6 d-flex align-items-center">
+        <div class="testimonial-text-right w-100">
+          <i class="bi bi-quote quote-icon"></i>
+          <p class="testimonial-quote-right">
+           CandidPage helped us bring in exceptional industry experts across the three pillars of our go-to-market strategy —
+            Sales, Marketing, and Customer Success. From Senior Director to Chief Revenue Officer, 
+            <br><br>
+          Every role was filled with the right talent — and ahead of schedule.
+          </p>
+          <p class="testimonial-author text-blackmb-1">Charles Lu</p>
+          <p class="testimonial-role text-white" >Senior Director of Operations, LexCheck</p>
+        </div>
+      </div>
+
+       <!-- Image -->
+      <div class="col-lg-6">
+        <img src="./assets/images/review.jpg" alt="Testimonial Person" class="testimonial-image-right">
+      </div>
+    </div>
+  </section>
+
+  <!-- left sec -->
+   <section class="testimonial-section bg-light">
     <div class="row g-0 align-items-stretch">
       <!-- Image -->
       <div class="col-lg-6">
@@ -634,7 +726,20 @@
   <script src="./assets/vendor/aos/aos.js"></script>  
   <!-- custom sciprts -->
   <script src="./assets/js/main.js"></script>
-  
+  <script>
+  document.getElementById("view-more-btn").addEventListener("click", function() {
+    const moreLogos = document.getElementById("more-logos");
+    moreLogos.classList.toggle("d-none");
+
+    // Change button text after showing logos
+    if (!moreLogos.classList.contains("d-none")) {
+      this.textContent = "VIEW LESS";
+    } else {
+      this.textContent = "VIEW MORE";
+    }
+  });
+</script>
+
   <script>
     
     const swiper = new Swiper('.swiper-f', {
