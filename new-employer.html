@@ -538,6 +538,7 @@
     </div>
   </section>
 <!-- review msg -->
+<div class="testimonial-slider-container">
  <section class="testimonial-section bg-light">
     <div class="row g-0 align-items-stretch">
       <!-- Image -->
@@ -613,7 +614,7 @@
       </div>
     </div>
   </section>
-
+</div>
   <!--  roles we place-->
  <section class="container text-center py-5">
   <p class="section-subtitle mb-2">ROLES WE PLACE</p>
@@ -918,6 +919,43 @@
         arrow.classList.toggle('rotate');
       });
     });
+  </script>
+  <script>
+    const sections = document.querySelectorAll(".testimonial-slider-container section");
+let currentIndex = 0;
+let isScrolling = false;
+
+window.addEventListener("wheel", (e) => {
+  if (isScrolling) return;
+
+  // scroll down
+  if(e.deltaY > 0 && currentIndex < sections.length - 1) {
+    isScrolling = true;
+
+    sections[currentIndex].style.transform = "translateX(-50%) translateY(-100%)";
+    sections[currentIndex].style.zIndex = 0;
+
+    currentIndex++;
+    sections[currentIndex].style.transform = "translateX(-50%) translateY(0)";
+    sections[currentIndex].style.zIndex = 1;
+
+    setTimeout(() => { isScrolling = false; }, 600); // wait for animation
+  }
+  // scroll up
+  else if(e.deltaY < 0 && currentIndex > 0) {
+    isScrolling = true;
+
+    sections[currentIndex].style.transform = "translateX(-50%) translateY(100%)";
+    sections[currentIndex].style.zIndex = 0;
+
+    currentIndex--;
+    sections[currentIndex].style.transform = "translateX(-50%) translateY(0)";
+    sections[currentIndex].style.zIndex = 1;
+
+    setTimeout(() => { isScrolling = false; }, 600);
+  }
+});
+
   </script>
   <script>
     
