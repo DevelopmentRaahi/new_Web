@@ -4458,6 +4458,7 @@ input[type="file"] {
       max-width: 1200px;
       overflow: hidden;
       border-radius: 0;
+      
     }
      .testimonial-section-right {
       margin: 4rem auto;
@@ -4529,6 +4530,7 @@ input[type="file"] {
       letter-spacing: 0.5px;
     }
 
+    
     @media (max-width: 991px) {
       .testimonial-section {
         border-radius: 20px;
@@ -4543,6 +4545,7 @@ input[type="file"] {
         border-radius: 20px 20px 0 0;
       }
     } 
+    
      /* Section Header */
    /* Section Header */
 .section-subtitle {
@@ -4947,3 +4950,103 @@ input[type="file"] {
   transform: translateX(-50%) translateY(0);
   z-index: 1;
 }
+
+/* case study */
+
+.case-study-m {
+  background-color: #fff;
+  color: #000;
+}
+
+.profile-card-m img {
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+/* Role & Requirement */
+.role-box-m {
+  background-color: #f8f9fa;
+  border-left: 4px solid #d1d1d1;
+}
+
+.requirement-box-m {
+  background-color: #fceaea;
+  border-left: 4px solid #ff7373;
+}
+
+.challenges-box-m {
+  background-color: #fceafc;
+  border-left: 4px solid #f873ff;
+}
+
+/* Help Section */
+.help-box-m {
+  background-color: #e9fbfc;
+  border-left: 6px solid #003f42;
+  color: #111;
+}
+
+/* Result & Success */
+.result-box-m {
+  background-color: #f7f7f7;
+  border-left: 4px solid #000;
+}
+
+.success-box-m {
+  background-color: #000;
+  color: #fff;
+  border-left: 4px solid #000;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 992px) {
+  .case-study-m .col-md-4,
+  .case-study-m .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .profile-card-m {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .help-box-m {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .help-box-m,
+  .result-box-m,
+  .success-box-m {
+    padding: 1rem;
+  }
+
+  .result-box-m,
+  .success-box-m {
+    text-align: left;
+  }
+
+  .help-box-m h6,
+  .result-box-m h6,
+  .success-box-m h6 {
+    font-size: 1rem;
+  }
+
+  .help-box-m p,
+  .result-box-m p,
+  .success-box-m p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .case-study-m {
+    padding: 2rem 1rem;
+  }
+}
+
+
