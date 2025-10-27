@@ -3923,13 +3923,19 @@ input[type="file"] {
   }
 }
 
-
+.rol-bg {
+  background-color: #e3e5e3; 
+  padding: 1rem 0;
+  width: 100%;
+}
  .section-subtitle {
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 0.75rem;
       font-weight: 600;
       color: #4d7a66;
+      margin-top: -20px;
+      
     }
 
     .section-heading {
@@ -4031,8 +4037,7 @@ input[type="file"] {
       line-height: 1.6;
     }
 
-    /* ---------- RIGHT SECTION ---------- */
-    /* ---------- RIGHT SECTION ---------- */
+
 /* ---------- RIGHT SECTION ---------- */
 .detail-right {
   flex: 1;
@@ -4161,52 +4166,6 @@ input[type="file"] {
   background: #14573e;
 }
 
-/* Recently Placed Roles heading */
-/* .logos h5 {
-  font-size: 18px;
-  color: #0f3d2e;
-  margin-bottom: 20px;
-  font-weight: 700;
-  text-align: left;
-  padding-left: 15px;
-  position: relative;
-}
-.logos img{
-  width: 150px;
-  height: 70px;
-  
-} */
-
-/* green vertical line for recently placed roles */
-/* .logos h5::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 3px;
-  height: 100%;
-  background-color: #0f3d2e; /* green */
-  /* border-radius: 3px;
-}  */
-
-/* logo grid: 3 per row, responsive */
-/* .logo-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  align-items: center;
-  justify-items: center;
-}
-
-.logo-list img {
-  width: 90px;
-  opacity: 0.9;
-  transition: transform 0.3s ease;
-}
-
-.logo-list img:hover {
-  transform: scale(1.05);
-} */
 
 /* Learn More button */
 .learn-more-btn {
@@ -4227,6 +4186,116 @@ input[type="file"] {
   background: #14573e;
 }
 
+/* 🌿 MOBILE RESPONSIVE (below 768px) */
+@media (max-width: 768px) {
+
+  /* Section padding thoda compact */
+  .container.text-center.py-5 {
+    padding: 3rem 1rem !important;
+  }
+
+  /* Info box (green bars) */
+  .info-box-m {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 15px 25px;
+    border-radius: 20px;
+  }
+
+  .info-left-m {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .info-left-m i {
+    font-size: 26px;
+  }
+
+  .info-left-m h5 {
+    font-size: 18px;
+  }
+
+  .info-left-m p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .arrow-icon-m {
+    align-self: flex-end;
+    margin-top: 8px;
+  }
+
+  /* Detail Box */
+  .detail-box.active {
+    flex-direction: column;
+    padding: 25px 20px;
+  }
+
+  .detail-left,
+  .detail-right {
+    width: 100%;
+    min-width: auto;
+    padding: 0;
+    border-left: none;
+  }
+
+  .detail-left img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .detail-left p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Detail right content */
+  .detail-right {
+    margin-top: 20px;
+  }
+
+  .detail-right h4 {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .detail-right h4::after {
+    display: none; /* vertical line hide on mobile for cleaner layout */
+  }
+
+  .detail-right ul li {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  /* Logo grid — 2 columns on mobile */
+  .logo-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 15px;
+  }
+
+  .logo-list img {
+    width: 80px;
+  }
+
+  /* Learn More button center */
+  .learn-more-btn {
+    display: block;
+    margin: 25px auto 0;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  /* Reduce spacing between each info section */
+  .detail-box {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+}
 
 /* .detail-right {
   flex: 1;
@@ -4409,6 +4478,7 @@ input[type="file"] {
     /* Roles Section */
     .roles-section {
       margin-top: 4rem;
+     
     }
 
     .role-card {
@@ -4546,7 +4616,7 @@ input[type="file"] {
       }
     } 
     
-     /* Section Header */
+
    /* Section Header */
 .section-subtitle {
   text-transform: uppercase;
