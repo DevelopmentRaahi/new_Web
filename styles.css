@@ -3862,6 +3862,14 @@ input[type="file"] {
   border: none;
   transition: 0.3s;
 }
+.startups-section-m img {
+  height: 60px;
+  width: 120px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 
 .view-more-btn-m:hover {
   background-color: #003f3c;
