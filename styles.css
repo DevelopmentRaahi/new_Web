@@ -5105,55 +5105,89 @@ input[type="file"] {
 /* case study */
 
 .case-study-m {
-  background-color: #fff;
-  color: #000;
+  background: linear-gradient(120deg, #ffffff, #f9f9f9);
+  background-image: radial-gradient(circle at 20% 20%, #313579 1px, transparent 1px);
+  background-size: 30px 30px;
 }
 
-/* .profile-card-m img {
-  border: 4px solid #f1f1f1;
-  border-radius: 14px;
-   width: 100%;
-  height: auto;
-   max-width: 360px;
-  object-fit: cover;
-} */
 
-/* Role & Requirement */
+/* ===== Role & Requirement ===== */
 .role-box-m {
-  background-color: #f7cbcb;
+  background-color: #ffe0e0; /* softer pink */
   border-left: 4px solid #d22b2b;
+  transition: all 0.3s ease;
+}
+
+.role-box-m:hover {
+  background-color: #ffd6d6;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(210, 43, 43, 0.15);
 }
 
 .requirement-box-m {
-  background-color: #d6bdff;
+  background-color: #e5d6ff; /* pleasant lavender */
   border-left: 4px solid #a833f0;
+  transition: all 0.3s ease;
 }
 
+.requirement-box-m:hover {
+  background-color: #dcc8ff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(168, 51, 240, 0.15);
+}
+
+/* ===== Challenges ===== */
 .challenges-box-m {
-  background-color: #becde4;
+  background-color: #d7e4ff; /* cool soft blue */
   border-left: 4px solid #2859fa;
+  transition: all 0.3s ease;
 }
 
-/* Help Section */
+.challenges-box-m:hover {
+  background-color: #c9daff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(40, 89, 250, 0.15);
+}
+
+/* ===== Help Section ===== */
 .help-box-m {
-  background-color: #bee5e7;
+  background-color: #c8f0ef; /* gentle teal */
   border-left: 6px solid #025048;
   color: #111;
+  transition: all 0.3s ease;
 }
 
-/* Result & Success */
+.help-box-m:hover {
+  background-color: #b5e9e8;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(2, 80, 72, 0.15);
+}
+
+/* ===== Result & Success (keep same) ===== */
 .result-box-m {
   background-color: #f7f7f7;
   border-left: 4px solid #000;
+  transition: all 0.3s ease;
+}
+
+.result-box-m:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .success-box-m {
   background-color: #000;
   color: #fff;
   border-left: 4px solid #000;
+  transition: all 0.3s ease;
 }
 
-/* Responsive Tweaks */
+.success-box-m:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Responsive Tweaks ===== */
 @media (max-width: 992px) {
   .case-study-m .col-md-4,
   .case-study-m .col-md-8 {
@@ -5201,6 +5235,7 @@ input[type="file"] {
     padding: 2rem 1rem;
   }
 }
+
 /* middle line */
 .section-line-m {
   width: 100%;
