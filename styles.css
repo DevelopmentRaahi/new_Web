@@ -5112,55 +5112,56 @@ input[type="file"] {
 
 
 /* ===== Role & Requirement ===== */
+/* ===== Role & Requirement ===== */
 .role-box-m {
-  background-color: #ffe0e0; /* softer pink */
-  border-left: 4px solid #d22b2b;
+  background-color: #ffe8d6; /* soft peach */
+  border-left: 4px solid #e07a5f; /* terracotta accent */
   transition: all 0.3s ease;
 }
 
 .role-box-m:hover {
-  background-color: #ffd6d6;
+  background-color: #ffdfc6;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(210, 43, 43, 0.15);
+  box-shadow: 0 6px 15px rgba(224, 122, 95, 0.2);
 }
 
 .requirement-box-m {
-  background-color: #e5d6ff; /* pleasant lavender */
-  border-left: 4px solid #a833f0;
+  background-color: #e0f7f6; /* mint aqua */
+  border-left: 4px solid #008b8b; /* teal green */
   transition: all 0.3s ease;
 }
 
 .requirement-box-m:hover {
-  background-color: #dcc8ff;
+  background-color: #c9efee;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(168, 51, 240, 0.15);
+  box-shadow: 0 6px 15px rgba(0, 139, 139, 0.2);
 }
 
 /* ===== Challenges ===== */
 .challenges-box-m {
-  background-color: #d7e4ff; /* cool soft blue */
-  border-left: 4px solid #2859fa;
+  background-color: #eaf0ff; /* soft blue lavender */
+  border-left: 4px solid #5773ff; /* royal blue */
   transition: all 0.3s ease;
 }
 
 .challenges-box-m:hover {
-  background-color: #c9daff;
+  background-color: #dde6ff;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(40, 89, 250, 0.15);
+  box-shadow: 0 6px 15px rgba(87, 115, 255, 0.2);
 }
 
 /* ===== Help Section ===== */
 .help-box-m {
-  background-color: #c8f0ef; /* gentle teal */
-  border-left: 6px solid #025048;
+  background-color: #f4ecff; /* lilac */
+  border-left: 6px solid #7a42f4; /* purple accent */
   color: #111;
   transition: all 0.3s ease;
 }
 
 .help-box-m:hover {
-  background-color: #b5e9e8;
+  background-color: #ecdefe;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(2, 80, 72, 0.15);
+  box-shadow: 0 6px 15px rgba(122, 66, 244, 0.2);
 }
 
 /* ===== Result & Success (keep same) ===== */
