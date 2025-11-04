@@ -5105,89 +5105,99 @@ input[type="file"] {
 /* case study */
 
 .case-study-m {
-  background: linear-gradient(120deg, #ffffff, #f9f9f9);
-  background-image: radial-gradient(circle at 20% 20%, #313579 1px, transparent 1px);
-  background-size: 30px 30px;
+  background-color: #fdfdfd;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 
 /* ===== Role & Requirement ===== */
-/* ===== Role & Requirement ===== */
 .role-box-m {
-  background-color: #ffe8d6; /* soft peach */
-  border-left: 4px solid #e07a5f; /* terracotta accent */
+  background-color: #ffe0e0; /* softer pink */
+  border-left: 4px solid #d22b2b;
   transition: all 0.3s ease;
 }
 
 .role-box-m:hover {
-  background-color: #ffdfc6;
+  background-color: #ffd6d6;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(224, 122, 95, 0.2);
+  box-shadow: 0 6px 15px rgba(210, 43, 43, 0.15);
 }
 
 .requirement-box-m {
-  background-color: #e0f7f6; /* mint aqua */
-  border-left: 4px solid #008b8b; /* teal green */
+  background-color: #e5d6ff; /* pleasant lavender */
+  border-left: 4px solid #a833f0;
   transition: all 0.3s ease;
 }
 
 .requirement-box-m:hover {
-  background-color: #c9efee;
+  background-color: #dcc8ff;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 139, 139, 0.2);
+  box-shadow: 0 6px 15px rgba(168, 51, 240, 0.15);
 }
 
 /* ===== Challenges ===== */
 .challenges-box-m {
-  background-color: #eaf0ff; /* soft blue lavender */
-  border-left: 4px solid #5773ff; /* royal blue */
+  background-color: #d7e4ff; /* cool soft blue */
+  border-left: 4px solid #2859fa;
   transition: all 0.3s ease;
 }
 
 .challenges-box-m:hover {
-  background-color: #dde6ff;
+  background-color: #c9daff;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(87, 115, 255, 0.2);
+  box-shadow: 0 6px 15px rgba(40, 89, 250, 0.15);
 }
 
 /* ===== Help Section ===== */
 .help-box-m {
-  background-color: #f4ecff; /* lilac */
-  border-left: 6px solid #7a42f4; /* purple accent */
+  background-color: #c8f0ef; /* gentle teal */
+  border-left: 6px solid #025048;
   color: #111;
   transition: all 0.3s ease;
+  
 }
 
+
 .help-box-m:hover {
-  background-color: #ecdefe;
+  background-color: #b5e9e8;
   transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(122, 66, 244, 0.2);
+  box-shadow: 0 6px 15px rgba(2, 80, 72, 0.15);
 }
 
 /* ===== Result & Success (keep same) ===== */
-.result-box-m {
+.result-box-m,
+.success-box-m {
   background-color: #f7f7f7;
   border-left: 4px solid #000;
   transition: all 0.3s ease;
+  transform: translateY(-10px); 
+  min-height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding: 1.5rem 1.5rem;
+}
+.result-box-m {
+  background-color: #f7f7f7;
+  color: #000;
 }
 
-.result-box-m:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-}
+
 
 .success-box-m {
   background-color: #000;
   color: #fff;
-  border-left: 4px solid #000;
-  transition: all 0.3s ease;
 }
-
+.result-box-m:hover,
 .success-box-m:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-13px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+.help-box-m {
+  margin-bottom: 2rem !important; 
+}
 /* ===== Responsive Tweaks ===== */
 @media (max-width: 992px) {
   .case-study-m .col-md-4,
