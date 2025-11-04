@@ -3922,31 +3922,11 @@ input[type="file"] {
 
 /* ------------------ Benefits Section ------------------ */
 .benefits-section-m {
-  background-color: #003f3c; /* 🟢 Dark green background */
-  padding-top: 80px;
-  padding-bottom: 80px;
+  background-color: #003f3c;
+  padding: 80px 0;
 }
 
-.benefit-item-m {
-  align-items: flex-start;
-}
-
-.benefit-item-m i {
-  flex-shrink: 1;
-}
-
-.benefit-item-m h5 {
-  font-size: 1.1rem;
-  margin-bottom: 1.2rem;
-  text-align: left;
-}
-
-.benefit-item-m p {
-  color: #d5d5d5;
-  line-height: 1.5;
-  text-align: left;
-}
-
+/* Headings */
 .heading-large {
   font-size: 2.8rem;
   line-height: 1.2;
@@ -3957,25 +3937,57 @@ input[type="file"] {
   margin-top: -20px;
 }
 
-/* ------------------ Responsive ------------------ */
+/* Benefit items */
+.benefit-item-m {
+  text-align: left;
+  position: relative;
+}
+
+.benefit-heading-m {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.benefit-heading-m i {
+  color: #ffc107;
+  font-size: 1.6rem;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.benefit-heading-m h5 {
+  color: #ffc107;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* ✅ Paragraph starts exactly below heading text */
+.benefit-item-m p {
+  color: #d5d5d5;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 2.1rem; /* same width as icon + its margin-right */
+  font-size: 0.95rem;
+}
+
+/* Responsive */
 @media (max-width: 767px) {
-  .benefit-item-m {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .benefit-item-m i {
-    margin-bottom: 10px;
-  }
-
   .heading-large {
     font-size: 2rem;
   }
 
-  .confidence-section-m h3 {
-    font-size: 2.2rem;
+  .benefit-heading-m {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .benefit-item-m p {
+    text-align: center;
+    padding-left: 0; /* remove indent on mobile */
   }
 }
+
 
 
 .rol-bg {
