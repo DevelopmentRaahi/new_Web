@@ -3785,6 +3785,13 @@ input[type="file"] {
       color: #333;
       text-align: left;
     }
+    .login-hint {
+      color: #888;          
+      opacity: 0.8;        
+      font-weight: 400;    
+      font-size: 0.95em;     
+     }
+
     .form-control:focus {
       border-color: teal;
       box-shadow: 0 0 5px rgba(0,128,128,0.3);
@@ -4954,15 +4961,22 @@ input[type="file"] {
     }
 
   /* register page */
-    .build-section-m {
+
+  .build-section-m {
+  background-color: #f8f4f4;
+  text-align: center;
+  min-height: 30vh;
+  padding: 3rem 3rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  min-height: 30vh;
-  background-color: #f8f4f4;
-  padding: 2rem;
-    padding: 3rem 3rem 2rem;
+}
+
+.build-section-m .container-m {
+  display: flex;
+  flex-direction: column; /* 👈 important */
+  align-items: center;
+  justify-content: center;
 }
 
 .build-heading-m {
@@ -4977,7 +4991,7 @@ input[type="file"] {
   font-size: 1.1rem;
   max-width: 600px;
   line-height: 1.5;
-  margin: 4px auto;
+  margin: 8px auto 0;
 }
 
 /* Responsive Design */
