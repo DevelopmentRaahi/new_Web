@@ -5119,29 +5119,94 @@ input[type="file"] {
 }
 /* review scrollr code */
 
-.testimonial-slider-container {
-  position: relative;
-  height: 100vh;
-  overflow: hidden; /* hide scrollbar */
+.review-section-m {
+     background: url('bg-texture.jpg');  
+     background-size: cover;
+     background-size: 1500px;
+     padding: 80px 0; 
 }
 
-/* stack sections */
-.testimonial-slider-container section {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%); /* start below screen */
-  width: 100%;
-  max-width: 1200px; /* existing max-width */
-  transition: transform 0.6s ease;
-  z-index: 0;
+/* Outer Green Box With Curved Shape */
+.review-container-m {
+    background: #0d4f44;
+    padding: 40px 30px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1400px;
 }
 
-/* first section visible initially */
-.testimonial-slider-container section:first-child {
-  transform: translateX(-50%) translateY(0);
-  z-index: 1;
+/* Inner abstract curves */
+.review-container-m::before,
+.review-container-m::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    width: 160%;
+    height: 160%;
+    border-radius: 50%;
+    top: -40%;
+    left: -30%;
 }
+
+.review-container-m::after {
+    top: auto;
+    bottom: -40%;
+    right: -30%;
+    left: auto;
+}
+
+/* Card Area */
+.review-card-m {
+    padding: 20px 10px;
+}
+
+/* Icon Image */
+.review-icon-m img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+   
+}
+
+/* Heading */
+.review-title-m {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.review-title-n {
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+/* Paragraph */
+.review-desc-m {
+    font-size: 14px;
+    color: #d6e7e5;
+    line-height: 1.5;
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .review-container-m {
+        padding: 30px 20px;
+    }
+    .review-title-m {
+        font-size: 18px;
+    }
+    .review-icon-m img {
+        width: 50px;
+    }
+}
+
+/* case study */
 .case-study-list {
   display: flex;
   gap: 20px;
