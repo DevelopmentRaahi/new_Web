@@ -5142,7 +5142,13 @@ input[type="file"] {
   transform: translateX(-50%) translateY(0);
   z-index: 1;
 }
-
+.case-study-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap; 
+}
 .case-study-section-m {
   background: #fff;
   padding: 80px 0;
@@ -5163,6 +5169,30 @@ input[type="file"] {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.new-layout-m {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top-center-m {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;  
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+/* Buttons responsive look same */
+.top-center-m .case-item-m {
+  width: auto;
+  min-width: 180px;
+  text-align: center;
+  justify-content: center;
 }
 
 .case-item-m {
