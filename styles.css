@@ -5404,7 +5404,8 @@ input[type="file"] {
 /* Whole Section Bigger */
 .hs2-wrapper {
   width: 100%;
-  background: #d6eabe;
+  /* background: #d6eabe; */
+  background: #d4eff0;;
   padding-top: 70px;
   padding-bottom: 120px;
   position: relative;
@@ -5417,7 +5418,7 @@ input[type="file"] {
 /* LEFT IMAGE BACKGROUND */
 .hs2-left-imgbox {
   width: 170%;
-  height:450px;          /* Image height increased */
+  height:450px;     
   background-image: url('./assets/images/new-hero-s.jpg');
   background-size: cover;
   background-position: center;
@@ -5442,7 +5443,8 @@ input[type="file"] {
 
 /* RIGHT BOXES */
 .hs2-box {
-  background: #a9c98b;
+  /* background: #a9c98b; */
+  background: #014c51;;
   padding: 25px;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
@@ -5464,13 +5466,13 @@ input[type="file"] {
 .hs2-title {
   font-size: 17px;
   font-weight: 700;
-  color: #1e1e1e;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .hs2-text {
   font-size: 14px;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
@@ -5478,14 +5480,16 @@ input[type="file"] {
   background: #fff;
   padding: 8px 20px;
   border-radius: 25px;
-  color: #456d28;
+  /* color: #456d28; */
+  color: #003f43;;
   font-weight: 600;
   transition: 0.3s;
 }
 
 .hs2-btn:hover {
   background: #e4f2d7;
-  color: #2f4e1b;
+  /* color: #2f4e1b; */
+  color: #05545a;;
 }
 
 /* Animations */
