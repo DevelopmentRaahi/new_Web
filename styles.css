@@ -5244,12 +5244,13 @@ input[type="file"] {
 .top-center-m {
   display: flex;
   flex-direction: row;
-  justify-content: cen;  
+  justify-content: center;   /* FIXED */
   align-items: center;
   gap: 25px;
   flex-wrap: wrap;
   width: 100%;
 }
+
 
 
 /* Buttons responsive look same */
