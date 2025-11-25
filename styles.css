@@ -5718,62 +5718,117 @@ input[type="file"] {
 
 /* test slider */
 
+/* MAIN HERO SECTION */
 .hero-slider-m {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
-.hero-img-m {
-  height: 80vh;
-  object-fit: cover;
-  filter: brightness(40%); /* slight dark for better text visibility */
+/* BACKGROUND IMAGE */
+.hero-bg-m {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(40%);
 }
 
+/* Ensure each slide fits perfectly */
+.carousel-item {
+  height: 100vh;
+  position: relative;
+}
+
+/* CAPTION STYLE */
 .hero-caption-m {
   bottom: 35%;
+  z-index: 5;
 }
 
 .hero-caption-m h1 {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 700;
 }
 
 .hero-caption-m p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
 .hero-btn-m {
   background: #00adb5;
   color: #fff;
-  padding: 12px 30px;
+  padding: 12px 32px;
   border-radius: 40px;
   font-size: 18px;
 }
+
+/* ---------------------------- */
+/* 📱 MOBILE RESPONSIVE (max 768px) */
+/* ---------------------------- */
 @media(max-width: 768px) {
-  .hero-caption-m h1 { font-size: 32px; }
-  .hero-caption-m p { font-size: 16px; }
-  .hero-slider-m, 
-  .hero-img-m { height: 70vh; }
-}
-/* Smooth fade fix */
-.carousel-item {
-  transition: opacity 1.2s ease-in-out !important;
+
+  .hero-slider-m,
+  .carousel-item,
+  .hero-bg-m {
+    height: 65vh;     /* mobile height */
+  }
+
+  .hero-caption-m { 
+    bottom: 25%;      /* text thoda niche */
+  }
+
+  .hero-caption-m h1 {
+    font-size: 32px;
+  }
+
+  .hero-caption-m p {
+    font-size: 15px;
+  }
+
+  .hero-btn-m {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
 }
 
-.carousel-fade .carousel-item {
-  opacity: 0;
+/* ---------------------------- */
+/* 📱📲 TABLET RESPONSIVE (769px – 1024px) */
+/* ---------------------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero-slider-m,
+  .carousel-item,
+  .hero-bg-m {
+    height: 75vh;    /* tablet height adjust */
+  }
+
+  .hero-caption-m {
+    bottom: 30%;      /* tablet ke liye perfect */
+  }
+
+  .hero-caption-m h1 {
+    font-size: 42px;
+  }
+
+  .hero-caption-m p {
+    font-size: 17px;
+  }
+
+  .hero-btn-m {
+    font-size: 17px;
+    padding: 10px 28px;
+  }
 }
 
+/* SMOOTH FADE EFFECT */
+.carousel-item { transition: opacity 1.2s ease-in-out !important; }
+.carousel-fade .carousel-item { opacity: 0; }
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-start,
-.carousel-fade .carousel-item-prev.carousel-item-end {
-  opacity: 1;
-}
-
+.carousel-fade .carousel-item-prev.carousel-item-end { opacity: 1; }
 .carousel-fade .active.carousel-item-end,
-.carousel-fade .active.carousel-item-start {
-  opacity: 0;
-}
+.carousel-fade .active.carousel-item-start { opacity: 0; }
