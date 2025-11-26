@@ -5721,7 +5721,7 @@ input[type="file"] {
 /* MAIN HERO SECTION */
 .hero-slider-m {
   width: 100%;
-  height: 100vh;
+  height: 80vh;            /* ↓ reduced from 100vh */
   position: relative;
   overflow: hidden;
 }
@@ -5729,98 +5729,98 @@ input[type="file"] {
 /* BACKGROUND IMAGE */
 .hero-bg-m {
   width: 100%;
-  height: 100vh;
+  height: 80vh;            /* ↓ reduced */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: brightness(40%);
 }
 
-/* Ensure each slide fits perfectly */
+/* Each Slide */
 .carousel-item {
-  height: 100vh;
+  height: 80vh;            /* ↓ reduced */
   position: relative;
 }
 
-/* CAPTION STYLE */
+/* CAPTION */
 .hero-caption-m {
-  bottom: 35%;
+  bottom: 32%;
   z-index: 5;
 }
 
 .hero-caption-m h1 {
-  font-size: 55px;
+  font-size: 48px;
   font-weight: 700;
 }
 
 .hero-caption-m p {
-  font-size: 20px;
-  margin-bottom: 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .hero-btn-m {
   background: #00adb5;
   color: #f6f3f3;
-  padding: 12px 32px;
+  padding: 12px 28px;
   border-radius: 40px;
   font-size: 18px;
 }
 
 /* ---------------------------- */
-/* 📱 MOBILE RESPONSIVE (max 768px) */
+/* MOBILE (max 768px) */
 /* ---------------------------- */
 @media(max-width: 768px) {
 
   .hero-slider-m,
   .carousel-item,
   .hero-bg-m {
-    height: 65vh;     /* mobile height */
+    height: 60vh;          /* smaller for mobile */
   }
 
   .hero-caption-m { 
-    bottom: 25%;      /* text thoda niche */
+    bottom: 22%;
   }
 
   .hero-caption-m h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .hero-caption-m p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .hero-btn-m {
-    font-size: 16px;
-    padding: 10px 25px;
+    font-size: 15px;
+    padding: 8px 20px;
   }
 }
 
 /* ---------------------------- */
-/* 📱📲 TABLET RESPONSIVE (769px – 1024px) */
+/* TABLET (769px – 1024px) */
 /* ---------------------------- */
 @media (min-width: 769px) and (max-width: 1024px) {
 
   .hero-slider-m,
   .carousel-item,
   .hero-bg-m {
-    height: 75vh;    /* tablet height adjust */
+    height: 70vh;          /* balanced tablet height */
   }
 
   .hero-caption-m {
-    bottom: 30%;      /* tablet ke liye perfect */
+    bottom: 28%;
   }
 
   .hero-caption-m h1 {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   .hero-caption-m p {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .hero-btn-m {
     font-size: 17px;
-    padding: 10px 28px;
+    padding: 10px 25px;
   }
 }
 
