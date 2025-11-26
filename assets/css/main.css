@@ -109,7 +109,7 @@ h6 {
 .header {
 	background-color: var(--bg-light-gray);
 	border-bottom: 1px solid #27262652;
-	
+	position: fixed;
 }
 
 .header__container {
