@@ -510,9 +510,9 @@
   content: "";
   position:absolute;
   /* display: none; */
-  height: 850px;
+  height: 920px;
   max-width: 360px;  
-  width: 100%;
+  width: 120%;
   background-color: transparent;
   border-radius: 0 50px 50px 0px;
   border: 3px solid  #23c6e0;
@@ -3165,10 +3165,10 @@ footer::after {
 .line-wrapper .line-right::after{
   content: '';
   position: absolute;
-  bottom: -70px;
+  bottom: -110px;
   right: -0px;  
   width: 650px;
-  height: 100px;  
+  height: 150px;  
   border-radius:0 0px 50px 0 ;
   z-index: 2;  
   background-color: transparent;
