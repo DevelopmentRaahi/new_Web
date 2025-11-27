@@ -29,95 +29,45 @@
 
 <body>
   <!-- header Code -->
-<section>
-    <div class="container-fluid pre-header space-horizontal">
-      <div class="contact-info d-flex align-items-center">
-        <a href="#"><i class="bi bi-chat-dots me-1"></i>Chat with us</a>
-         
-       <li class="dropdown">
-        <a href="#" class="dropdown-toggle"><span>Apply as candidate</span> 
-          <!-- <i class="bi bi-chevron-down "></i> -->
-         </a>
-            <ul class="dropdown-menu">
-                 <li> <a href="./log.html"><i class="bi bi-person me-1"></i>Login</a></li>
-                 <li> <a href="./register.html"><i class="bi bi-person-check me-1"></i>Register</a></li>
-            </ul>
-       </li>
+<!-- Pre-header -->
+<section class="pre-header">
+  <div class="container-fluid pre-header-container d-flex justify-content-end align-items-center">
+    <a href="#"><i class="bi bi-chat-dots me-1"></i>Chat with us</a>
 
-
-       <!-- <a href="./log.html"><i class="bi bi-person me-1"></i>Login</a> -->
-        <!-- <a href="#"><i class="bi bi-person-check me-1"></i>Register</a> -->
-        <!-- <a href="#"><i class="bi bi-cart3 "></i></a>
-        <a href="#"><i class="bi bi-search"></i></a> -->
-      </div>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle"><span>Apply as candidate</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="./log.html"><i class="bi bi-person me-1"></i>Login</a></li>
+        <li><a href="./register.html"><i class="bi bi-person-check me-1"></i>Register</a></li>
+      </ul>
     </div>
-    </section>
-    <header id="header" class="header sticky-top w-100">
-    <div class="container-fluid position-relative space-horizontal ">
-      <div class="d-flex align-items-center justify-content-between">
-        <!-- <a href="./home.html" class="logo d-flex align-items-center me-auto me-xl-0"> -->
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <!-- <h1 class="sitename uppercase"><span>Candid</span>Page</h1> -->
-        <a class="navbar-brand d-flex align-items-center" href="./home.html">
-          <span class="logo-icon me-2">CP</span>
-          <span class="fw-bold fs-4 text-dark">CandidPage</span>
-        </a>
+  </div>
+</section>
 
-        <!-- <img src="./assets_edr/img/logo.png" alt="Logo" class="img-fluid logo-cls" width="200" height="50"> -->
-        </a>
-        <nav id="navmenu" class="navmenu">
-          <ul class="icon-header">
-            <!-- <li><a href="https://domgys.in" class="active">Home</a></li> -->
-            <li>
-              <a href="./about-us.html">About Us</a>
-            </li>
-            <li>
-              <a href="./Services.html">Services</a>
-            </li>
-            <li>
-              <a href="./new-employer.html">Employers </a>
-            </li>
-            <!-- dropdown menu -->
-            <li>
-              <a href="./Candidate.html">Candidates</a>
-            </li>
-            <!-- dropdown menu -->
-            <li>
-              <a href="./Job-opportunity.html">Current Opportunity</a>
-            </li>
-            
-            <!-- <li class="dropdown">
-          <a href="#"><span>Domains</span> <i class="bi bi-chevron-down toggle-dropdown"></i>
-          </a>
-          <ul>
-            <li><a href="https://domgys.in/in-domain.html">Book .In domain</a></li>
-            <li><a href="https://domgys.in/com-domain.html">Book .Com domain</a></li>
-            <li><a href="https://domgys.in/bank-domain.html">Book .Bank domain </a></li>
-            <li><a href="https://domgys.in/insurance-domain.html">Book .insurance domain</a></li>
-          </ul>
-        </li>
-        <li class="close-md-screen">
-          <a href="https://domgys.in/Become-Our-Partner.html" aria-current="page">
-            Become Our Partner</a>
-        </li> -->
-            <!-- <li class="becom-partner">
-            <a class="becom-partner" href="https://domgys.in/Become-Our-Partner.html" aria-current="page">
-              Sign In</a>
-          </li> -->
-          <li>
-            <a href="./blog.html" aria-current="page">Blogs</a>
-          </li>
-          <li>
-            <a href="./contact-us.html" aria-current="page">Contact us</a>
-          </li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-        <!-- <a class="btn-getstarted" href="https://clients.domgys.in/login"> Sign In</a> -->
-        </div>
-      </div>
-    </header>
+<!-- Main Header -->
+<header id="header" class="header sticky-top w-100">
+  <div class="container-fluid header-container d-flex align-items-center justify-content-between">
+    <a class="navbar-brand d-flex align-items-center" href="./home.html">
+      <span class="logo-icon me-2">CP</span>
+      <span class="fw-bold fs-4 text-dark">CandidPage</span>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul class="icon-header">
+        <li><a href="./about-us.html">About Us</a></li>
+        <li><a href="./Services.html">Services</a></li>
+        <li><a href="./new-employer.html">Employers</a></li>
+        <li><a href="./Candidate.html">Candidates</a></li>
+        <li><a href="./Job-opportunity.html">Current Opportunity</a></li>
+        <li><a href="./blog.html">Blogs</a></li>
+        <li><a href="./contact-us.html">Contact us</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+  </div>
+</header>
+
+
     <!-- hero section  -->
     <section class="hero-section text-center py-5">
       <div class="container hero_container">
@@ -127,15 +77,15 @@
             <span class="px-4">Flexible, Skilled, & </span>
           </div>
           <div class="line3-r second_line ">
-           driven by transformation
+           Driven by transformation
           </div>
         </div>
         <p class="mt-4 px-4" data-aos="fade-left">
-         At CandidPage, we’re transforming the staffing experience—offering flexible, on-demand talent solutions tailored to fuel your business growth. By combining deep industry insights with a vast talent network, we deliver excellence right when you need it.
-        </p>
+            At CandidPage, we believe that great companies are built by great people—and finding them requires expertise, 
+            agility, and care. Our mission is simple: connect organizations with the right talent at the right time. </p>
         <p class="mt-4 px-4" data-aos="fade-right">
-          With a legacy of innovation in workforce solutions, we help bridge skill gaps and meet strategic goals by connecting companies with exceptional professionals across roles and industries.
-        </p>
+            With a blend of innovation, market intelligence, and a fast-growing talent community, we deliver recruitment 
+            solutions that support business growth and empower professionals to advance their careers. </p>
       </div>
     </section>
     <!-- second section -->
@@ -168,18 +118,18 @@
       <div class="row py-3 tm-right-line g-0 ">
         <div class="col-12 col-lg-6 tm-left" data-aos="fade-right" data-aos-duration="1000">
           <div class="wrapper-heading">
-            <span>We are</span>
             <span>Connected</span>
+            <span>Through Talent</span>
           </div>
           <div class=" center-text ">
-            <p>Through strategic partnerships and our extensive talent ecosystem, we drive measurable impact by placing
-              the right people in the right roles—fast.
+            <p>With strong strategic partnerships and an expansive talent ecosystem, we help companies secure the right
+               candidates quickly and efficiently.
             </p>
             <p>
-              Whether for short-term projects, long-term assignments, or permanent roles, our clients trust us to source
-              the best minds across industries like IT, finance, healthcare, and digital. With every connection, we’re
-              not just filling roles—we’re fueling possibilities.
-            </p>
+              Whether you need short-term contractors, long-term project consultants, or permanent hires across IT, finance, 
+              digital, healthcare, marketing, or business operations—our connected network ensures seamless hiring at speed.
+           <br> 
+          Every placement is not just a role filled—it’s a future shaped. </p>
           </div>
         </div>
         <div class="col-12 col-lg-6 ab-image " data-aos="fade-left" data-aos-duration="1000">
@@ -370,8 +320,8 @@
                 <i class="bi bi-people fs-1"></i>
                 <h4>Partnership</h4>
                 <div class="hover-content ">
-                <p>Collaboration is at the heart of our service. By developing meaningful connections, we can build
-                long-lasting relationships to truly understand obstacles, drivers, and overall strategy. </p>  
+                <p>Collaboration fuels our success. We build meaningful, long-term relationships to understand business 
+                  challenges, hiring needs, and growth opportunities.</p>  
                 </div>
             </div>
         </div>
@@ -381,9 +331,8 @@
                 <i class="bi bi-lightbulb fs-1"></i>
                 <h4>Courageous</h4>
                 <div class="hover-content">
-                <p>We always aim to be decisive. Challenging ourselves and those around us means we can advise on the best
-                possible
-                solutions for both clients and candidates. </p>   
+                <p>We make bold decisions backed by insights, challenging   norms to deliver innovative hiring solutions for
+                   both clients and candidates.</p>   
                 </div>
             </div>
         </div>
@@ -393,9 +342,8 @@
                 <i class="bi bi-chat-text fs-1"></i>
                 <h4>Drive</h4>
                 <div class="hover-content">
-                  <p>Our ambitious attitude means we continually strive to improve. It gives us momentum to challenge
-                industry norms,
-                driving innovation and pushing us closer to our goals and those of our partners.</p>
+                  <p>Our ambitious attitude means we continually strive to improve. It gives us momentum to challenge industry 
+                    norms, driving innovation and pushing us closer to our goals and those of our partners.</p>
                 </div>
             </div>
         </div>
@@ -405,10 +353,8 @@
                 <i class="bi bi-chat-left fs-1"></i>
                 <h4>Excellence</h4>
                 <div class="hover-content">
-                   <p>It’s our service promise, our people promise and our delivery promise. With our credible industry
-                knowledge, a
-                proven reputation for delivering outstanding work and a highly-skilled network, excellence is at the
-                heart of everything we do.</p>
+                   <p>From service quality to delivery and support, excellence is our promise. With strong domain expertise and
+                     a high-performing network, we ensure top-tier outcomes—every time.</p>
                 </div>
             </div>
         </div>
@@ -426,10 +372,10 @@
         </div>
         <div class="c-text  " data-aos="fade-right" data-aos-duration="1000">
           <p>
-            We’re proud to be driven by our people. Dedicated, skilled, and client-focused—
-            our team is the heart of everything we do. With deep industry knowledge and a passion
-            for building lasting relationships, we work closely with clients and candidates to
-            deliver real impact—ensuring every match is the right one.
+            Behind every successful placement is a dedicated team that listens, understands, and delivers. Our experts bring 
+            market intelligence, relationship-driven thinking, and an unwavering focus on results.
+            <br>
+            We take pride in shaping careers, supporting businesses, and building long-term partnerships based on trust and integrity.
           </p>
 
           <a href="#" class="feature-button-f">Meet the team</a>
@@ -449,12 +395,12 @@
       <div class="row" data-aos="fade-left" data-aos-duration="1000">
         <div class=" col-sm-12 col-md-8 col-lg-6 m-auto join-team-content">
           <h3>Join Our Team!</h3>
-          <p>We’re always on the lookout for passionate, purpose-driven professionals to join our growing team. If
-            you’re motivated by impact, innovation, and collaboration—this is the place for you.
-            We celebrate individuality, thrive on diversity, and truly invest in the people who power our mission.
+          <p>We’re always looking for purpose-driven individuals who thrive on impact, growth, and innovation.
           </p>
-          <p>Want to know what it’s like to work with us?
-            Explore our open roles and discover how you can shape the future of staffing with us.</p>
+          <p> If you want to be part of a team that values diversity, celebrates individuality, and transforms the future of 
+            staffing—we’d love to meet you.
+          <br>
+        Explore open roles and shape the future with us.</p>
           <a href="#" class="feature-button-f">Join our team</a>
         </div>
       </div>
