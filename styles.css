@@ -968,7 +968,7 @@
 .ab-wrapper_row {
   background-color: var(--bg-light-gray);
   position: relative;
-  z-index: -2;
+  z-index: -1;
 
 }
 /* .center-text {
@@ -3133,7 +3133,7 @@ footer::after {
   width: 120px;
   height: 100px;  
   border-radius:0 0 0 50px;
-  z-index: 2;  
+  z-index: 1;  
   background-color: transparent;
   border:3px solid #23c6e0;
   border-top:0;
@@ -3147,7 +3147,7 @@ footer::after {
   width: 100px;
   height: 100px;  
   border-radius:0 50px 0 0 ;
-  z-index: 2;  
+  z-index: 1;  
   background-color: transparent;
   border:3px solid #23c6e0;
   border-left: none;
@@ -3263,7 +3263,7 @@ footer::after {
   }  
   .line-wrapper .line-top::before{
     left: -40px;
-    z-index: 2;    
+    z-index: 1;    
   }
   
 }
