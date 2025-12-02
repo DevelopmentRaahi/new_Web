@@ -241,7 +241,8 @@
   width: 1500px;
   height: 2px;
   background-color: #0c5760;
-  z-index: -1;
+  /* z-index: -1; */
+  z-index: 1;
 }
 
 .hero_container p {
@@ -292,7 +293,8 @@
   border-right: none;
   bottom: -132px;
   right: -798px;
-  z-index: -1;
+  /* z-index: -1; */
+  z-index: 1;
 }
 
 .para-r {
