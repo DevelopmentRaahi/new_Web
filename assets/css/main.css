@@ -70,6 +70,10 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-primary), 'Segoe UI', sans-serif !important;
 }
+ul{
+  margin: 0;
+  padding: 0;
+}
 
 /* ----------------- Pre-header ----------------- */
 .pre-header {
@@ -169,6 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   list-style: none;
   gap: 2rem;
+
 }
 
 .header .navmenu ul li a {
