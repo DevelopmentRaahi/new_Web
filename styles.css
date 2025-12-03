@@ -6078,4 +6078,48 @@ input[type="file"] {
   display: block;  
   z-index: 1;
 } */
-  
+ 
+
+.animated-section h2 >span:first-child::before{
+    content: "";
+  position: absolute;
+  bottom: 500px;
+  right: -38px;
+  background-color:transparent;  
+  border: 3px solid #23c6e0;
+  border-style: solid solid solid none; 
+  width: 437px;
+  height: 615px;
+  border-radius: 0 50px 50px 0px;
+  display: block; 
+  z-index: -1; 
+}
+.animated-section h2 >span:first-child::after{
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 70px;
+  width: 555px;
+  height: 1400px;
+  background-color: transparent ;
+  border: 3px solid #003c3c;
+  border-radius:50px 0 0 0px;
+  border-right: none;
+  border-bottom: none;
+  pointer-events: none;
+}
+
+.team-section-mn h2::before {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  right: -500px;
+  background-color:transparent;  
+  border: 3px solid #23c6e0;
+  border-style: solid solid solid none; 
+  width: 340px;
+  height: 520px;
+  border-radius: 0 50px 50px 0px;
+  display: block; 
+  z-index: -1; 
+}
