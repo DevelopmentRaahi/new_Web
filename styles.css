@@ -910,7 +910,7 @@
 
 @media (min-width: 1200px) {
   .tm-container img {
-    height: 512px;
+    /* height: 512px; */
   }
 }
 /* 
@@ -4668,7 +4668,7 @@ input[type="file"] {
 
     .testimonial-text {
       background-color: #116a6cf5; /* teal shade */
-      padding: 4rem;
+      padding: 2rem;
       border-top-right-radius: 30px;
       border-bottom-right-radius: 30px;
       position: relative;
@@ -5140,56 +5140,40 @@ input[type="file"] {
 
 
 
-.info-card-m {
-  background: #ff3b8d;
+.info-wrapper-m > div {
+  /* background: #ff3b8d; */
   padding: 40px 28px;
   border-radius: 22px;
- box-shadow: 0 8px 28px rgba(0,0,0,0.12);
   text-align: center;
   position: relative;
   z-index: 2;
-  transition: 0.3s ease;
-}
-.info-card-mn {
-  background: #9b51e0;
-  padding: 40px 28px;
-  border-radius: 22px;
- box-shadow: 0 8px 28px rgba(0,0,0,0.12);
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  transition: 0.3s ease;
-}
-.info-card-mno {
-  background: #00d4b3;
-  padding: 40px 28px;
-  border-radius: 22px;
- box-shadow: 0 8px 28px rgba(0,0,0,0.12);
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  transition: 0.3s ease;
-}
-.info-card-mnop {
-  background: #0092ff;
-  padding: 40px 28px;
-  border-radius: 22px;
- box-shadow: 0 8px 28px rgba(0,0,0,0.12);
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  transition: 0.3s ease;
+  border: 1px solid transparent;
+  border: 1px solid #1b202171;
+  /* box-shadow: 0 8px 28px rgba(0,0,0,0.12); */
+  transition: all 0.3s ease;
 }
 
-.info-card-m:hover {
+/* .info-wrapper-m .info-card-mn {
+  background: #9b51e0;
+}
+.info-wrapper-m .info-card-mno {
+  background: #00d4b3; 
+}
+.info-wrapper-m .info-card-mnop {
+  background: #0092ff; 
+} */
+
+.info-wrapper-m >div:hover {
   transform: translateY(-8px);
+  border: 1px solid #17afc7;
 }
 
 .info-img-m {
-  width: 55px;
-  height: 55px;
-  object-fit: contain;
-  margin-bottom: 15px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+ border-radius: 50%;
+ margin-bottom: 10px;
 }
 
 .info-card-m h4 {
@@ -5264,16 +5248,16 @@ input[type="file"] {
 .info-card-mnop h4 {
   margin-bottom: 12px;
   font-size: 18px;
-  color: #ffffff;
+ 
 }
 
 .info-card-m h5,
 .info-card-mn h5,
 .info-card-mno h5,
 .info-card-mnop h5 {
-  margin-bottom: 12ssspx;
+  margin-bottom: 12px;
   font-size: 14px;
-  color: #ffffff;
+  
 }
 .info-card-m p,
 .info-card-mn p,
@@ -5281,7 +5265,7 @@ input[type="file"] {
 .info-card-mnop p {
   font-size: 14px;
   line-height: 1.55;
-  color: #fdfdfd;
+ 
 }
 
 /* Responsive */
@@ -6078,21 +6062,29 @@ input[type="file"] {
   display: block;  
   z-index: 1;
 } */
- 
+ .btn-primary-l{
+  position: relative;
+  z-index: 2;
+ }
+.btn-primary-l:hover{  
+  color: #fff;
+  background-color: #23c6e0;
+}
 
-.animated-section h2 >span:first-child::before{
-    content: "";
+.animated-section h2 > span:first-child::before{
+  content: "";
   position: absolute;
-  bottom: 500px;
-  right: -38px;
+  bottom: 495px;
+  right: -8px;
   background-color:transparent;  
   border: 3px solid #23c6e0;
   border-style: solid solid solid none; 
-  width: 437px;
-  height: 615px;
+  width: 600px;
+  height: 610px;
   border-radius: 0 50px 50px 0px;
   display: block; 
   z-index: -1; 
+  pointer-events: none;
 }
 .animated-section h2 >span:first-child::after{
   content: '';
@@ -6100,26 +6092,35 @@ input[type="file"] {
   left: -12px;
   top: 70px;
   width: 555px;
-  height: 1400px;
+  height: 1370px;
   background-color: transparent ;
   border: 3px solid #003c3c;
-  border-radius:50px 0 0 0px;
-  border-right: none;
-  border-bottom: none;
+  border-radius:50px 0  0px 50px;
+  border-style: solid none solid solid; 
   pointer-events: none;
+  z-index: -1;
+}
+.wts h2 {
+  position: relative;
+  z-index: 2;
+}
+.team-section-mn h2{
+  position: relative;
+  z-index: 1;
 }
 
 .team-section-mn h2::before {
   content: "";
   position: absolute;
-  bottom: 15px;
-  right: -500px;
+  right: -550px;
+  bottom: 12px;
   background-color:transparent;  
   border: 3px solid #23c6e0;
   border-style: solid solid solid none; 
-  width: 340px;
-  height: 520px;
+  width: 570px;
+  height: 515px;
   border-radius: 0 50px 50px 0px;
   display: block; 
   z-index: -1; 
+  pointer-events: none;
 }
