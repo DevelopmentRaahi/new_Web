@@ -88,9 +88,6 @@
   text-align: center;
 }
 
-
-
-
 .blue-box {
   background-color: #36a2d5;
 }
@@ -5915,6 +5912,11 @@ input[type="file"] {
     font-size: 17px;
     padding: 10px 25px;
   }
+}
+.nav-active {
+  color: #23c6e0 !important;
+  font-weight: 600 !important;
+  
 }
 
 /* SMOOTH FADE EFFECT */

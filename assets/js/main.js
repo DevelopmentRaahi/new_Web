@@ -3,6 +3,7 @@ const track = document.querySelector('.slide-track-sl');
 const slides = document.querySelectorAll('.slide-item-sl');
 const prevBtn = document.querySelector('.prev-sl');
 const nextBtn = document.querySelector('.next-sl');
+const navList = document.getElementById("navmenu");
 
 let currentSlide = 0;
 
@@ -32,6 +33,16 @@ const toggleBtn = document.getElementById('menu-toggle');
 const menu = document.querySelector('.header__menu');
 const backdrop = document.querySelector('#backdrop');
 const body = document.querySelector('body');
+
+const menuLinks = navList.querySelectorAll('ul li a');
+const current = window.location.pathname;
+
+menuLinks && menuLinks.forEach((item) => {
+  if (item.href.includes(current)) {
+      item.classList.add("nav-active");
+    }
+})  
+
 
 toggleBtn && toggleBtn.addEventListener('click', () => {
   const isMobile = window.innerWidth <= 991; // or 768px as per your breakpoint
