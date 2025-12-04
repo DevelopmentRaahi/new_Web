@@ -6104,12 +6104,12 @@ input[type="file"] {
   position: relative;
   z-index: 2;
 }
-.team-section-mn h2{
+.team-section-mno h2{
   position: relative;
   z-index: 1;
 }
 
-.team-section-mn h2::before {
+.team-section-mno h2::before {
   content: "";
   position: absolute;
   right: -550px;
