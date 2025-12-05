@@ -913,9 +913,9 @@
 }
 
 @media (min-width: 1200px) {
-  .tm-container img {
-    /* height: 512px; */
-  }
+  /*.tm-container img {
+     height: 512px; 
+  }*/
 }
 /* 
 @media (max-width: 1300px) {
@@ -3774,7 +3774,7 @@ input[type="file"] {
     right: 25px;
     background-color: #25D366; 
     color: white;
-    width: 47px;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
@@ -5923,9 +5923,9 @@ input[type="file"] {
   content: '';
   position: absolute;
   right: -575px;
-  top: -145px;
+  top: -125px;
   width: 575px;
-  height: 170px;
+  height: 150px;
   background-color: transparent;
   border-radius:0px 0 50px 0px;
   border: 3px solid #23c6e0;
@@ -6023,7 +6023,7 @@ input[type="file"] {
   content: "";
   position: absolute;
   bottom: -310px;
-  right: -100px;
+  right: -50px;
   background-color:transparent;  
   border: 3px solid #23c6e0;
   border-style: solid solid solid none; 
@@ -6041,7 +6041,7 @@ input[type="file"] {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 45%;
+  width: 52%;
   height: 100%;
   z-index: -1;
   display: block;
@@ -6127,4 +6127,72 @@ input[type="file"] {
   display: block; 
   z-index: -1; 
   pointer-events: none;
+}
+
+
+@media (max-width:1400px){
+  .industry-header-l .industry_content_l::before {
+   left: -90%;    
+  }
+  .text-dark-blue::after {
+        right: -38%;       
+    }
+    .fb-header div >span:first-child::before {
+    width:481px;
+    right:-481px;
+  }
+  .four-sec-h::before{
+    width: 462px;
+  }
+  .tsw .trusted-title-w::before{
+    width: 430px;
+  }
+}
+@media (max-width:1330px){  
+  .text-dark-blue::after {
+        right: -38%;       
+    }
+  .line-wrapper .line-right::after {
+    bottom: -170px;
+    height: 185px;
+  }
+  .text-dark-blue::after{
+    right: -30%;
+    height: 940px;
+    width: 60%;
+  }
+  .fb-header div >span:first-child::before {
+    width:481px;
+    right:-481px;
+  }
+  .four-sec-h::before{
+    width: 462px;
+  }
+}
+
+@media  (max-width:1200px) {
+  .fb-header div >span:first-child::before {
+    display: none;
+  }
+  .four-sec-h::before{
+   display: none;
+  }
+  .tsw .trusted-title-w::before{
+    display: none;
+  }
+  .four-sec-h::before{
+    display: none;
+  }
+  .tmc::before{
+    display: none;
+  }
+  .jt-c::before{
+    display: none;
+  }
+  .tsw::before{
+    display: none;
+  }
+  .mobile-nav-toggle{
+    display: none;
+  }
 }
