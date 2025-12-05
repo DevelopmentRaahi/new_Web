@@ -4,6 +4,7 @@ const slides = document.querySelectorAll('.slide-item-sl');
 const prevBtn = document.querySelector('.prev-sl');
 const nextBtn = document.querySelector('.next-sl');
 const navList = document.getElementById("navmenu");
+const navMenu = document.querySelector(".navmenu ul");
 
 let currentSlide = 0;
 
@@ -164,7 +165,7 @@ viewJob && viewJob.addEventListener('click', () => {
   const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
 
   function mobileNavToogle() {
-    document.querySelector("body").classList.toggle("mobile-nav-active");
+    navMenu.classList.toggle("mobile-nav-active");
     mobileNavToggleBtn.classList.toggle("bi-list");
     mobileNavToggleBtn.classList.toggle("bi-x");
   }

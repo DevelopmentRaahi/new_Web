@@ -219,7 +219,7 @@ ul{
     gap: 1.5rem;
     background-color: var(--bg-dark-cyan);
     position: fixed;
-    top: 90px;
+    top: 110px;
     left: 0;
     width: 100%;
     height: calc(100vh - 90px);
@@ -284,4 +284,7 @@ html, body {
   .navmenu .dropdown.active > a i {
     transform: rotate(180deg);
   }
+}
+.mobile-nav-active{
+  display: flex ! important;
 }
