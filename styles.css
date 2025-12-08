@@ -2849,13 +2849,6 @@ content: "";
   border-bottom-right-radius: 180px;
   /* bottom-right curve */
 }
-
-.btn-primary-l {
-
-}
-
-
-
 /* Primary Button */
 .btn-primary-l {
   background: linear-gradient(135deg, #36a2d5, #36a2d5);
