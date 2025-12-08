@@ -417,7 +417,7 @@
   text-align: center; 
   position: relative;  
 }
-.industry-container-l::before{
+.industry-container-l.icl::before{
   content: "";
   position: absolute;
   top:60px;
@@ -429,8 +429,9 @@
   border-style: solid none solid solid; 
   border-radius: 50px 0 0 50px ; 
   z-index: 1;
+  /* display: none; */
 }
-.industry-container-l::after{
+.industry-container-l.icl::after{
   content: "";
   position: absolute;
   top: -230px;
@@ -442,6 +443,7 @@
   border-style: none solid solid none; 
   border-radius: 0 0 50px 0 ; 
   z-index: 1;
+  /* display: none; */
 }
 
 .industry-header-l {
@@ -5906,7 +5908,7 @@ input[type="file"] {
  .hero-slider-m,
   .carousel-item,
   .hero-bg-m {
-    height: 65vh;          /* balanced tablet height */
+    height: 50vh;          /* balanced tablet height */
   }
 /* ---------------------------- */
 /* TABLET (769px – 1024px) */
@@ -6331,6 +6333,15 @@ input[type="file"] {
   .team-section-mno h2::before{
     display: none;
   }  
+  .hire-section-m h2{
+    font-size: 2.5rem;
+  }
+  .confidence-section-m h3{
+    font-size: 2.3rem;
+  }
+  .testimonial-text{
+    padding: 1rem;
+  }
 }
 @media  (max-width:1100px) {
   .header .navmenu ul{
