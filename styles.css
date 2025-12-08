@@ -429,6 +429,7 @@
   border-style: solid none solid solid; 
   border-radius: 50px 0 0 50px ; 
   z-index: 1;
+  pointer-events: none;
   /* display: none; */
 }
 .industry-container-l.icl::after{
@@ -1035,9 +1036,9 @@
   margin: 0 0 1.5rem 0; 
   font-size: 18px;          
   line-height: 1.8;         
-  width: 70%;   
+  width: 75%;   
   max-width: 800px;     
-  text-align: justify;      
+  /* text-align: justify;       */
   /* text-align-last: center;    */
 }
 
@@ -1060,9 +1061,10 @@
   /* font-size: 1rem; */
   font-size: 17px;
   font-weight: 400;
-  width: 98%;
+  width: 90%;
   margin-bottom: 1rem;
   justify-content: center;
+  max-width: 700px;
 }
 
 .join-team {
@@ -1782,6 +1784,7 @@
     line-height: 1.5;
     color: #003f3c;
     margin-bottom: 15px;
+    width: 75%;
   }
 
   .feature-button-f {
@@ -5342,10 +5345,10 @@ input[type="file"] {
   .info-card-m {
     padding: 30px 20px;
   }
-  .info-img-m {
+  /* .info-img-m {
     width: 55px;
     height: 55px;
-  }
+  } */
 }
 
 
@@ -5940,7 +5943,7 @@ input[type="file"] {
  .hero-slider-m,
   .carousel-item,
   .hero-bg-m {
-    height: 60vh;          /* balanced tablet height */
+    height: 70vh;          /* balanced tablet height */
   }
 /* ---------------------------- */
 /* TABLET (769px – 1024px) */
