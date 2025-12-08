@@ -6395,7 +6395,9 @@ input[type="file"] {
   .mobile-nav-toggle{
     display: none;
   }
-  
+  .carousel-item h1 + p{   
+    width: 60%;
+  }
 }
 
 @media (max-width:768px){
