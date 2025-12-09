@@ -888,6 +888,7 @@
 
 .tm-container {
   padding-block: 6rem;
+  padding-inline:0px;
 }
 .tm-container 
 .wrapper-heading span {
@@ -1099,7 +1100,7 @@
   font-weight: 400;
   color: var(--bg-light-gray);
   margin-bottom: 1rem;
-  width: 70%;
+  width: 89%;
 }
 
 .join-team-content a {
@@ -2407,7 +2408,7 @@ footer::after {
   }
 
   .hero-section .first_line {
-    width: 90%;
+    width: 95%;
     font-size: 1.8rem;
   }
 
@@ -2417,7 +2418,7 @@ footer::after {
   }
 
   .box .text-box {
-    left: 12px;
+    left: 0;
     border-radius: 0;
   }
 
@@ -2428,6 +2429,12 @@ footer::after {
 
   .heading-r {
     margin-top: 0;
+  }
+  .heading-r span:first-child {
+    font-size: 1.8rem;
+  }
+  .industry-title-l{
+    background-color: #00464b;
   }
 
   .section-r {
@@ -2460,7 +2467,7 @@ footer::after {
   .bt-service p {
     font-size: 1rem;
     width: 95%;
-  }
+  }  
 }
 
 /* third */
@@ -2820,11 +2827,11 @@ footer::after {
   content: "";
   position: absolute;
   bottom: 40px;
-  left:30px;
+  left:-5px;
   background-color: transparent;  
   border: 3px solid #23c6e0;
   border-style: none none solid solid; 
-  width: 650px;
+  width: 700px;
   height: 90px;
   border-radius: 0px 0px 0px 50px;
   display: block;   
@@ -4375,17 +4382,16 @@ input[type="file"] {
 
   /* Info box (green bars) */
   .info-box-m {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
     text-align: left;
     padding: 15px 25px;
     border-radius: 20px;
   }
 
-  .info-left-m {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+  .info-left-m {    
+    align-items: center;
+    gap: 10px;
   }
 
   .info-left-m i {
@@ -6391,6 +6397,9 @@ input[type="file"] {
   .header{
     padding: 1rem 2rem;
   }  
+  .section-r {
+    margin: 0;
+  }
   
 }
 @media  (min-width:993px) {
@@ -6402,8 +6411,39 @@ input[type="file"] {
   } 
 }
 
+@media (max-width:992px){
+  .tm-container .row, 
+  .second-about .row,
+  .wrapper-row-lines{
+    gap: 3rem;
+  }
+}
+@media (max-width:1024px){
+  .tm__l p {
+    width: 100%;
+  }
+}
+
 @media (max-width:768px){
   .hero-slider-m, .carousel-item, .hero-bg-m{
     height: 35vh;
+  }
+  .second-about .row{
+    gap: 2rem;
+  }
+  .section-r {
+    margin:4.5rem 0;
+  }
+}
+@media (max-width:576px){
+  .hero-caption-m h1{
+    font-size: 21px;
+  }
+  .pre-header a{
+    font-size: 14px;
+  }
+  .header{
+    padding: 1rem 1rem;
+  
   }
 }
