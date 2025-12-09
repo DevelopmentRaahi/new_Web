@@ -421,7 +421,7 @@
   content: "";
   position: absolute;
   top:60px;
-  left: -35px;
+  left: -20px;
   width: 50%;
   height: 730px;
   background-color: transparent;
@@ -6380,8 +6380,10 @@ input[type="file"] {
     bottom: 325px;
     right: -20px;    
     width: 540px;
-    height: 521px;   
-    
+    height: 521px; 
+  }
+  .tsw::after {
+    right: 0;
   }
 }
 @media (max-width:1330px){  
