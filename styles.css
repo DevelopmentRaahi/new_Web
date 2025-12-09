@@ -349,10 +349,10 @@
 .features-section-f {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   /* max-width: 1200px; */
   margin: 70px auto;
-  padding: 0 20px;
+  padding: 0 ;
 
 }
 
@@ -6417,6 +6417,20 @@ input[type="file"] {
   .wrapper-row-lines{
     gap: 3rem;
   }
+  .content-wrapper-r {
+    flex-direction: column;
+    gap: 20px;
+  }
+   .heading-rl{    
+    display: none;
+  } 
+  .heading-r{
+    display: flex;
+    margin-top: -90px;
+  } 
+  /* .line1-r{
+    margin-left: 0;
+  }  */
 }
 @media (max-width:1024px){
   .tm__l p {
