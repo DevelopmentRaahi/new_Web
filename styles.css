@@ -1041,10 +1041,11 @@
 
 .center-text p {
 
-  max-width: 700px;       
+  max-width: 600px;       
     font-size: 17px;
   line-height: 1.7;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.3rem;
+  width: 95%;
 
 }
 
@@ -1055,9 +1056,9 @@
 
 .c-text p {
   margin: 0 0 1.5rem 0; 
-  font-size: 18px;          
-  line-height: 1.8;         
-  width: 75%;   
+  font-size: 17px;          
+  line-height: 1.7;         
+  width: 100%;   
   max-width: 800px;     
   /* text-align: justify;       */
   /* text-align-last: center;    */
@@ -1082,8 +1083,8 @@
   /* font-size: 1rem; */
   font-size: 17px;
   font-weight: 400;
-  width: 90%;
-  margin-bottom: 1rem;
+  width: 100%;
+  margin-bottom: 1.2rem;
   justify-content: center;
   max-width: 700px;
 }
@@ -5917,18 +5918,18 @@ input[type="file"] {
 
 /* CAPTION */
 .hero-caption-m {
-  bottom: 32%;
+  bottom: 22%;
   z-index: 5;
 }
 
 .hero-caption-m h1 {
-  font-size: 48px;
+  font-size: 47px;
   font-weight: 700;
 }
 
 .hero-caption-m p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 18px;
 }
 
 .hero-btn-m {
