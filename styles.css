@@ -5897,12 +5897,12 @@ input[type="file"] {
 
 /* CAPTION */
 .hero-caption-m {
-  bottom: 18%;
+  bottom: 22%;
   z-index: 5;
 }
 
 .hero-caption-m h1 {
-  font-size: 46px;
+  font-size: 47px;
   font-weight: 700;
 }
 
