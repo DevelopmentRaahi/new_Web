@@ -2812,20 +2812,22 @@ footer::after {
   justify-content: center;
   align-items: center;
 }
+.ch-c {
+  position: relative;
+}
 
-.btn-custom-l::before {
-content: "";
+.ch-c::before {
+  content: "";
   position: absolute;
-  bottom: 15px;
-  left: -650px;
-  background-color:transparent;  
+  bottom: 40px;
+  left:30px;
+  background-color: transparent;  
   border: 3px solid #23c6e0;
   border-style: none none solid solid; 
   width: 650px;
-  height: 100px;
+  height: 90px;
   border-radius: 0px 0px 0px 50px;
-  display: block; 
-  z-index: -1; 
+  display: block;   
   pointer-events: none;
 }
 
@@ -2859,8 +2861,7 @@ content: "";
   border: 2px solid transparent;
 }
 
-.btn-primary-l:hover {
-  background: transparent;
+.btn-primary-l:hover { 
   border-color: #2ca0d5;
   /* color: #2ca0d5; */
   color: #fff;
@@ -2919,7 +2920,7 @@ content: "";
 /* Animation */
 @keyframes slideUp {
   0% {
-    transform: translateY(100px);
+    transform: translateY(0px);
     opacity: 0;
   }
 
@@ -2930,7 +2931,7 @@ content: "";
 }
 
 .animated-section {
-  animation: slideUp 2s ease forwards;
+  animation: slideUp 1s ease forwards;
 }
 
 /* Heading style */
@@ -6143,8 +6144,9 @@ input[type="file"] {
   z-index: 2;
  }
 .btn-primary-l:hover{  
-  color: #fff;
-  background-color: #23c6e0;
+  /* color: #dadcdc; */
+  font-weight: 400;
+ 
 }
 
 .animated-section h2 > span:first-child::before{
@@ -6328,7 +6330,7 @@ input[type="file"] {
   .section-r .content-wrapper-r::after,
   .section-r .content-wrapper-r::before,
   .industry-container-l::before,
-  .industry-container-l::after
+  .industry-container-l::after  
   {
     display: none;
   } 
@@ -6355,6 +6357,7 @@ input[type="file"] {
   .jt-c::before{
     display: none;
   }
+  .ch-c::before,
   .tsw::before{
     display: none;
   }
@@ -6377,6 +6380,9 @@ input[type="file"] {
   .testimonial-text{
     padding: 1rem;
   }
+   .info-left-m p{
+    display: none;
+  }
 }
 @media  (max-width:1100px) {
   .header .navmenu ul{
@@ -6384,7 +6390,7 @@ input[type="file"] {
   }
   .header{
     padding: 1rem 2rem;
-  }
+  }  
   
 }
 @media  (min-width:993px) {
@@ -6393,7 +6399,7 @@ input[type="file"] {
   }
   .carousel-item h1 + p{   
     width: 60%;
-  }
+  } 
 }
 
 @media (max-width:768px){
