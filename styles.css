@@ -556,7 +556,7 @@
 .container.tdb-lines::before{
   content: "";
   position:absolute; 
-  height: 920px;
+  height: 915px;
   max-width: 100%;  
   width: 600px;
   background-color: transparent;
@@ -6364,7 +6364,7 @@ input[type="file"] {
     width: 460px;
   }
   .container.tdb-lines::before{
-    height: 932px;
+    height: 936px;
     width: 480px;
   }
   .tsw::before{
