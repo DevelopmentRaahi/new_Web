@@ -6429,14 +6429,15 @@ input[type="file"] {
   .tsw::after{
     right: 0;
   }
-  
+  .container.animated-section.lines::after,
   .text-dark-blue::after,
   .wrapper-row-lines::after,
   .section-r .content-wrapper-r::after,
   .section-r .content-wrapper-r::before,
   .industry-container-l::before,
   .industry-container-l::after ,
-  .container.tdb-lines::before 
+  .container.tdb-lines::before ,
+  .tsw::after
   {
     display: none;
   } 
