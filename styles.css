@@ -822,6 +822,8 @@
   font-size: 35px;
   margin: 1rem 0;
   font-family: var(--hero-font);
+  position: relative;
+  z-index: 1;
 }
 
 .wrapper-heading span {
@@ -2855,7 +2857,7 @@ footer::after {
   width: 700px;
   height: 90px;
   border-radius: 0px 0px 0px 50px;
-  display: block;   
+  display: none;   
   pointer-events: none;
 }
 
@@ -6219,7 +6221,7 @@ input[type="file"] {
   border: 3px solid #23c6e0;
   border-style: solid solid solid none; 
   width: 600px;
-  height: 610px;
+  height: 1100px;
   border-radius: 0 50px 50px 0px;
   display: block; 
   z-index: -1; 
@@ -6388,6 +6390,10 @@ input[type="file"] {
   }
   .four-sec-h::after{
     width: 497px;
+  }
+  .container.animated-section.lines::before{
+    width: 520px;
+    height:1128px ;
   }
   
 }
