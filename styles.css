@@ -6544,7 +6544,7 @@ input[type="file"] {
 
 @media (max-width:768px){
   .hero-slider-m, .carousel-item, .hero-bg-m{
-    height: 35vh;
+    height: 50vh;
   }
   .second-about .row{
     gap: 2rem;
@@ -6563,5 +6563,14 @@ input[type="file"] {
   .header{
     padding: 1rem 1rem;
   
+  }
+  .heading-r{    
+    margin-top: -20px;
+  }
+  .container.tsw   {
+    display: none !important ;
+  }
+  .hero-section .first_line{
+    width: fit-content;
   }
 }
