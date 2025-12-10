@@ -6062,7 +6062,7 @@ input[type="file"] {
   border: 3px solid #23c6e0;
   border-radius: 50px 0 0 0px;
   border-style: solid none solid solid; 
-  width:570px;
+  width:568px;
   height: 150%;
   display: block;
   z-index: 0;
@@ -6441,12 +6441,7 @@ input[type="file"] {
   {
     display: none;
   } 
-}
-
-
-@media  (max-width:1200px) {
-
- .team-section-mno .lines::before,
+    .team-section-mno .lines::before,
  .container.animated-section.lines::before,
   .fb-header div >span:first-child::before {
     display: none;
@@ -6480,7 +6475,12 @@ input[type="file"] {
   }
   .team-section-mno h2::before{
     display: none;
-  }  
+  }
+}
+
+
+@media  (max-width:1200px) {
+ 
   .hire-section-m h2{
     font-size: 2.5rem;
   }
