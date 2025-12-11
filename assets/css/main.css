@@ -215,27 +215,29 @@ ul{
 
   .header .navmenu ul {
     flex-direction: column;
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
     gap: 1.5rem;
     background-color: var(--bg-dark-cyan);
-    position: fixed;
-    top: 110px;
+    position: absolute;
+    top: 75px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 90px);
+    height: 100%;
     padding: 2rem;
-    z-index: 9998;
+    z-index: 9998;    
+    transform: translateY(-50%);    
   }
 
-  .header .navmenu.active ul {
-    display: flex;
-  }
-
-  .mobile-nav-toggle {
-    display: block;
-    font-size: 28px;
-    color: var(--nav-color);
-    cursor: pointer;
+  .header .navmenu ul.active  {
+    /* display: flex; */
+     width: 100%;
+    height: calc(100vh - 90px);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+   transition:opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
   }
 
   .pre-header {
@@ -287,4 +289,6 @@ html, body {
 }
 .mobile-nav-active{
   display: flex ! important;
+  transform: translateX(0) ! important;
+  transition: all 0.3s ease-in-out;
 }

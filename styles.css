@@ -2655,6 +2655,8 @@ footer::after {
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
+  font-size: 15px;
+  font-weight: normal;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -2662,9 +2664,10 @@ footer::after {
 }
 
 .contact-form button:hover {
-  background-color: #00464b;
-  color: #fff;
+  border-width: 1px;
+  background-color: #1e4b73;
 }
+
 
 
 @media(max-width: 768px) {
@@ -2692,7 +2695,7 @@ footer::after {
 
 .info-box {
   background-color: #fff;
-  padding: 10px;
+  padding: 40px;
   border-left: 2px solid #f1f1f1;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -6336,6 +6339,26 @@ input[type="file"] {
   z-index: 0;
 }
 
+.emp-form{
+  position: relative;
+}
+.emp-form input, .emp-form textarea{
+  border-radius: 5px;
+  border-color: #e3e3e3;
+  border-width: 1px;
+}
+.emp-form button{
+  border-radius: 5px;
+  border-color: #e3e3e3;
+  border-width: 1px;
+  font-size: 15px;
+  font-weight: normal;
+}
+.emp-form button:hover{ 
+  border-width: 1px;
+  background-color: #1e4b73;
+}
+
 @media screen and (min-width:1530px) {
   .section-r .content-wrapper-r::before{
     width: 90%;
@@ -6483,8 +6506,6 @@ input[type="file"] {
     display: none;
   }
 }
-
-
 @media  (max-width:1200px) {
  
   .hire-section-m h2{

@@ -165,7 +165,7 @@ viewJob && viewJob.addEventListener('click', () => {
   const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
 
   function mobileNavToogle() {
-    nav_menu.classList.toggle("mobile-nav-active");
+    nav_menu.classList.toggle("active");
     mobileNavToggleBtn.classList.toggle("bi-list");
     mobileNavToggleBtn.classList.toggle("bi-x");
   }
@@ -176,7 +176,7 @@ viewJob && viewJob.addEventListener('click', () => {
    */
   document.querySelectorAll("#navmenu a").forEach((navmenu) => {
     navmenu.addEventListener("click", () => {
-      if (document.querySelector(".mobile-nav-active")) {
+      if (document.querySelector(".active")) {
         mobileNavToogle();
       }
     });
