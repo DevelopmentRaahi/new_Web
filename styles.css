@@ -6223,7 +6223,7 @@ input[type="file"] {
   border: 3px solid #23c6e0;
   border-style: solid solid solid none; 
   width: 600px;
-  height: 1100px;
+  height: 620px;
   border-radius: 0 50px 50px 0px;
   display: block; 
   z-index: -1; 
@@ -6415,7 +6415,7 @@ input[type="file"] {
   }
   .container.animated-section.lines::before{
     width: 520px;
-    height:1128px ;
+    /* height:62px ; */
   }
   
 }
