@@ -5422,9 +5422,9 @@ input[type="file"] {
 .top-center-m {
   display: flex;
   flex-direction: row;
-  justify-content: center;   /* FIXED */
+  justify-content: space-around;   /* FIXED */
   align-items: center;
-  gap: 25px;
+  /* gap: 25px; */
   flex-wrap: wrap;
   width: 100%;
 }
@@ -5432,11 +5432,14 @@ input[type="file"] {
 
 
 /* Buttons responsive look same */
-.top-center-m .case-item-m {
-  width: auto;
-  min-width: 180px;
-  text-align: center;
+.top-center-m .case-item-m {  
+  min-width: fit-content;
+  /* text-align: center; */
+  display: flex;  
+  align-items: center;
   justify-content: center;
+  width: 24%;
+  gap: 1rem;
 }
 
 .case-item-m {
@@ -5539,6 +5542,15 @@ input[type="file"] {
   .case-item-m {
     justify-content: center;
     text-align: center;
+  }
+  .top-center-m{
+    gap:1.5rem ;
+  }
+  .top-center-m .case-item-m{
+    max-width: 32%;
+  }
+  .case-item-m h4{
+    font-size: 15px;
   }
 }
 
@@ -6602,5 +6614,8 @@ input[type="file"] {
   .filled-role-box-m{
     width:200px;
     font-size: 0.9rem;
+  }
+  .top-center-m  .case-item-m{
+    width: 100%;
   }
 }
