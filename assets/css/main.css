@@ -63,7 +63,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: var(--font-secondary), 'Segoe UI', sans-serif;
-  background-color: #f7f7f7;
+  background-color: #fffefe;
   padding-top: 60px; /* space for pre-header + header */
 }
 
@@ -141,7 +141,8 @@ ul{
 
 /* ----------------- Header ----------------- */
 .header {
-  background-color: var(--bg-light-gray);
+  /* background-color: var(--bg-light-gray); */
+  background-color: white;
   color: var(--default-color);
   padding: 1rem 3rem;
   position: fixed;
