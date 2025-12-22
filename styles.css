@@ -6373,6 +6373,10 @@ input[type="file"] {
   border-width: 1px;
   background-color: #1e4b73;
 }
+.mobile-nav-toggle{
+  font-size: 1.5rem;
+}
+
 
 @media screen and (min-width:1530px) {
   .section-r .content-wrapper-r::before{
