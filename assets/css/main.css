@@ -292,3 +292,7 @@ html, body {
   transform: translateX(0) ! important;
   transition: all 0.3s ease-in-out;
 }
+.navbar-logo {
+  height: 65px;
+  width: auto;
+}
