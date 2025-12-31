@@ -9,4 +9,4 @@ replace old files with new one-
 	location:-assets/js
 	file:- main.js
 
-(c) privacy-policy.html
+(c) Terms-Conditions.html
