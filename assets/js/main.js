@@ -36,14 +36,20 @@ const backdrop = document.querySelector('#backdrop');
 const body = document.querySelector('body');
 
 const menuLinks = navList.querySelectorAll('ul li a');
-const current = window.location.pathname;
+let currentPage = window.location.pathname.split("/").pop();
 
-menuLinks && menuLinks.forEach((item) => {
-  if (item.href.includes(current)) {
-      item.classList.add("nav-active");
-    }
-})  
+if (currentPage === "") {
+  currentPage = "index.html";
+}
+menuLinks.forEach((link) => {
+  const linkPage = link.getAttribute("href").slice(2).toLowerCase();
 
+  if (linkPage === currentPage.toLowerCase()) {
+    link.classList.add("nav-active");
+  } else {
+    link.classList.remove("nav-active");
+  }
+});
 
 toggleBtn && toggleBtn.addEventListener('click', () => {
   const isMobile = window.innerWidth <= 991; // or 768px as per your breakpoint
