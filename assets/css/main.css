@@ -74,7 +74,15 @@ ul{
   margin: 0;
   padding: 0;
 }
-
+.success{
+  display: none;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.success.show{
+  display: block;
+}
 /* ----------------- Pre-header ----------------- */
 .pre-header {
   background-color: #09656a;
