@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | CandidPage</title>
+    <title>CandidPage | Contact</title>
     
     <!-- favicon link -->
     <link rel="shortcut icon" href="./assets/images/candidpage-logo.png" type="image/x-icon">
@@ -70,53 +70,55 @@
 
 <body>
 
-  <div class="container contact-section">
-    <div class="row">
-      <div class="col-lg-6 mb-4">
-        <div class="contact-form">
-          <h2 class="mb-4">Contact Us</h2>
-          <form class="contact-form">
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+  <section class="form-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-12">
+
+        <form class="line-form">
+
+          <div class="field">
+            <label>First name</label>
+            <input type="text" placeholder="Jane">
+          </div>
+
+          <div class="field">
+            <label>Last name</label>
+            <input type="text" placeholder="Smith">
+          </div>
+
+          <div class="field">
+            <label>Phone number</label>
+            <div class="phone-field">
+              <span class="flag">🇮🇳</span>
+              <span class="arrow">▾</span>
+              <input type="tel" placeholder="081234 56789">
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email" />
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Phone Number</label>
-              <input type="text" class="form-control" id="phone" placeholder="Phone number" />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-success ">Send Message</button>
-          </form>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="info-box">
-          <h5><strong>Address</strong></h5>
-          <p>Street Number 67, Vipin Garden,
-            Uttam Nagar, Delhi,110059</p>
-        </div>
-        <div class="info-box">
-          <h5><strong>Email</strong></h5>
-          <p> sales@domgys.com</p>
-        </div>
-        <div class="info-box">
-          <h5><strong>Phone</strong></h5>
-          <p> +91-888-239-2962</p>
-        </div>
-        <div class="info-box">
-          <h5><strong>Working Hours</strong></h5>
-          <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
-        </div>
+          </div>
+
+          <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="name@example.com">
+          </div>
+
+          <div class="field">
+            <label>Company</label>
+            <input type="text" placeholder="Acme Corporation">
+          </div>
+
+          <button class="submit-btn">Submit</button>
+
+          <p class="note">
+            Never submit passwords! -
+            <a href="#">Report abuse</a>
+          </p>
+
+        </form>
+
       </div>
     </div>
   </div>
+</section>
 
 
   

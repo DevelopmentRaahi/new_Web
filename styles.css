@@ -6627,3 +6627,105 @@ input[type="file"] {
     width: 100%;
   }  
 }
+
+/* contact us page form */
+
+.form-section {
+  min-height: 100vh;
+  background: #fcfcfc;
+  /* padding: 50px 20px; */
+   display: flex;
+  align-items: center; 
+   padding-top: 60px;
+   padding-bottom: 60px;
+}
+
+.line-form {
+  width: 100%;
+   max-width: 520px;
+  margin: 0 auto;  
+}
+
+.field {
+  margin-bottom: 28px;
+}
+
+.field label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.field input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+  padding: 6px 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.field input::placeholder {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.field input:focus {
+  outline: none;
+  border-bottom-color: #000;
+}
+
+/* phone */
+.phone-field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+  padding-bottom: 6px;
+}
+
+.phone-field input {
+  border: none;
+  padding: 0;
+}
+
+.flag {
+  font-size: 16px;
+}
+
+.arrow {
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+/* button */
+.submit-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* note */
+.note {
+  font-size: 12px;
+  margin-top: 8px;
+  color: #000;
+}
+
+.note a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 576px) {
+  .field input {
+    font-size: 15px;
+  }
+}
