@@ -1,6 +1,6 @@
 
   (function () {
-    emailjs.init("Wk73l3qDZA4AnM3bf");
+    emailjs.init("ZwCQ7ozbJKcgTkgjW");
   })();
   const successmsg = document.getElementById("success");
   document.getElementById("contact-form").addEventListener("submit", function (e) {
@@ -43,7 +43,7 @@
 
   // send the form
 function sendEmail(form) {
-  emailjs.sendForm("service_99wdlsp", "template_f7n4ghw", form).then(
+  emailjs.sendForm("service_ao273su", "template_bsvd0rd", form).then(
     function () {
       alert("Message sent successfully!");
       successmsg.classList.add("show");
