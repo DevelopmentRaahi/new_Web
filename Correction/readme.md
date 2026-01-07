@@ -10,3 +10,4 @@ replace old files with new one-
 	file:- main.js
 
 (c) Terms-Conditions.html
+(d) Privacy-policy.html
