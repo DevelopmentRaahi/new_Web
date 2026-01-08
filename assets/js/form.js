@@ -2,15 +2,19 @@
   (function () {
     emailjs.init("ZwCQ7ozbJKcgTkgjW");
   })();
+  const contactForm = document.getElementById("contact-form");
+  const empForm = document.getElementById("emp-form");
   const successmsg = document.getElementById("success");
-  document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();
+  const empSuccess = document.getElementById("emp-success");  
 
+function validateData(e) { 
+    e.preventDefault();
     //validation checks
      const name = this.name.value.trim();
      const email = this.email.value.trim();
      const phone = this.phone.value.trim();
-     const message = this.message.value.trim();
+    const message = this.message.value.trim();
+   
 
      // Name validation
      if (name.length < 2) {
@@ -37,22 +41,36 @@
        return;
      }
 
-   sendEmail(this);
-    
-  });
+   sendEmail(this);    
+}
+
+contactForm && contactForm.addEventListener("submit", validateData);
+empForm && empForm.addEventListener("submit", validateData);
 
   // send the form
 function sendEmail(form) {
   emailjs.sendForm("service_ao273su", "template_bsvd0rd", form).then(
     function () {
       alert("Message sent successfully!");
-      successmsg.classList.add("show");
-      document.getElementById("contact-form").reset();
+      if(contactForm){
+        successmsg.classList.add("show");
+        contactForm.reset();
+      }
+      if(empForm){
+        empSuccess.classList.add("show");
+        empForm.reset();
+      }
     },
     function (error) {
-      alert("Something went wrong!");
-      successmsg.classList.remove("show");
-      console.log(error);
+      alert("Something went wrong!");      
+      if (successmsg.classList.contains("show")) {
+         successmsg.classList.remove("show");
+      }
+      if (empSuccess.classList.contains("show")) {
+         empSuccess.classList.remove("show");
+      } 
+      console.error(error);
+      
     }
   );
 }

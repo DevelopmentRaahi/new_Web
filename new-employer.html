@@ -928,22 +928,25 @@
       <div class="col-lg-6">
         <div class=" p-4 shadow-sm bg-white rounded">
           <h2 class="mb-4 fw-semibold text-dark">Contact Us</h2>
-          <form class=" emp-form">
+          <form class=" emp-form" id="emp-form">
             <div class="mb-3">
               <label for="name" class="form-label text-start">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+              <input type="text" class="form-control" name="name" placeholder="Enter your name" required />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+              <input type="email" class="form-control" name="email" placeholder="Enter your email" required />
             </div>
             <div class="mb-3">
               <label for="phone" class="form-label">Phone Number</label>
-              <input type="text" class="form-control" id="phone" placeholder="Phone number" />
+              <input type="text" class="form-control" name="phone" placeholder="Phone number" required />
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Type your message here..."></textarea>
+              <textarea class="form-control" name="message" rows="3" placeholder="Type your message here..." required></textarea>
+              </div>
+              <div class="success" id="emp-success">
+                <p>Thanks for contacting us! We will get back to you soon.</p>
             </div>
             <button type="submit" class="btn btn-success px-4">Send Message</button>
           </form>
@@ -1065,8 +1068,11 @@
   <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
   <!-- AOS sciprts -->
   <script src="./assets/vendor/aos/aos.js"></script>  
+  <!-- emailjs sciprts -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <!-- custom sciprts -->
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/form.js"></script>
   <script>
   document.getElementById("view-more-btn").addEventListener("click", function() {
     const moreLogos = document.getElementById("more-logos");
