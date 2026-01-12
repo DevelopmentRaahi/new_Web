@@ -6733,7 +6733,7 @@ input[type="file"] {
 
 .hero-banner {
   background: #ffffff;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .hero-container {
@@ -6814,14 +6814,14 @@ input[type="file"] {
 }
 
 .hero-image img {
-  max-width: 120%;
+  max-width: 110%;
   border-radius: 20px;
 }
 
 .discount-badge {
   position: absolute;
   top: 20px;
-  right: -60px;
+  right: -30px;
   background: #2563eb;
   color: #ffffff;
   padding: 16px 18px;
